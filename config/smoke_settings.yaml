@@ -1,0 +1,21 @@
+paths:
+  input_csv: "Data/wellbeing_smoke.csv"
+
+profile: "wellbeing"
+
+performance:
+  use_pyspark: false
+
+analytics:
+  enabled: false
+
+semantic:
+  model_name: "Data/embedding_classifier_multi/encoder"
+  use_cross_encoder: false
+
+output:
+  generate_sentiment: false
+  generate_wordclouds: false
+  generate_segmented: false
+  generate_detailed_segments: false
+  generate_absa: false

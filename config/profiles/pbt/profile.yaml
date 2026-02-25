@@ -1,0 +1,66 @@
+# Profile overrides for the PBT wellbeing survey
+# Uses the existing wellbeing taxonomy/dictionary by default.
+
+profile: "pbt"
+
+# Canonical text columns for this survey
+text_columns:
+  - Workload_Concern
+  - Self_Help_Strategies
+  - Support_From_Org
+  - Peer_Support
+  - Value_At_Work
+
+# Map raw question headers (or Q-names) to canonical column names
+input:
+  column_map:
+    "Q1": "Work_Feeling_Rating"
+    "How are you feeling at the moment about work?": "Work_Feeling_Rating"
+
+    "Q2": "Workload_Concern"
+    "Do you have a specific workload concern? If yes, please add your answer below:": "Workload_Concern"
+
+    "Q3": "Self_Help_Strategies"
+    "How can you help yourself with fatigue / burnout / anxiety stress?": "Self_Help_Strategies"
+
+    "Q4": "Support_From_Org"
+    "How can we help you with fatigue / burnout / anxiety / stress?": "Support_From_Org"
+
+    "Q5": "Peer_Support"
+    "How can we help each other with fatigue / burnout / anxiety / stress?": "Peer_Support"
+
+    "Q6": "Value_At_Work"
+    "What helps you feel valued at work?": "Value_At_Work"
+
+# Per-stage column selection (optional overrides)
+processing:
+    # Master list of free text columns - Preprocessing and null detection applied 
+    - Workload_Concern
+    - Self_Help_Strategies
+    - Support_From_Org
+    - Peer_Support
+    - Value_At_Work
+
+    # Text columns receiving theme classification
+  taxonomy_columns:
+    - Workload_Concern
+    - Self_Help_Strategies
+    - Support_From_Org
+    - Peer_Support
+    - Value_At_Work
+
+    # Text columns receiving sentiment scoring
+  sentiment_columns:
+    - Workload_Concern
+    - Self_Help_Strategies
+    - Support_From_Org
+    - Peer_Support
+    - Value_At_Work
+    
+  segmentation_columns: []
+
+# Reuse existing wellbeing taxonomy assets until a PBT-specific set is created.
+paths:
+  dictionary: "config/profiles/wellbeing/dictionary.yaml"
+  themes: "config/profiles/wellbeing/themes.yaml"
+  enriched_json: "assets/taxonomy/wellbeing/theme_subtheme_dictionary_v3_enriched.json"

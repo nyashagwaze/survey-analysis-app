@@ -1,0 +1,31 @@
+# Template profile (copy to create a new survey profile)
+
+profile: "template"
+
+# Optional: override input path here for a profile-specific dataset
+# paths:
+#   input_csv: "Data/your_survey.csv"
+
+# Map raw column headers to canonical names
+input:
+  column_map:
+    "Raw Question 1": "Free_Text_1"
+    "Raw Question 2": "Free_Text_2"
+
+# Per-stage column selection (only free-text columns should be here)
+processing:
+  text_columns:
+    - Free_Text_1
+    - Free_Text_2
+  taxonomy_columns:
+    - Free_Text_1
+    - Free_Text_2
+  sentiment_columns:
+    - Free_Text_1
+  segmentation_columns: []
+
+# Point to your profile-specific assets once created
+paths:
+  dictionary: "config/profiles/<profile>/dictionary.yaml"
+  themes: "config/profiles/<profile>/themes.yaml"
+  enriched_json: "assets/taxonomy/<profile>/theme_subtheme_dictionary_v3_enriched.json"

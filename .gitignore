@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+.env
+.env.*
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+outputs/
+Deliverables/
+Performance_metrics/
+Final_deliverable/
+
+# Logs
+*.log
+
+# Local data (keep model assets but not raw datasets)
+Data/*.csv
+Data/*.xlsx
+Data/*.parquet

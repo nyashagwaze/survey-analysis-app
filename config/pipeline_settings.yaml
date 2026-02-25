@@ -1,0 +1,325 @@
+# ============================================================
+# NLP Pipeline Configuration Settings
+# ============================================================
+# This file centralizes all pipeline parameters for easy tuning
+# without modifying code. Adjust these values to control pipeline
+# behavior, matching thresholds, and output preferences.
+# ============================================================
+
+# ------------------------------------------------------------
+# PROFILE (SURVEY PACK)
+# ------------------------------------------------------------
+# Select which dictionary/taxonomy pack to use.
+profile: "wellbeing"
+
+# ------------------------------------------------------------
+# NULL TEXT DETECTION SETTINGS
+# ------------------------------------------------------------
+null_detection:
+  min_meaningful_length: 3          # Minimum characters for meaningful text
+  max_dismissive_length: 50         # Maximum characters for dismissive responses
+                                    # Prevents long sentences from being dismissed
+  
+  # Response categories for dismissed text
+  categories:
+    - "Yes"                         # Affirmative responses (yes, yep, yeah, sure)
+    - "No"                          # Negative/null responses (no, nope, n/a, none)
+    - "No sentiment"                # Irrelevant responses (ok, fine, as above, prefer not to say)
+
+# ------------------------------------------------------------
+# TAXONOMY MATCHING SETTINGS
+# ------------------------------------------------------------
+taxonomy:
+  use_fuzzy: true                   # Enable fuzzy matching for typos/variations
+  fuzzy_threshold: 0.70             # Minimum similarity score for fuzzy matches (0.0-1.0)
+                                    # Lower = more lenient, Higher = stricter
+  
+  min_accept_score: 0.70            # Minimum score to accept a theme match (0.0-1.0)
+                                    # Lower = more themes detected, Higher = fewer but more confident
+  
+  top_k: 5                          # Maximum number of themes to return per response
+                                    # Increase for multi-theme responses
+  
+  column_bonus: 0.25                # Score boost when keyword appears in likely_column
+  column_penalty: 0.10              # Score reduction when keyword appears in unlikely column
+                                    # Lower penalty = less harsh on unexpected columns
+  
+  prefer_exact: true                # Give slight boost to exact matches over fuzzy
+  phrase_first: true                # Prioritize multi-word phrases over single tokens
+  allow_token_fallback: false       # Allow single-word token matching if no phrase matches
+                                    # Keep false to avoid false positives
+  
+  # Multi-label output format
+  multi_label:
+    enabled: true                   # Return multiple themes per response
+    delimiter: " | "                # Separator for concatenated themes
+    order_by: "score"               # Order themes by: "score" or "detection"
+
+# ------------------------------------------------------------
+# SEMANTIC MATCHING SETTINGS
+# ------------------------------------------------------------
+semantic:
+  model_name: "Data/embedding_classifier_multi/encoder"
+  similarity_threshold: 0.35
+  top_k: 3
+  use_cross_encoder: false
+  cross_encoder_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  bi_top_k: 15
+  bi_threshold: 0.20
+  pair_template: "{phrase}"
+  scores_output: "outputs/tables/semantic_ce_scores.csv"
+  assignments_filename: "assignments_semantic_cross_encoder.csv"
+
+# ------------------------------------------------------------
+# SENTIMENT ANALYSIS SETTINGS
+# ------------------------------------------------------------
+sentiment:
+  model: "cardiffnlp/twitter-roberta-base-sentiment-latest"  # RoBERTa model
+  
+  # Sentiment thresholds
+  positive_threshold: 0.10          # Compound score >= 0.05 = Positive
+  negative_threshold: -0.10         # Compound score <= -0.05 = Negative
+                                    # Between thresholds = Neutral
+  
+  # Column-aware weighting
+  column_weights:
+    Wellbeing_Details: 0.50         # 50% weight
+    Areas_Improve: 0.30             # 30% weight
+    Support_Provided: 0.20          # 20% weight
+  
+  # Respect meaningful flags
+  skip_dismissed: true              # Don't calculate sentiment for dismissed text
+  dismissed_sentiment_value: null   # Use null instead of 0.0 for dismissed text
+
+# ------------------------------------------------------------
+# PREPROCESSING SETTINGS
+# ------------------------------------------------------------
+preprocessing:
+  # Text normalization
+  lowercase: true
+  remove_punctuation: true
+  collapse_whitespace: true
+  
+  # Phrase forcing
+  force_phrases_enabled: true       # Use FORCE_PHRASES from dictionary
+  
+  # Unigram filtering
+  unigram_whitelist_enabled: true   # Use UNIGRAM_WHITELIST from dictionary
+  always_drop_unigrams: true        # Use ALWAYS_DROP_UNIGRAMS from dictionary
+  must_be_phrase_enabled: true      # Use MUST_BE_PHRASE from dictionary
+
+# ------------------------------------------------------------
+# SEGMENTATION SETTINGS
+# ------------------------------------------------------------
+segmentation:
+  enabled: false                    # Enable contrast-aware segmentation
+  spacy_model: "en_core_web_sm"     # spaCy model for sentence splitting
+  min_tokens: 3                     # Minimum tokens per segment
+  
+  # Contrast markers
+  detect_contrast: true             # Look for but/however/although markers
+  
+  # Fallback behavior
+  fallback_to_whole_text: true      # If no segments found, analyze whole text
+  use_assign_many_fallback: true    # Use assign_many() for short unsegmented text
+
+# ------------------------------------------------------------
+# OUTPUT SETTINGS
+# ------------------------------------------------------------
+output:
+  # File formats
+  export_csv: true
+  export_parquet: false             # Optional: faster for large datasets
+  
+  # Output files to generate
+  generate_assignments: true        # assignments.csv (theme/subtheme per response)
+  assignments_filename: null        # Override default assignments_<mode>.csv
+  deliverables_assignments_filename: null
+  generate_sentiment: true          # sentiment_by_id.csv (sentiment scores)
+  generate_segmented: false         # segmented_analysis.csv (contrast analysis)
+  generate_detailed_segments: false # segments_detailed.csv (segment-level data)
+  segmented_analysis_filename: "segmented_analysis.csv"
+  segments_detailed_filename: "segments_detailed.csv"
+  generate_review_sheet: true       # categorisation_review.csv (simplified review)
+  generate_quality_report: true     # null_text_report.csv (response quality stats)
+  generate_null_text_details: true  # null_text_details.csv (dismissed text + reason)
+  null_text_details_filename: "null_text_details.csv"
+  generate_taxonomy_reports: true   # taxonomy_matched.csv / taxonomy_unmatched.csv
+  taxonomy_matched_filename: "taxonomy_matched.csv"
+  taxonomy_unmatched_filename: "taxonomy_unmatched.csv"
+  generate_wordclouds: false        # Wordcloud images (optional)
+  generate_segment_sentiment_summary: true  # Summarize per-segment sentiment by theme
+  segment_sentiment_summary_filename: "segment_sentiment_summary.csv"
+  generate_absa: false
+  absa_filename: "absa_segment_sentiment.csv"
+
+# ------------------------------------------------------------
+# WORDCLOUD SETTINGS (column_wordclouds.py)
+# ------------------------------------------------------------
+wordcloud:
+  min_freq: 2
+  min_token_len: 3
+  max_words: 140
+  min_font_size: 14
+  max_font_size: 220
+  relative_scaling: 0.3
+  prefer_horizontal: 1.0
+  keep_phrases_only: true
+  display_phrases_with_spaces: true
+  use_processed: true
+  export_frequencies: false
+  
+  # Dismissed text in outputs
+  include_dismissed_in_assignments: true   # Show dismissed text with theme="Brief response"
+  dismissed_theme_label: "Brief response"  # Theme label for dismissed text
+  dismissed_subtheme_from: "response_detail"  # Use response_detail as subtheme
+
+# ------------------------------------------------------------
+# BASIC DATA AUDIT (OPTIONAL)
+# ------------------------------------------------------------
+analytics:
+  enabled: true                     # On/off switch for basic data audit
+  export_csv: true                  # Save audit to outputs/deliverables
+  audit_filename: "data_audit.csv"
+
+# ------------------------------------------------------------
+# PERFORMANCE SETTINGS
+# ------------------------------------------------------------
+performance:
+  use_pyspark: false                # Use PySpark for parallel processing
+  cache_dataframes: true            # Cache intermediate Spark DataFrames
+  
+  # Batch sizes for UDFs
+  taxonomy_batch_size: 100          # Rows per batch in taxonomy UDF
+  sentiment_batch_size: 100         # Rows per batch in sentiment UDF
+  
+  # Transformers cache
+  transformers_cache: "/tmp/huggingface_cache"
+  hf_home: "/tmp/huggingface_cache"
+
+# ------------------------------------------------------------
+# TEXT COLUMNS TO PROCESS
+# ------------------------------------------------------------
+text_columns:
+  - Wellbeing_Details
+  - Areas_Improve
+  - Support_Provided
+
+# ------------------------------------------------------------
+# INPUT COLUMN MAPPING (OPTIONAL)
+# ------------------------------------------------------------
+input:
+  # Map raw column headers to canonical names.
+  # Example:
+  # column_map:
+  #   "How are you feeling at the moment about work?": "Wellbeing_Details"
+  #   "Q2": "Areas_Improve"
+  column_map: {}
+
+# ------------------------------------------------------------
+# PER-STAGE COLUMN SELECTION (OPTIONAL)
+# ------------------------------------------------------------
+# If not set, each stage uses text_columns.
+processing: {}
+# Example:
+# processing:
+#   text_columns: ["Wellbeing_Details", "Areas_Improve"]
+#   taxonomy_columns: ["Wellbeing_Details"]
+#   sentiment_columns: ["Wellbeing_Details"]
+#   segmentation_columns: []
+
+# ------------------------------------------------------------
+# FILE PATHS
+# ------------------------------------------------------------
+paths:
+ 
+  # Base directory resolved relative to project root
+  # Use "." for most cases; override with absolute path if needed.
+  # Paths support {profile} token replacement.
+  base_dir: "."
+  # Input data (set per run or update here)
+  input_csv: "Data/wellbeing.csv"
+
+  # Config files
+  dictionary: "config/profiles/{profile}/dictionary.yaml"
+  themes: "config/profiles/{profile}/themes.yaml"
+  pipeline_settings: "config/pipeline_settings.yaml"
+  enriched_json: "assets/taxonomy/{profile}/theme_subtheme_dictionary_v3_enriched.json"
+  
+  # Output directories (intermediate outputs)
+  output_tables: "outputs/tables"
+  output_wordclouds: "outputs/wordclouds"
+  output_review: "outputs/review"
+  output_logs: "outputs/logs"
+
+  # Final deliverables (BI outputs)
+  deliverables: "Deliverables"
+
+# ------------------------------------------------------------
+# LOGGING & DEBUGGING
+# ------------------------------------------------------------
+logging:
+  verbose: true                     # Print detailed progress messages
+  show_match_details: false         # Show individual match scores (debug mode)
+  log_dismissed_text: true          # Log dismissed text samples
+  
+  # Performance tracking
+  track_execution_time: true        # Time each pipeline stage
+  track_memory_usage: false         # Monitor memory (adds overhead)
+
+# ------------------------------------------------------------
+# DATABRICKS RUNTIME (OPTIONAL)
+# ------------------------------------------------------------
+databricks:
+  enabled: auto                     # true/false/auto (auto enables when in Databricks)
+  project_root: "/Workspace/Users/{user}/Wellbeing_Survey_Analysis"
+  hf_cache: "/Workspace/Users/{user}/.cache/huggingface"
+  set_hf_cache_env: true            # Export HF_HOME/TRANSFORMERS_CACHE/SENTENCE_TRANSFORMERS_HOME
+  override_env: true                # Override existing env vars if set
+  spark_copy_workspace_to_dbfs: false  # If true and Spark is enabled, copy /Workspace input to DBFS
+  spark_dbfs_dir: "dbfs:/tmp/wellbeing_pipeline"  # Target dir for Spark-readable copies
+
+# ------------------------------------------------------------
+# FEATURE FLAGS
+# ------------------------------------------------------------
+features:
+  enable_fuzzy_matching: true       # Fuzzy matching in taxonomy
+  enable_segmentation: true         # Contrast-aware segmentation
+  enable_multi_label: true          # Multi-label semantic themes detection
+  enable_column_weighting: true     # Column-aware sentiment weighting
+  enable_coping_detection: true     # Detect coping mechanisms in sentiment
+
+# ------------------------------------------------------------
+# SEGMENT SENTIMENT SUMMARY (DELIVERABLE)
+# ------------------------------------------------------------
+segment_summary:
+  # Net score bands (pos/neg balance):
+  # neutral_low <= net <= neutral_high → Neutral/Mixed
+  net_neutral_low: -0.1
+  net_neutral_high: 0.1
+  # 0.1–0.2 = Slightly positive, 0.2–0.5 = Happy, >0.5 = Very happy
+  net_slight: 0.2
+  net_strong: 0.5
+
+  # Minimum dominant share (positive or negative) to classify.
+  # Set >0.50 to require a majority.
+  min_majority_pct: 0.51
+
+  # Statistical significance ideas for future dynamic thresholds:
+  # - Fisher's exact test (2x2 sparse tables)
+  # - Chi-squared test (larger counts)
+  # - Barnard's exact test (more power for 2x2)
+  # - Odds ratio with confidence intervals
+  # - p-value thresholding (e.g., 0.05)
+
+# ------------------------------------------------------------
+# ABSA (ASPECT-BASED SENTIMENT)
+# ------------------------------------------------------------
+absa:
+  enabled: false
+  model_name: "yangheng/deberta-v3-base-absa-v1"
+  input_mode: "pair"               # pair or prompt
+  prompt_template: "aspect: {aspect} text: {text}"
+  batch_size: 16
+  max_len: 128
+  use_subtheme: true

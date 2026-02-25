@@ -1,0 +1,16 @@
+﻿-r requirements.txt
+
+# Optional analysis + visuals
+matplotlib>=3.7.0
+seaborn>=0.12.0
+wordcloud>=1.9.0
+
+# Synthetic generation (optional)
+python-dotenv>=1.0.0
+openai>=1.0.0
+
+# Dev tooling
+pytest>=7.4.0
+ruff>=0.3.0
+black>=24.0.0
+ipykernel>=6.29.0
