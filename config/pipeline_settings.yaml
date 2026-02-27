@@ -10,7 +10,7 @@
 # PROFILE (SURVEY PACK)
 # ------------------------------------------------------------
 # Select which dictionary/taxonomy pack to use.
-profile: "wellbeing"
+profile: "general"
 
 # ------------------------------------------------------------
 # NULL TEXT DETECTION SETTINGS
@@ -83,9 +83,9 @@ sentiment:
   
   # Column-aware weighting
   column_weights:
-    Wellbeing_Details: 0.50         # 50% weight
-    Areas_Improve: 0.30             # 30% weight
-    Support_Provided: 0.20          # 20% weight
+    Free_Text_1: 0.50               # 50% weight
+    Free_Text_2: 0.30               # 30% weight
+    Free_Text_3: 0.20               # 20% weight
   
   # Respect meaningful flags
   skip_dismissed: true              # Don't calculate sentiment for dismissed text
@@ -201,9 +201,11 @@ performance:
 # TEXT COLUMNS TO PROCESS
 # ------------------------------------------------------------
 text_columns:
-  - Wellbeing_Details
-  - Areas_Improve
-  - Support_Provided
+  - Free_Text_1
+  - Free_Text_2
+  - Free_Text_3
+  - Free_Text_4
+  - Free_Text_5
 
 # ------------------------------------------------------------
 # INPUT COLUMN MAPPING (OPTIONAL)
@@ -212,8 +214,8 @@ input:
   # Map raw column headers to canonical names.
   # Example:
   # column_map:
-  #   "How are you feeling at the moment about work?": "Wellbeing_Details"
-  #   "Q2": "Areas_Improve"
+  #   "Question 1": "Free_Text_1"
+  #   "Question 2": "Free_Text_2"
   column_map: {}
 
 # ------------------------------------------------------------
@@ -223,9 +225,9 @@ input:
 processing: {}
 # Example:
 # processing:
-#   text_columns: ["Wellbeing_Details", "Areas_Improve"]
-#   taxonomy_columns: ["Wellbeing_Details"]
-#   sentiment_columns: ["Wellbeing_Details"]
+#   text_columns: ["Free_Text_1", "Free_Text_2"]
+#   taxonomy_columns: ["Free_Text_1"]
+#   sentiment_columns: ["Free_Text_1"]
 #   segmentation_columns: []
 
 # ------------------------------------------------------------
@@ -238,7 +240,7 @@ paths:
   # Paths support {profile} token replacement.
   base_dir: "."
   # Input data (set per run or update here)
-  input_csv: "Data/wellbeing.csv"
+  input_csv: "Data/survey.csv"
 
   # Config files
   dictionary: "config/profiles/{profile}/dictionary.yaml"
@@ -272,12 +274,12 @@ logging:
 # ------------------------------------------------------------
 databricks:
   enabled: auto                     # true/false/auto (auto enables when in Databricks)
-  project_root: "/Workspace/Users/{user}/Wellbeing_Survey_Analysis"
+  project_root: "/Workspace/Users/{user}/survey-analysis-app"
   hf_cache: "/Workspace/Users/{user}/.cache/huggingface"
   set_hf_cache_env: true            # Export HF_HOME/TRANSFORMERS_CACHE/SENTENCE_TRANSFORMERS_HOME
   override_env: true                # Override existing env vars if set
   spark_copy_workspace_to_dbfs: false  # If true and Spark is enabled, copy /Workspace input to DBFS
-  spark_dbfs_dir: "dbfs:/tmp/wellbeing_pipeline"  # Target dir for Spark-readable copies
+  spark_dbfs_dir: "dbfs:/tmp/survey_app"  # Target dir for Spark-readable copies
 
 # ------------------------------------------------------------
 # FEATURE FLAGS

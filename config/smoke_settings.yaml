@@ -1,7 +1,7 @@
 paths:
-  input_csv: "Data/wellbeing_smoke.csv"
+  input_csv: "Data/survey_smoke.csv"
 
-profile: "wellbeing"
+profile: "general"
 
 performance:
   use_pyspark: false

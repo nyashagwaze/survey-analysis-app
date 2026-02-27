@@ -1,0 +1,70 @@
+# General-purpose dictionary (company-agnostic)
+
+DOMAIN_WHITELIST:
+  - wellbeing
+  - well-being
+  - workload
+  - burnout
+  - stress
+  - anxious
+  - anxiety
+  - manager
+  - leadership
+  - teamwork
+  - recognition
+  - feedback
+  - training
+  - development
+  - flexibility
+  - wfh
+  - remote
+  - overtime
+  - deadlines
+  - staffing
+  - resourcing
+
+BUSINESS_MAP:
+  line manager: management
+  supervisor: management
+  leadership: management
+  manager: management
+  team lead: management
+
+MERGE_TO_CANONICAL:
+  wfh: working from home
+  work from home: working from home
+  work life: work-life
+  worklife: work-life
+  timeoff: time off
+
+FORCE_PHRASES:
+  - work life balance
+  - working from home
+  - mental health
+  - career progression
+  - time off
+  - paid leave
+
+UNIGRAM_WHITELIST:
+  - workload
+  - wellbeing
+  - burnout
+  - stress
+  - manager
+  - leadership
+  - training
+  - recognition
+  - feedback
+
+ALWAYS_DROP_UNIGRAMS:
+  - ok
+  - fine
+  - yes
+  - no
+  - none
+  - maybe
+
+MUST_BE_PHRASE:
+  - time off
+  - work life
+  - mental health

@@ -10,7 +10,7 @@
 # MAGIC %md
 # MAGIC ## Install Dependencies
 # MAGIC
-# MAGIC /Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis/docs/dependencies.md for details
+# MAGIC /Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/docs/dependencies.md for details
 
 # COMMAND ----------
 
@@ -20,15 +20,15 @@ from pathlib import Path
 import pandas as pd
 
 # EDIT THIS: Databricks repo/workspace path to the project root
-PROJECT_ROOT = "/Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis"
+PROJECT_ROOT = "/Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app"
 
 # Add src to module path
 src_dir = Path(PROJECT_ROOT) / "src"
 if str(src_dir) not in sys.path:
     sys.path.insert(0, str(src_dir))
 
-from wellbeing_pipeline.pipeline import run_pipeline
-from wellbeing_pipeline.config_runtime import load_settings
+from survey_app.pipeline import run_pipeline
+from survey_app.config_runtime import load_settings
 
 # COMMAND ----------
 
@@ -40,7 +40,7 @@ from wellbeing_pipeline.config_runtime import load_settings
 # MAGIC %md
 # MAGIC ## Configuration
 # MAGIC ### Full settings tweaks at
-# MAGIC  (/Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis/config/pipeline_settings.yaml) 
+# MAGIC  (/Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/config/pipeline_settings.yaml) 
 
 # COMMAND ----------
 
@@ -49,14 +49,14 @@ settings_path = f"{PROJECT_ROOT}/config/pipeline_settings.yaml"
 settings = load_settings(settings_path)
 
 # Optional overrides
-input_csv = "/Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis/Data/wellbeing.csv"
+input_csv = "/Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/Data/survey.csv"
 output_dir =  f"{PROJECT_ROOT}/outputs/tables"
 deliverables_dir = f"{PROJECT_ROOT}/Deliverables"
 
 # Taxonomy options
 # Use "keyword" or "semantic". Semantic requires enriched_json_path.
 taxonomy_mode = "keyword"
-profile = "wellbeing"
+profile = "general"
 enriched_json_path =  f"{PROJECT_ROOT}/assets/taxonomy/{profile}/theme_subtheme_dictionary_v3_enriched.json"
 
 # Analytics on/off

@@ -1,11 +1,11 @@
-﻿# Wellbeing Survey Analysis
+﻿# Survey Analysis App
 
-NLP pipeline for employee wellbeing survey free-text responses. Uses semantic matching, keyword taxonomy, and optional sentiment analysis to produce theme assignments and reporting outputs without exposing raw text.
+NLP pipeline for survey free-text responses. Uses semantic matching, keyword taxonomy, and optional sentiment analysis to produce theme assignments and reporting outputs without exposing raw text.
 
 ```
-Wellbeing_Survey_Analysis/
+survey-analysis-app/
   src/
-    wellbeing_pipeline/
+    survey_app/
       clean_normalise/
       grouping/
       taxonomy/
@@ -17,13 +17,20 @@ Wellbeing_Survey_Analysis/
   config/
     pipeline_settings.yaml
     profiles/
-      wellbeing/
+      general/
+        dictionary.yaml
+        themes.yaml
+        profile.yaml
+      hearing/
         dictionary.yaml
         themes.yaml
         profile.yaml
   assets/
     taxonomy/
-      wellbeing/
+      general/
+        theme_phrase_library.csv
+        theme_subtheme_dictionary_v3_enriched.json
+      hearing/
         theme_phrase_library.csv
         theme_subtheme_dictionary_v3_enriched.json
   notebooks/
@@ -43,7 +50,7 @@ Wellbeing_Survey_Analysis/
 
 2) Edit `PROJECT_ROOT` at the top of the notebook:
 ```
-PROJECT_ROOT = "/Workspace/Repos/<your_user>/<your_repo>/Wellbeing_Survey_Analysis"
+PROJECT_ROOT = "/Workspace/Repos/<your_user>/<your_repo>/survey-analysis-app"
 ```
 
 3) Run the notebook. It loads `config/pipeline_settings.yaml` and executes the full pipeline.
@@ -68,7 +75,7 @@ All key settings are centralized in:
 
 Key path settings (relative to `base_dir`, resolved against the project root):
 ```
-profile: "wellbeing"
+profile: "general"
 input:
   column_map: {}
 processing:
@@ -76,7 +83,7 @@ processing:
   # (see config/pipeline_settings.yaml for examples)
 paths:
   base_dir: "."
-  input_csv: "Data/wellbeing.csv"
+  input_csv: "Data/survey.csv"
   dictionary: "config/profiles/{profile}/dictionary.yaml"
   themes: "config/profiles/{profile}/themes.yaml"
   enriched_json: "assets/taxonomy/{profile}/theme_subtheme_dictionary_v3_enriched.json"
@@ -109,7 +116,7 @@ Final deliverables (if configured) are also copied to `Deliverables/`.
 
 Generate cleaner wordclouds per column:
 ```
-python -m wellbeing_pipeline.wordcloud.column_wordclouds --settings config/pipeline_settings.yaml
+python -m survey_app.wordcloud.column_wordclouds --settings config/pipeline_settings.yaml
 ```
 
 Tuning options are under `wordcloud` in `pipeline_settings.yaml`.

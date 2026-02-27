@@ -6,14 +6,14 @@ Run after: `pip install -e .` (or set `PYTHONPATH=src`).
 from pathlib import Path
 import pandas as pd
 
-from wellbeing_pipeline.config_runtime import load_settings
-from wellbeing_pipeline.pipeline import run_pipeline
+from survey_app.config_runtime import load_settings
+from survey_app.pipeline import run_pipeline
 
 
 def main():
     project_root = Path(__file__).resolve().parents[1]
-    input_csv = project_root / "Data" / "wellbeing.csv"
-    smoke_csv = project_root / "Data" / "wellbeing_smoke.csv"
+    input_csv = project_root / "Data" / "survey.csv"
+    smoke_csv = project_root / "Data" / "survey_smoke.csv"
 
     if input_csv.exists():
         df = pd.read_csv(input_csv).head(25)

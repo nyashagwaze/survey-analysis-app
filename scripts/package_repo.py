@@ -78,7 +78,7 @@ def main() -> int:
     args = parser.parse_args()
 
     root = Path(args.root).resolve() if args.root else Path(__file__).resolve().parents[1]
-    out_path = Path(args.out).resolve() if args.out else root / "dist" / "wellbeing_bundle.zip"
+    out_path = Path(args.out).resolve() if args.out else root / "dist" / "survey_bundle.zip"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     include_paths = list(DEFAULT_INCLUDE)

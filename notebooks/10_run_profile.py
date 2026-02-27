@@ -11,11 +11,11 @@ import sys
 from pathlib import Path
 
 # EDIT THIS: Databricks repo/workspace path to the project root
-PROJECT_ROOT = "/Workspace/Users/<you>/Wellbeing_Survey_Analysis"
+PROJECT_ROOT = "/Workspace/Users/<you>/survey-analysis-app"
 
 # Optional overrides (leave empty to use config/pipeline_settings.yaml)
 PROFILE = ""  # e.g. "pbt"
-INPUT_CSV = ""  # e.g. "/Workspace/Users/<you>/Wellbeing_Survey_Analysis/Data/pbt.csv"
+INPUT_CSV = ""  # e.g. "/Workspace/Users/<you>/survey-analysis-app/Data/pbt.csv"
 
 # Add src to module path
 src_dir = Path(PROJECT_ROOT) / "src"
@@ -29,8 +29,8 @@ if str(src_dir) not in sys.path:
 
 # COMMAND ----------
 
-from wellbeing_pipeline.config_runtime import load_settings, apply_profile
-from wellbeing_pipeline.pipeline import run_pipeline
+from survey_app.config_runtime import load_settings, apply_profile
+from survey_app.pipeline import run_pipeline
 
 settings_path = str(Path(PROJECT_ROOT) / "config/pipeline_settings.yaml")
 settings = load_settings(settings_path)

@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "schema_version": "3.0",
+    "description": "Column-specific theme libraries with strict enforcement",
+    "generated_from": "theme_phrase_library.csv",
+    "columns": [
+      "Free_Text_1",
+      "Free_Text_2",
+      "Free_Text_3",
+      "Free_Text_4",
+      "Free_Text_5"
+    ]
+  },
+  "column_libraries": {
+    "Free_Text_1": {
+      "description": "Themes for Free_Text_1",
+      "parents": [
+        {
+          "parent_name": "Perception",
+          "themes": [
+            {
+              "theme_name": "Hearing Meaning",
+              "subthemes": [
+                {
+                  "name": "Connection & Engagement",
+                  "keywords_phrases": [
+                    "connected with the world",
+                    "feeling connected",
+                    "part of conversations",
+                    "staying connected",
+                    "staying connected with the world"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Enjoyment & Quality of Life",
+                  "keywords_phrases": [
+                    "enjoying life",
+                    "enjoying music",
+                    "enjoying music, laughter, and life",
+                    "enjoyment of sounds",
+                    "quality of life"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Independence & Alertness",
+                  "keywords_phrases": [
+                    "independent and alert",
+                    "stay alert",
+                    "stay independent",
+                    "staying independent",
+                    "staying independent and alert"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Not Considered",
+                  "keywords_phrases": [
+                    "i haven't thought about it much",
+                    "i haven?t thought about it much",
+                    "not considered",
+                    "not really thought about it",
+                    "unsure"
+                  ],
+                  "default_polarity": "Neutral"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_2": {
+      "description": "Themes for Free_Text_2",
+      "parents": [
+        {
+          "parent_name": "Barriers",
+          "themes": [
+            {
+              "theme_name": "Testing Barriers",
+              "subthemes": [
+                {
+                  "name": "Cost",
+                  "keywords_phrases": [
+                    "cannot afford",
+                    "cost",
+                    "cost is a barrier",
+                    "price",
+                    "too expensive"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Lack of Awareness",
+                  "keywords_phrases": [
+                    "didn?t know",
+                    "didnt know",
+                    "lack of awareness",
+                    "not aware",
+                    "not enough information"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "No Need",
+                  "keywords_phrases": [
+                    "don?t need a test",
+                    "dont need a test",
+                    "never felt the need",
+                    "no need",
+                    "not necessary"
+                  ],
+                  "default_polarity": "Neutral"
+                },
+                {
+                  "name": "Shame or Embarrassment",
+                  "keywords_phrases": [
+                    "don?t want people to know",
+                    "dont want people to know",
+                    "embarrassed",
+                    "shame",
+                    "stigma"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Time or Access",
+                  "keywords_phrases": [
+                    "access issues",
+                    "difficult to book",
+                    "hard to access",
+                    "inconvenient",
+                    "no time"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_3": {
+      "description": "Themes for Free_Text_3",
+      "parents": [
+        {
+          "parent_name": "Impact",
+          "themes": [
+            {
+              "theme_name": "Missed Sounds",
+              "subthemes": [
+                {
+                  "name": "Family Conversations",
+                  "keywords_phrases": [
+                    "conversations at home",
+                    "family conversations",
+                    "family discussions",
+                    "family gatherings",
+                    "talking with family"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Not Missed",
+                  "keywords_phrases": [
+                    "haven?t missed anything",
+                    "havent missed anything",
+                    "no",
+                    "none",
+                    "not missed"
+                  ],
+                  "default_polarity": "Neutral"
+                },
+                {
+                  "name": "Public Announcements",
+                  "keywords_phrases": [
+                    "announcements",
+                    "in public spaces",
+                    "public announcements",
+                    "public spaces",
+                    "trains, shops, announcements"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Safety Alerts",
+                  "keywords_phrases": [
+                    "alarms",
+                    "emergency sounds",
+                    "safety alerts",
+                    "sirens",
+                    "warning sounds"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Work or School Meetings",
+                  "keywords_phrases": [
+                    "important meetings",
+                    "important work meetings",
+                    "meetings at work",
+                    "school meetings",
+                    "work or school meetings"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_4": {
+      "description": "Themes for Free_Text_4",
+      "parents": [
+        {
+          "parent_name": "Social Impact",
+          "themes": [
+            {
+              "theme_name": "Left Out",
+              "subthemes": [
+                {
+                  "name": "Noisy Places Only",
+                  "keywords_phrases": [
+                    "crowded places",
+                    "loud environments",
+                    "noisy places",
+                    "only in noisy environments",
+                    "only in noisy places"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Not Left Out",
+                  "keywords_phrases": [
+                    "never",
+                    "no",
+                    "no issues",
+                    "not at all",
+                    "not left out"
+                  ],
+                  "default_polarity": "Neutral"
+                },
+                {
+                  "name": "Often Left Out",
+                  "keywords_phrases": [
+                    "frequently left out",
+                    "left out often",
+                    "often",
+                    "regularly left out",
+                    "yes, often"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Sometimes Left Out",
+                  "keywords_phrases": [
+                    "at times",
+                    "now and then",
+                    "occasionally",
+                    "sometimes",
+                    "sometimes left out"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_5": {
+      "description": "Themes for Free_Text_5",
+      "parents": [
+        {
+          "parent_name": "App Features",
+          "themes": [
+            {
+              "theme_name": "Desired Features",
+              "subthemes": [
+                {
+                  "name": "AI Support",
+                  "keywords_phrases": [
+                    "ai",
+                    "ai assistant",
+                    "ai help",
+                    "ai support",
+                    "smart guidance"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Game-based Interaction",
+                  "keywords_phrases": [
+                    "game based",
+                    "game interaction",
+                    "game-based interaction",
+                    "games",
+                    "gamified"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Privacy",
+                  "keywords_phrases": [
+                    "confidential",
+                    "confidentiality",
+                    "data privacy",
+                    "privacy",
+                    "private"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Reminders",
+                  "keywords_phrases": [
+                    "check in reminders",
+                    "follow up reminders",
+                    "notifications",
+                    "regular check ins",
+                    "reminders"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Report Sharing",
+                  "keywords_phrases": [
+                    "report options",
+                    "report sharing",
+                    "share reports",
+                    "share results",
+                    "sharing options"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Self-Test",
+                  "keywords_phrases": [
+                    "hearing test in app",
+                    "in app test",
+                    "self assessment",
+                    "self test",
+                    "test myself"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Soft Guidance",
+                  "keywords_phrases": [
+                    "gentle guidance",
+                    "guidance",
+                    "light guidance",
+                    "soft guidance",
+                    "supportive guidance"
+                  ],
+                  "default_polarity": "Positive"
+                },
+                {
+                  "name": "Visuals",
+                  "keywords_phrases": [
+                    "charts",
+                    "visual feedback",
+                    "visual guidance",
+                    "visuals",
+                    "visuals and reports"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -22,14 +22,14 @@ from pathlib import Path
 import pandas as pd
 
 # EDIT THIS: Databricks repo/workspace path to the project root
-PROJECT_ROOT = "/Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis"
+PROJECT_ROOT = "/Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app"
 
 # Add src to module path
 src_dir = Path(PROJECT_ROOT) / "src"
 if str(src_dir) not in sys.path:
     sys.path.insert(0, str(src_dir))
 
-from wellbeing_pipeline.config_runtime import (
+from survey_app.config_runtime import (
     load_settings,
     resolve_path,
     load_dictionary_config,
@@ -38,17 +38,17 @@ from wellbeing_pipeline.config_runtime import (
     build_null_text_details,
     generate_taxonomy_reports,
 )
-from wellbeing_pipeline.clean_normalise.null_text_detector import add_response_quality_flags, get_response_quality_report
-from wellbeing_pipeline.sentiment.sentiment_module import add_sentiment_columns_pandas, DEFAULT_COLUMN_WEIGHTS
-from wellbeing_pipeline.taxonomy.semantic_taxonomy import assign_taxonomy_semantic
-from wellbeing_pipeline.taxonomy.keyword_taxonomy import assign_taxonomy_keyword
+from survey_app.clean_normalise.null_text_detector import add_response_quality_flags, get_response_quality_report
+from survey_app.sentiment.sentiment_module import add_sentiment_columns_pandas, DEFAULT_COLUMN_WEIGHTS
+from survey_app.taxonomy.semantic_taxonomy import assign_taxonomy_semantic
+from survey_app.taxonomy.keyword_taxonomy import assign_taxonomy_keyword
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Configuration
 # MAGIC ### Full settings tweaks at
-# MAGIC  (/Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis/config/pipeline_settings.yaml) 
+# MAGIC  (/Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/config/pipeline_settings.yaml) 
 
 # COMMAND ----------
 
@@ -189,7 +189,7 @@ os.environ['TRANSFORMERS_CACHE'] = cache_dir
 os.environ['HF_HOME'] = cache_dir
 os.environ['SENTENCE_TRANSFORMERS_HOME'] = cache_dir
 
-profile = "wellbeing"
+profile = "general"
 enriched_json_path = f"{PROJECT_ROOT}/assets/taxonomy/{profile}/theme_subtheme_dictionary_v3_enriched.json"
 
 assignments_semantic = assign_taxonomy_semantic(

@@ -3,11 +3,17 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "wellbeing-survey-analysis"
+name = "survey-analysis-app"
 version = "0.1.0"
-description = "Privacy-preserving NLP pipeline for employee wellbeing surveys."
+description = "General-purpose survey analysis app and NLP pipeline."
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Nyasha Gwaze", email = "nyasha.gwaze1@gmail.com" }]
+
+[project.urls]
+Repository = "https://github.com/nyashagwaze/survey-analysis-app"
+Issues = "https://github.com/nyashagwaze/survey-analysis-app/issues"
 
 # Core runtime dependencies
 dependencies = [
@@ -26,6 +32,8 @@ dependencies = [
 [project.optional-dependencies]
 # Visuals and notebooks
 viz = ["matplotlib>=3.7.0", "seaborn>=0.12.0", "wordcloud>=1.9.0"]
+# Streamlit app
+app = ["streamlit>=1.29.0"]
 # Synthetic data generation
 synthetic = ["python-dotenv>=1.0.0", "openai>=1.0.0"]
 # Development tooling
@@ -34,7 +42,7 @@ dev = ["pytest>=7.4.0", "ruff>=0.3.0", "black>=24.0.0", "ipykernel>=6.29.0"]
 spark = ["pyspark>=3.5.0"]
 
 [project.scripts]
-wellbeing-pipeline = "wellbeing_pipeline.cli:main"
+survey-app = "survey_app.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

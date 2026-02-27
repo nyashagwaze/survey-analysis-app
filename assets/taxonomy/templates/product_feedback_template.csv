@@ -1,0 +1,6 @@
+column,parent,theme,subtheme,polarity,phrase
+Free_Text_1,Product,Usability,Ease of Use,Positive,easy to navigate
+Free_Text_1,Product,Usability,Ease of Use,Negative,too many steps to complete tasks
+Free_Text_2,Features,Feature Requests,Missing Features,Neutral,would like more export options
+Free_Text_2,Features,Feature Requests,Missing Features,Neutral,need a dark mode option
+Free_Text_3,Performance,Speed,Slow Loading,Negative,pages load slowly

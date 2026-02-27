@@ -1,15 +1,14 @@
-# Profile overrides for the PBT wellbeing survey
-# Uses the existing wellbeing taxonomy/dictionary by default.
+# PBT survey profile (mapped to general taxonomy)
 
 profile: "pbt"
 
-# Canonical text columns for this survey
+# Canonical free-text columns for this profile
 text_columns:
-  - Workload_Concern
-  - Self_Help_Strategies
-  - Support_From_Org
-  - Peer_Support
-  - Value_At_Work
+  - Free_Text_1
+  - Free_Text_2
+  - Free_Text_3
+  - Free_Text_4
+  - Free_Text_5
 
 # Map raw question headers (or Q-names) to canonical column names
 input:
@@ -17,50 +16,43 @@ input:
     "Q1": "Work_Feeling_Rating"
     "How are you feeling at the moment about work?": "Work_Feeling_Rating"
 
-    "Q2": "Workload_Concern"
-    "Do you have a specific workload concern? If yes, please add your answer below:": "Workload_Concern"
+    "Q2": "Free_Text_1"
+    "Do you have a specific workload concern? If yes, please add your answer below:": "Free_Text_1"
 
-    "Q3": "Self_Help_Strategies"
-    "How can you help yourself with fatigue / burnout / anxiety stress?": "Self_Help_Strategies"
+    "Q3": "Free_Text_2"
+    "How can you help yourself with fatigue / burnout / anxiety stress?": "Free_Text_2"
 
-    "Q4": "Support_From_Org"
-    "How can we help you with fatigue / burnout / anxiety / stress?": "Support_From_Org"
+    "Q4": "Free_Text_3"
+    "How can we help you with fatigue / burnout / anxiety / stress?": "Free_Text_3"
 
-    "Q5": "Peer_Support"
-    "How can we help each other with fatigue / burnout / anxiety / stress?": "Peer_Support"
+    "Q5": "Free_Text_4"
+    "How can we help each other with fatigue / burnout / anxiety / stress?": "Free_Text_4"
 
-    "Q6": "Value_At_Work"
-    "What helps you feel valued at work?": "Value_At_Work"
+    "Q6": "Free_Text_5"
+    "What helps you feel valued at work?": "Free_Text_5"
 
-# Per-stage column selection (optional overrides)
 processing:
-    # Master list of free text columns - Preprocessing and null detection applied 
-    - Workload_Concern
-    - Self_Help_Strategies
-    - Support_From_Org
-    - Peer_Support
-    - Value_At_Work
-
-    # Text columns receiving theme classification
+  text_columns:
+    - Free_Text_1
+    - Free_Text_2
+    - Free_Text_3
+    - Free_Text_4
+    - Free_Text_5
   taxonomy_columns:
-    - Workload_Concern
-    - Self_Help_Strategies
-    - Support_From_Org
-    - Peer_Support
-    - Value_At_Work
-
-    # Text columns receiving sentiment scoring
+    - Free_Text_1
+    - Free_Text_2
+    - Free_Text_3
+    - Free_Text_4
+    - Free_Text_5
   sentiment_columns:
-    - Workload_Concern
-    - Self_Help_Strategies
-    - Support_From_Org
-    - Peer_Support
-    - Value_At_Work
-    
+    - Free_Text_1
+    - Free_Text_2
+    - Free_Text_3
+    - Free_Text_4
+    - Free_Text_5
   segmentation_columns: []
 
-# Reuse existing wellbeing taxonomy assets until a PBT-specific set is created.
 paths:
-  dictionary: "config/profiles/wellbeing/dictionary.yaml"
-  themes: "config/profiles/wellbeing/themes.yaml"
-  enriched_json: "assets/taxonomy/wellbeing/theme_subtheme_dictionary_v3_enriched.json"
+  dictionary: "config/profiles/general/dictionary.yaml"
+  themes: "config/profiles/general/themes.yaml"
+  enriched_json: "assets/taxonomy/general/theme_subtheme_dictionary_v3_enriched.json"

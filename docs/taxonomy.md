@@ -13,7 +13,7 @@ All can be used independently or for cross-validation.
 ## Directory Structure
 
 ```
-src/wellbeing_pipeline/taxonomy/
+src/survey_app/taxonomy/
   keyword_taxonomy.py
   semantic_taxonomy.py
   cross_encoder_taxonomy.py
@@ -76,15 +76,15 @@ assets/taxonomy/
 
 ### Keyword Taxonomy
 ```python
-from wellbeing_pipeline.taxonomy.keyword_taxonomy import TaxonomyMatcher
+from survey_app.taxonomy.keyword_taxonomy import TaxonomyMatcher
 
 matcher = TaxonomyMatcher(themes_json, fuzzy_threshold=0.78, top_k=3)
-matches = matcher.match("I'm overwhelmed with workload", "Wellbeing_Details")
+matches = matcher.match("I'm overwhelmed with workload", "Free_Text_1")
 ```
 
 ### Semantic Taxonomy
 ```python
-from wellbeing_pipeline.taxonomy.semantic_taxonomy import SemanticTaxonomyMatcher
+from survey_app.taxonomy.semantic_taxonomy import SemanticTaxonomyMatcher
 
 matcher = SemanticTaxonomyMatcher(enriched_json_path, similarity_threshold=0.35, top_k=3)
 results = matcher.match_batch(texts, columns, sentiment_labels)
@@ -99,7 +99,7 @@ semantic:
 
 ### Transfer CSV -> Enriched JSON
 ```bash
-python -m wellbeing_pipeline.taxonomy.synthetic_generation.transfer \
+python -m survey_app.taxonomy.synthetic_generation.transfer \
   --input-csv assets/taxonomy/<profile>/theme_phrase_library.csv \
   --output-json assets/taxonomy/<profile>/theme_subtheme_dictionary_v3_enriched.json
 ```

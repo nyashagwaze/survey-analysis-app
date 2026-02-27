@@ -27,7 +27,7 @@ PySpark Pandas UDF: Distributes sentiment analysis across Spark cluster
 Batch processing: Processes rows in batches across executors
 Imports sentiment_module.py: Calls weighted_sentiment_for_row() function
 Null text integration: Respects _is_meaningful flags from null_text_detector
-Column-aware weighting: 50%/35%/15% weights for Wellbeing_Details/Areas_Improve/Support_Provided
+Column-aware weighting: configurable weights per text column
 Processing: Distributed parallel processing on Spark cluster
 
 ### Use case: Production pipeline for processing 625+ survey responses efficiently

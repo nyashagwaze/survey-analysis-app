@@ -1,0 +1,1821 @@
+{
+  "metadata": {
+    "schema_version": "3.0",
+    "description": "Column-specific theme libraries with strict enforcement",
+    "generated_from": "theme_phrase_library.csv",
+    "columns": [
+      "Free_Text_1",
+      "Free_Text_2",
+      "Free_Text_3",
+      "Free_Text_4",
+      "Free_Text_5"
+    ]
+  },
+  "column_libraries": {
+    "Free_Text_1": {
+      "description": "Themes for Free_Text_1",
+      "parents": [
+        {
+          "parent_name": "Career & Growth",
+          "themes": [
+            {
+              "theme_name": "Growth & Development",
+              "subthemes": [
+                {
+                  "name": "Career Progression",
+                  "keywords_phrases": [
+                    "career growth is unclear",
+                    "limited growth opportunities",
+                    "no career progression",
+                    "stuck in role",
+                    "want promotion"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Role Clarity",
+                  "keywords_phrases": [
+                    "need clearer responsibilities",
+                    "role clarity needed",
+                    "role is confusing",
+                    "uncertain about duties",
+                    "unclear role expectations"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Training",
+                  "keywords_phrases": [
+                    "lack of development",
+                    "learning resources",
+                    "need more training",
+                    "training is helpful",
+                    "upskilling opportunities"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Culture",
+          "themes": [
+            {
+              "theme_name": "Management & Leadership",
+              "subthemes": [
+                {
+                  "name": "Communication",
+                  "keywords_phrases": [
+                    "communication could be better",
+                    "mixed messages",
+                    "not enough updates",
+                    "poor communication from leaders",
+                    "unclear direction"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Micromanagement",
+                  "keywords_phrases": [
+                    "decisions are controlled",
+                    "feel micromanaged",
+                    "lack of trust",
+                    "no autonomy",
+                    "too much oversight"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Supportive Management",
+                  "keywords_phrases": [
+                    "good leadership support",
+                    "helpful manager",
+                    "manager checks in",
+                    "manager is supportive",
+                    "my supervisor listens"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            },
+            {
+              "theme_name": "Recognition & Value",
+              "subthemes": [
+                {
+                  "name": "Appreciation",
+                  "keywords_phrases": [
+                    "appreciation is low",
+                    "feel appreciated",
+                    "not feeling valued",
+                    "recognition matters",
+                    "would like more thanks"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Fairness",
+                  "keywords_phrases": [
+                    "favoritism issues",
+                    "feels unfair",
+                    "inequity in workload",
+                    "lack of fairness",
+                    "unfair treatment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Feedback",
+                  "keywords_phrases": [
+                    "feedback is helpful",
+                    "lack of feedback",
+                    "need constructive feedback",
+                    "no feedback from manager",
+                    "regular feedback helps"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            },
+            {
+              "theme_name": "Team & Collaboration",
+              "subthemes": [
+                {
+                  "name": "Conflict",
+                  "keywords_phrases": [
+                    "frequent disagreements",
+                    "poor team dynamics",
+                    "team conflict",
+                    "tension with colleagues",
+                    "toxic environment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Inclusion",
+                  "keywords_phrases": [
+                    "feel included",
+                    "inclusive culture",
+                    "left out of decisions",
+                    "not included",
+                    "sense of belonging"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Teamwork",
+                  "keywords_phrases": [
+                    "good collaboration",
+                    "great teamwork",
+                    "supportive colleagues",
+                    "team helps each other",
+                    "we work well together"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Rewards",
+          "themes": [
+            {
+              "theme_name": "Compensation & Benefits",
+              "subthemes": [
+                {
+                  "name": "Benefits",
+                  "keywords_phrases": [
+                    "benefits are good",
+                    "benefits package is weak",
+                    "healthcare benefits",
+                    "need better benefits",
+                    "perks could improve"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Pay",
+                  "keywords_phrases": [
+                    "compensation concerns",
+                    "pay could be better",
+                    "pay is low",
+                    "salary not competitive",
+                    "underpaid"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Tools & Environment",
+          "themes": [
+            {
+              "theme_name": "Resources & Tools",
+              "subthemes": [
+                {
+                  "name": "Processes",
+                  "keywords_phrases": [
+                    "approvals take too long",
+                    "inefficient processes",
+                    "processes are unclear",
+                    "red tape slows work",
+                    "too much bureaucracy"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Tools & Systems",
+                  "keywords_phrases": [
+                    "equipment problems",
+                    "software issues",
+                    "systems are slow",
+                    "tech tools need upgrades",
+                    "tools are outdated"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Workspace",
+                  "keywords_phrases": [
+                    "office environment is noisy",
+                    "remote setup needs improvement",
+                    "work environment affects focus",
+                    "workspace is comfortable",
+                    "workspace issues"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Wellbeing",
+          "themes": [
+            {
+              "theme_name": "Wellbeing & Mental Health",
+              "subthemes": [
+                {
+                  "name": "Anxiety & Mood",
+                  "keywords_phrases": [
+                    "anxiety levels rising",
+                    "feeling anxious",
+                    "low mood",
+                    "mental health struggles",
+                    "worried about work"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Energy & Fatigue",
+                  "keywords_phrases": [
+                    "constant fatigue",
+                    "exhausted after work",
+                    "feeling drained",
+                    "low energy",
+                    "tired most days"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Stress & Burnout",
+                  "keywords_phrases": [
+                    "burnout risk",
+                    "feeling burned out",
+                    "overwhelmed and exhausted",
+                    "stress is high",
+                    "very stressed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Work-Life Balance",
+              "subthemes": [
+                {
+                  "name": "Flexibility",
+                  "keywords_phrases": [
+                    "flexible hours help",
+                    "lack of flexibility",
+                    "need more flexibility",
+                    "remote work is helpful",
+                    "working from home works well"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Long Hours",
+                  "keywords_phrases": [
+                    "late nights often",
+                    "long shifts",
+                    "regular overtime",
+                    "too many hours",
+                    "working long hours"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Time Off",
+                  "keywords_phrases": [
+                    "hard to take leave",
+                    "need more breaks",
+                    "not enough time off",
+                    "time off is limited",
+                    "tough to use holiday"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Workload & Pressure",
+              "subthemes": [
+                {
+                  "name": "Deadlines",
+                  "keywords_phrases": [
+                    "constant deadline pressure",
+                    "deadlines keep moving",
+                    "not enough time for deadlines",
+                    "rushed to meet deadlines",
+                    "tight deadlines every week"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Overload",
+                  "keywords_phrases": [
+                    "high workload",
+                    "overloaded most weeks",
+                    "too many tasks",
+                    "too much work",
+                    "work piling up"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Staffing",
+                  "keywords_phrases": [
+                    "need more people",
+                    "not enough staff",
+                    "resourcing is low",
+                    "short staffed",
+                    "team is understaffed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_2": {
+      "description": "Themes for Free_Text_2",
+      "parents": [
+        {
+          "parent_name": "Career & Growth",
+          "themes": [
+            {
+              "theme_name": "Growth & Development",
+              "subthemes": [
+                {
+                  "name": "Career Progression",
+                  "keywords_phrases": [
+                    "career growth is unclear",
+                    "limited growth opportunities",
+                    "no career progression",
+                    "stuck in role",
+                    "want promotion"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Role Clarity",
+                  "keywords_phrases": [
+                    "need clearer responsibilities",
+                    "role clarity needed",
+                    "role is confusing",
+                    "uncertain about duties",
+                    "unclear role expectations"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Training",
+                  "keywords_phrases": [
+                    "lack of development",
+                    "learning resources",
+                    "need more training",
+                    "training is helpful",
+                    "upskilling opportunities"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Culture",
+          "themes": [
+            {
+              "theme_name": "Management & Leadership",
+              "subthemes": [
+                {
+                  "name": "Communication",
+                  "keywords_phrases": [
+                    "communication could be better",
+                    "mixed messages",
+                    "not enough updates",
+                    "poor communication from leaders",
+                    "unclear direction"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Micromanagement",
+                  "keywords_phrases": [
+                    "decisions are controlled",
+                    "feel micromanaged",
+                    "lack of trust",
+                    "no autonomy",
+                    "too much oversight"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Supportive Management",
+                  "keywords_phrases": [
+                    "good leadership support",
+                    "helpful manager",
+                    "manager checks in",
+                    "manager is supportive",
+                    "my supervisor listens"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            },
+            {
+              "theme_name": "Recognition & Value",
+              "subthemes": [
+                {
+                  "name": "Appreciation",
+                  "keywords_phrases": [
+                    "appreciation is low",
+                    "feel appreciated",
+                    "not feeling valued",
+                    "recognition matters",
+                    "would like more thanks"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Fairness",
+                  "keywords_phrases": [
+                    "favoritism issues",
+                    "feels unfair",
+                    "inequity in workload",
+                    "lack of fairness",
+                    "unfair treatment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Feedback",
+                  "keywords_phrases": [
+                    "feedback is helpful",
+                    "lack of feedback",
+                    "need constructive feedback",
+                    "no feedback from manager",
+                    "regular feedback helps"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            },
+            {
+              "theme_name": "Team & Collaboration",
+              "subthemes": [
+                {
+                  "name": "Conflict",
+                  "keywords_phrases": [
+                    "frequent disagreements",
+                    "poor team dynamics",
+                    "team conflict",
+                    "tension with colleagues",
+                    "toxic environment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Inclusion",
+                  "keywords_phrases": [
+                    "feel included",
+                    "inclusive culture",
+                    "left out of decisions",
+                    "not included",
+                    "sense of belonging"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Teamwork",
+                  "keywords_phrases": [
+                    "good collaboration",
+                    "great teamwork",
+                    "supportive colleagues",
+                    "team helps each other",
+                    "we work well together"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Rewards",
+          "themes": [
+            {
+              "theme_name": "Compensation & Benefits",
+              "subthemes": [
+                {
+                  "name": "Benefits",
+                  "keywords_phrases": [
+                    "benefits are good",
+                    "benefits package is weak",
+                    "healthcare benefits",
+                    "need better benefits",
+                    "perks could improve"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Pay",
+                  "keywords_phrases": [
+                    "compensation concerns",
+                    "pay could be better",
+                    "pay is low",
+                    "salary not competitive",
+                    "underpaid"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Tools & Environment",
+          "themes": [
+            {
+              "theme_name": "Resources & Tools",
+              "subthemes": [
+                {
+                  "name": "Processes",
+                  "keywords_phrases": [
+                    "approvals take too long",
+                    "inefficient processes",
+                    "processes are unclear",
+                    "red tape slows work",
+                    "too much bureaucracy"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Tools & Systems",
+                  "keywords_phrases": [
+                    "equipment problems",
+                    "software issues",
+                    "systems are slow",
+                    "tech tools need upgrades",
+                    "tools are outdated"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Workspace",
+                  "keywords_phrases": [
+                    "office environment is noisy",
+                    "remote setup needs improvement",
+                    "work environment affects focus",
+                    "workspace is comfortable",
+                    "workspace issues"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Wellbeing",
+          "themes": [
+            {
+              "theme_name": "Wellbeing & Mental Health",
+              "subthemes": [
+                {
+                  "name": "Anxiety & Mood",
+                  "keywords_phrases": [
+                    "anxiety levels rising",
+                    "feeling anxious",
+                    "low mood",
+                    "mental health struggles",
+                    "worried about work"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Energy & Fatigue",
+                  "keywords_phrases": [
+                    "constant fatigue",
+                    "exhausted after work",
+                    "feeling drained",
+                    "low energy",
+                    "tired most days"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Stress & Burnout",
+                  "keywords_phrases": [
+                    "burnout risk",
+                    "feeling burned out",
+                    "overwhelmed and exhausted",
+                    "stress is high",
+                    "very stressed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Work-Life Balance",
+              "subthemes": [
+                {
+                  "name": "Flexibility",
+                  "keywords_phrases": [
+                    "flexible hours help",
+                    "lack of flexibility",
+                    "need more flexibility",
+                    "remote work is helpful",
+                    "working from home works well"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Long Hours",
+                  "keywords_phrases": [
+                    "late nights often",
+                    "long shifts",
+                    "regular overtime",
+                    "too many hours",
+                    "working long hours"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Time Off",
+                  "keywords_phrases": [
+                    "hard to take leave",
+                    "need more breaks",
+                    "not enough time off",
+                    "time off is limited",
+                    "tough to use holiday"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Workload & Pressure",
+              "subthemes": [
+                {
+                  "name": "Deadlines",
+                  "keywords_phrases": [
+                    "constant deadline pressure",
+                    "deadlines keep moving",
+                    "not enough time for deadlines",
+                    "rushed to meet deadlines",
+                    "tight deadlines every week"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Overload",
+                  "keywords_phrases": [
+                    "high workload",
+                    "overloaded most weeks",
+                    "too many tasks",
+                    "too much work",
+                    "work piling up"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Staffing",
+                  "keywords_phrases": [
+                    "need more people",
+                    "not enough staff",
+                    "resourcing is low",
+                    "short staffed",
+                    "team is understaffed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_3": {
+      "description": "Themes for Free_Text_3",
+      "parents": [
+        {
+          "parent_name": "Career & Growth",
+          "themes": [
+            {
+              "theme_name": "Growth & Development",
+              "subthemes": [
+                {
+                  "name": "Career Progression",
+                  "keywords_phrases": [
+                    "career growth is unclear",
+                    "limited growth opportunities",
+                    "no career progression",
+                    "stuck in role",
+                    "want promotion"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Role Clarity",
+                  "keywords_phrases": [
+                    "need clearer responsibilities",
+                    "role clarity needed",
+                    "role is confusing",
+                    "uncertain about duties",
+                    "unclear role expectations"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Training",
+                  "keywords_phrases": [
+                    "lack of development",
+                    "learning resources",
+                    "need more training",
+                    "training is helpful",
+                    "upskilling opportunities"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Culture",
+          "themes": [
+            {
+              "theme_name": "Management & Leadership",
+              "subthemes": [
+                {
+                  "name": "Communication",
+                  "keywords_phrases": [
+                    "communication could be better",
+                    "mixed messages",
+                    "not enough updates",
+                    "poor communication from leaders",
+                    "unclear direction"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Micromanagement",
+                  "keywords_phrases": [
+                    "decisions are controlled",
+                    "feel micromanaged",
+                    "lack of trust",
+                    "no autonomy",
+                    "too much oversight"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Supportive Management",
+                  "keywords_phrases": [
+                    "good leadership support",
+                    "helpful manager",
+                    "manager checks in",
+                    "manager is supportive",
+                    "my supervisor listens"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            },
+            {
+              "theme_name": "Recognition & Value",
+              "subthemes": [
+                {
+                  "name": "Appreciation",
+                  "keywords_phrases": [
+                    "appreciation is low",
+                    "feel appreciated",
+                    "not feeling valued",
+                    "recognition matters",
+                    "would like more thanks"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Fairness",
+                  "keywords_phrases": [
+                    "favoritism issues",
+                    "feels unfair",
+                    "inequity in workload",
+                    "lack of fairness",
+                    "unfair treatment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Feedback",
+                  "keywords_phrases": [
+                    "feedback is helpful",
+                    "lack of feedback",
+                    "need constructive feedback",
+                    "no feedback from manager",
+                    "regular feedback helps"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            },
+            {
+              "theme_name": "Team & Collaboration",
+              "subthemes": [
+                {
+                  "name": "Conflict",
+                  "keywords_phrases": [
+                    "frequent disagreements",
+                    "poor team dynamics",
+                    "team conflict",
+                    "tension with colleagues",
+                    "toxic environment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Inclusion",
+                  "keywords_phrases": [
+                    "feel included",
+                    "inclusive culture",
+                    "left out of decisions",
+                    "not included",
+                    "sense of belonging"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Teamwork",
+                  "keywords_phrases": [
+                    "good collaboration",
+                    "great teamwork",
+                    "supportive colleagues",
+                    "team helps each other",
+                    "we work well together"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Rewards",
+          "themes": [
+            {
+              "theme_name": "Compensation & Benefits",
+              "subthemes": [
+                {
+                  "name": "Benefits",
+                  "keywords_phrases": [
+                    "benefits are good",
+                    "benefits package is weak",
+                    "healthcare benefits",
+                    "need better benefits",
+                    "perks could improve"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Pay",
+                  "keywords_phrases": [
+                    "compensation concerns",
+                    "pay could be better",
+                    "pay is low",
+                    "salary not competitive",
+                    "underpaid"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Tools & Environment",
+          "themes": [
+            {
+              "theme_name": "Resources & Tools",
+              "subthemes": [
+                {
+                  "name": "Processes",
+                  "keywords_phrases": [
+                    "approvals take too long",
+                    "inefficient processes",
+                    "processes are unclear",
+                    "red tape slows work",
+                    "too much bureaucracy"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Tools & Systems",
+                  "keywords_phrases": [
+                    "equipment problems",
+                    "software issues",
+                    "systems are slow",
+                    "tech tools need upgrades",
+                    "tools are outdated"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Workspace",
+                  "keywords_phrases": [
+                    "office environment is noisy",
+                    "remote setup needs improvement",
+                    "work environment affects focus",
+                    "workspace is comfortable",
+                    "workspace issues"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Wellbeing",
+          "themes": [
+            {
+              "theme_name": "Wellbeing & Mental Health",
+              "subthemes": [
+                {
+                  "name": "Anxiety & Mood",
+                  "keywords_phrases": [
+                    "anxiety levels rising",
+                    "feeling anxious",
+                    "low mood",
+                    "mental health struggles",
+                    "worried about work"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Energy & Fatigue",
+                  "keywords_phrases": [
+                    "constant fatigue",
+                    "exhausted after work",
+                    "feeling drained",
+                    "low energy",
+                    "tired most days"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Stress & Burnout",
+                  "keywords_phrases": [
+                    "burnout risk",
+                    "feeling burned out",
+                    "overwhelmed and exhausted",
+                    "stress is high",
+                    "very stressed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Work-Life Balance",
+              "subthemes": [
+                {
+                  "name": "Flexibility",
+                  "keywords_phrases": [
+                    "flexible hours help",
+                    "lack of flexibility",
+                    "need more flexibility",
+                    "remote work is helpful",
+                    "working from home works well"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Long Hours",
+                  "keywords_phrases": [
+                    "late nights often",
+                    "long shifts",
+                    "regular overtime",
+                    "too many hours",
+                    "working long hours"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Time Off",
+                  "keywords_phrases": [
+                    "hard to take leave",
+                    "need more breaks",
+                    "not enough time off",
+                    "time off is limited",
+                    "tough to use holiday"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Workload & Pressure",
+              "subthemes": [
+                {
+                  "name": "Deadlines",
+                  "keywords_phrases": [
+                    "constant deadline pressure",
+                    "deadlines keep moving",
+                    "not enough time for deadlines",
+                    "rushed to meet deadlines",
+                    "tight deadlines every week"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Overload",
+                  "keywords_phrases": [
+                    "high workload",
+                    "overloaded most weeks",
+                    "too many tasks",
+                    "too much work",
+                    "work piling up"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Staffing",
+                  "keywords_phrases": [
+                    "need more people",
+                    "not enough staff",
+                    "resourcing is low",
+                    "short staffed",
+                    "team is understaffed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_4": {
+      "description": "Themes for Free_Text_4",
+      "parents": [
+        {
+          "parent_name": "Career & Growth",
+          "themes": [
+            {
+              "theme_name": "Growth & Development",
+              "subthemes": [
+                {
+                  "name": "Career Progression",
+                  "keywords_phrases": [
+                    "career growth is unclear",
+                    "limited growth opportunities",
+                    "no career progression",
+                    "stuck in role",
+                    "want promotion"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Role Clarity",
+                  "keywords_phrases": [
+                    "need clearer responsibilities",
+                    "role clarity needed",
+                    "role is confusing",
+                    "uncertain about duties",
+                    "unclear role expectations"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Training",
+                  "keywords_phrases": [
+                    "lack of development",
+                    "learning resources",
+                    "need more training",
+                    "training is helpful",
+                    "upskilling opportunities"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Culture",
+          "themes": [
+            {
+              "theme_name": "Management & Leadership",
+              "subthemes": [
+                {
+                  "name": "Communication",
+                  "keywords_phrases": [
+                    "communication could be better",
+                    "mixed messages",
+                    "not enough updates",
+                    "poor communication from leaders",
+                    "unclear direction"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Micromanagement",
+                  "keywords_phrases": [
+                    "decisions are controlled",
+                    "feel micromanaged",
+                    "lack of trust",
+                    "no autonomy",
+                    "too much oversight"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Supportive Management",
+                  "keywords_phrases": [
+                    "good leadership support",
+                    "helpful manager",
+                    "manager checks in",
+                    "manager is supportive",
+                    "my supervisor listens"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            },
+            {
+              "theme_name": "Recognition & Value",
+              "subthemes": [
+                {
+                  "name": "Appreciation",
+                  "keywords_phrases": [
+                    "appreciation is low",
+                    "feel appreciated",
+                    "not feeling valued",
+                    "recognition matters",
+                    "would like more thanks"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Fairness",
+                  "keywords_phrases": [
+                    "favoritism issues",
+                    "feels unfair",
+                    "inequity in workload",
+                    "lack of fairness",
+                    "unfair treatment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Feedback",
+                  "keywords_phrases": [
+                    "feedback is helpful",
+                    "lack of feedback",
+                    "need constructive feedback",
+                    "no feedback from manager",
+                    "regular feedback helps"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            },
+            {
+              "theme_name": "Team & Collaboration",
+              "subthemes": [
+                {
+                  "name": "Conflict",
+                  "keywords_phrases": [
+                    "frequent disagreements",
+                    "poor team dynamics",
+                    "team conflict",
+                    "tension with colleagues",
+                    "toxic environment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Inclusion",
+                  "keywords_phrases": [
+                    "feel included",
+                    "inclusive culture",
+                    "left out of decisions",
+                    "not included",
+                    "sense of belonging"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Teamwork",
+                  "keywords_phrases": [
+                    "good collaboration",
+                    "great teamwork",
+                    "supportive colleagues",
+                    "team helps each other",
+                    "we work well together"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Rewards",
+          "themes": [
+            {
+              "theme_name": "Compensation & Benefits",
+              "subthemes": [
+                {
+                  "name": "Benefits",
+                  "keywords_phrases": [
+                    "benefits are good",
+                    "benefits package is weak",
+                    "healthcare benefits",
+                    "need better benefits",
+                    "perks could improve"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Pay",
+                  "keywords_phrases": [
+                    "compensation concerns",
+                    "pay could be better",
+                    "pay is low",
+                    "salary not competitive",
+                    "underpaid"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Tools & Environment",
+          "themes": [
+            {
+              "theme_name": "Resources & Tools",
+              "subthemes": [
+                {
+                  "name": "Processes",
+                  "keywords_phrases": [
+                    "approvals take too long",
+                    "inefficient processes",
+                    "processes are unclear",
+                    "red tape slows work",
+                    "too much bureaucracy"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Tools & Systems",
+                  "keywords_phrases": [
+                    "equipment problems",
+                    "software issues",
+                    "systems are slow",
+                    "tech tools need upgrades",
+                    "tools are outdated"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Workspace",
+                  "keywords_phrases": [
+                    "office environment is noisy",
+                    "remote setup needs improvement",
+                    "work environment affects focus",
+                    "workspace is comfortable",
+                    "workspace issues"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Wellbeing",
+          "themes": [
+            {
+              "theme_name": "Wellbeing & Mental Health",
+              "subthemes": [
+                {
+                  "name": "Anxiety & Mood",
+                  "keywords_phrases": [
+                    "anxiety levels rising",
+                    "feeling anxious",
+                    "low mood",
+                    "mental health struggles",
+                    "worried about work"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Energy & Fatigue",
+                  "keywords_phrases": [
+                    "constant fatigue",
+                    "exhausted after work",
+                    "feeling drained",
+                    "low energy",
+                    "tired most days"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Stress & Burnout",
+                  "keywords_phrases": [
+                    "burnout risk",
+                    "feeling burned out",
+                    "overwhelmed and exhausted",
+                    "stress is high",
+                    "very stressed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Work-Life Balance",
+              "subthemes": [
+                {
+                  "name": "Flexibility",
+                  "keywords_phrases": [
+                    "flexible hours help",
+                    "lack of flexibility",
+                    "need more flexibility",
+                    "remote work is helpful",
+                    "working from home works well"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Long Hours",
+                  "keywords_phrases": [
+                    "late nights often",
+                    "long shifts",
+                    "regular overtime",
+                    "too many hours",
+                    "working long hours"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Time Off",
+                  "keywords_phrases": [
+                    "hard to take leave",
+                    "need more breaks",
+                    "not enough time off",
+                    "time off is limited",
+                    "tough to use holiday"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Workload & Pressure",
+              "subthemes": [
+                {
+                  "name": "Deadlines",
+                  "keywords_phrases": [
+                    "constant deadline pressure",
+                    "deadlines keep moving",
+                    "not enough time for deadlines",
+                    "rushed to meet deadlines",
+                    "tight deadlines every week"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Overload",
+                  "keywords_phrases": [
+                    "high workload",
+                    "overloaded most weeks",
+                    "too many tasks",
+                    "too much work",
+                    "work piling up"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Staffing",
+                  "keywords_phrases": [
+                    "need more people",
+                    "not enough staff",
+                    "resourcing is low",
+                    "short staffed",
+                    "team is understaffed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Free_Text_5": {
+      "description": "Themes for Free_Text_5",
+      "parents": [
+        {
+          "parent_name": "Career & Growth",
+          "themes": [
+            {
+              "theme_name": "Growth & Development",
+              "subthemes": [
+                {
+                  "name": "Career Progression",
+                  "keywords_phrases": [
+                    "career growth is unclear",
+                    "limited growth opportunities",
+                    "no career progression",
+                    "stuck in role",
+                    "want promotion"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Role Clarity",
+                  "keywords_phrases": [
+                    "need clearer responsibilities",
+                    "role clarity needed",
+                    "role is confusing",
+                    "uncertain about duties",
+                    "unclear role expectations"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Training",
+                  "keywords_phrases": [
+                    "lack of development",
+                    "learning resources",
+                    "need more training",
+                    "training is helpful",
+                    "upskilling opportunities"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Culture",
+          "themes": [
+            {
+              "theme_name": "Management & Leadership",
+              "subthemes": [
+                {
+                  "name": "Communication",
+                  "keywords_phrases": [
+                    "communication could be better",
+                    "mixed messages",
+                    "not enough updates",
+                    "poor communication from leaders",
+                    "unclear direction"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Micromanagement",
+                  "keywords_phrases": [
+                    "decisions are controlled",
+                    "feel micromanaged",
+                    "lack of trust",
+                    "no autonomy",
+                    "too much oversight"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Supportive Management",
+                  "keywords_phrases": [
+                    "good leadership support",
+                    "helpful manager",
+                    "manager checks in",
+                    "manager is supportive",
+                    "my supervisor listens"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            },
+            {
+              "theme_name": "Recognition & Value",
+              "subthemes": [
+                {
+                  "name": "Appreciation",
+                  "keywords_phrases": [
+                    "appreciation is low",
+                    "feel appreciated",
+                    "not feeling valued",
+                    "recognition matters",
+                    "would like more thanks"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Fairness",
+                  "keywords_phrases": [
+                    "favoritism issues",
+                    "feels unfair",
+                    "inequity in workload",
+                    "lack of fairness",
+                    "unfair treatment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Feedback",
+                  "keywords_phrases": [
+                    "feedback is helpful",
+                    "lack of feedback",
+                    "need constructive feedback",
+                    "no feedback from manager",
+                    "regular feedback helps"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            },
+            {
+              "theme_name": "Team & Collaboration",
+              "subthemes": [
+                {
+                  "name": "Conflict",
+                  "keywords_phrases": [
+                    "frequent disagreements",
+                    "poor team dynamics",
+                    "team conflict",
+                    "tension with colleagues",
+                    "toxic environment"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Inclusion",
+                  "keywords_phrases": [
+                    "feel included",
+                    "inclusive culture",
+                    "left out of decisions",
+                    "not included",
+                    "sense of belonging"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Teamwork",
+                  "keywords_phrases": [
+                    "good collaboration",
+                    "great teamwork",
+                    "supportive colleagues",
+                    "team helps each other",
+                    "we work well together"
+                  ],
+                  "default_polarity": "Positive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Rewards",
+          "themes": [
+            {
+              "theme_name": "Compensation & Benefits",
+              "subthemes": [
+                {
+                  "name": "Benefits",
+                  "keywords_phrases": [
+                    "benefits are good",
+                    "benefits package is weak",
+                    "healthcare benefits",
+                    "need better benefits",
+                    "perks could improve"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Pay",
+                  "keywords_phrases": [
+                    "compensation concerns",
+                    "pay could be better",
+                    "pay is low",
+                    "salary not competitive",
+                    "underpaid"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Tools & Environment",
+          "themes": [
+            {
+              "theme_name": "Resources & Tools",
+              "subthemes": [
+                {
+                  "name": "Processes",
+                  "keywords_phrases": [
+                    "approvals take too long",
+                    "inefficient processes",
+                    "processes are unclear",
+                    "red tape slows work",
+                    "too much bureaucracy"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Tools & Systems",
+                  "keywords_phrases": [
+                    "equipment problems",
+                    "software issues",
+                    "systems are slow",
+                    "tech tools need upgrades",
+                    "tools are outdated"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Workspace",
+                  "keywords_phrases": [
+                    "office environment is noisy",
+                    "remote setup needs improvement",
+                    "work environment affects focus",
+                    "workspace is comfortable",
+                    "workspace issues"
+                  ],
+                  "default_polarity": "Either"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "parent_name": "Wellbeing",
+          "themes": [
+            {
+              "theme_name": "Wellbeing & Mental Health",
+              "subthemes": [
+                {
+                  "name": "Anxiety & Mood",
+                  "keywords_phrases": [
+                    "anxiety levels rising",
+                    "feeling anxious",
+                    "low mood",
+                    "mental health struggles",
+                    "worried about work"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Energy & Fatigue",
+                  "keywords_phrases": [
+                    "constant fatigue",
+                    "exhausted after work",
+                    "feeling drained",
+                    "low energy",
+                    "tired most days"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Stress & Burnout",
+                  "keywords_phrases": [
+                    "burnout risk",
+                    "feeling burned out",
+                    "overwhelmed and exhausted",
+                    "stress is high",
+                    "very stressed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Work-Life Balance",
+              "subthemes": [
+                {
+                  "name": "Flexibility",
+                  "keywords_phrases": [
+                    "flexible hours help",
+                    "lack of flexibility",
+                    "need more flexibility",
+                    "remote work is helpful",
+                    "working from home works well"
+                  ],
+                  "default_polarity": "Either"
+                },
+                {
+                  "name": "Long Hours",
+                  "keywords_phrases": [
+                    "late nights often",
+                    "long shifts",
+                    "regular overtime",
+                    "too many hours",
+                    "working long hours"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Time Off",
+                  "keywords_phrases": [
+                    "hard to take leave",
+                    "need more breaks",
+                    "not enough time off",
+                    "time off is limited",
+                    "tough to use holiday"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            },
+            {
+              "theme_name": "Workload & Pressure",
+              "subthemes": [
+                {
+                  "name": "Deadlines",
+                  "keywords_phrases": [
+                    "constant deadline pressure",
+                    "deadlines keep moving",
+                    "not enough time for deadlines",
+                    "rushed to meet deadlines",
+                    "tight deadlines every week"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Overload",
+                  "keywords_phrases": [
+                    "high workload",
+                    "overloaded most weeks",
+                    "too many tasks",
+                    "too much work",
+                    "work piling up"
+                  ],
+                  "default_polarity": "Negative"
+                },
+                {
+                  "name": "Staffing",
+                  "keywords_phrases": [
+                    "need more people",
+                    "not enough staff",
+                    "resourcing is low",
+                    "short staffed",
+                    "team is understaffed"
+                  ],
+                  "default_polarity": "Negative"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

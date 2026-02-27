@@ -116,9 +116,9 @@ Key functions:
   End-to-end flow: preprocess -> null detect -> sentiment -> taxonomy -> outputs.
 
 CLI:
-- wellbeing-pipeline --help
-- wellbeing-pipeline --input <csv> --taxonomy-mode keyword
-- wellbeing-pipeline --taxonomy-mode semantic --enriched-json <json>
+- survey-app --help
+- survey-app --input <csv> --taxonomy-mode keyword
+- survey-app --taxonomy-mode semantic --enriched-json <json>
 
 ## scripts/compare_taxonomy_outputs.py
 Purpose: compare keyword vs semantic assignments and produce a mismatch report.

@@ -1,6 +1,6 @@
 # Databricks Guide
 
-Consolidated guidance for running the Wellbeing Survey Analysis pipeline on Databricks.
+Consolidated guidance for running the Survey Analysis App pipeline on Databricks.
 
 ## Quick Start (Notebook)
 If you are not installing the package on the cluster, add `src/` to `sys.path`:
@@ -8,21 +8,21 @@ If you are not installing the package on the cluster, add `src/` to `sys.path`:
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = "/Workspace/Users/<you>/Wellbeing_Survey_Analysis"
+PROJECT_ROOT = "/Workspace/Users/<you>/survey-analysis-app"
 src_dir = Path(PROJECT_ROOT) / "src"
 if str(src_dir) not in sys.path:
     sys.path.insert(0, str(src_dir))
 
-from wellbeing_pipeline.pipeline import run_pipeline
+from survey_app.pipeline import run_pipeline
 run_pipeline(settings_path="config/pipeline_settings.yaml")
 ```
 
 Alternative: use the bootstrap helper:
 ```python
-from wellbeing_pipeline.import_bootstrap import bootstrap
-bootstrap("/Workspace/Users/<you>/Wellbeing_Survey_Analysis")
+from survey_app.import_bootstrap import bootstrap
+bootstrap("/Workspace/Users/<you>/survey-analysis-app")
 
-from wellbeing_pipeline.pipeline import run_pipeline
+from survey_app.pipeline import run_pipeline
 run_pipeline(settings_path="config/pipeline_settings.yaml")
 ```
 
@@ -40,12 +40,12 @@ Set these in `config/pipeline_settings.yaml`:
 ```yaml
 databricks:
   enabled: auto
-  project_root: "/Workspace/Users/{user}/Wellbeing_Survey_Analysis"
+  project_root: "/Workspace/Users/{user}/survey-analysis-app"
   hf_cache: "/Workspace/Users/{user}/.cache/huggingface"
   set_hf_cache_env: true
   override_env: true
   spark_copy_workspace_to_dbfs: false
-  spark_dbfs_dir: "dbfs:/tmp/wellbeing_pipeline"
+  spark_dbfs_dir: "dbfs:/tmp/survey_app"
 
 performance:
   use_pyspark: false
@@ -56,9 +56,9 @@ If `performance.use_pyspark: true` and the input path starts with `/Workspace/`,
 ```yaml
 databricks:
   spark_copy_workspace_to_dbfs: true
-  spark_dbfs_dir: "dbfs:/tmp/wellbeing_pipeline"
+  spark_dbfs_dir: "dbfs:/tmp/survey_app"
 ```
-The helper lives in `src/wellbeing_pipeline/databricks_helpers.py` and is called by `python -m wellbeing_pipeline.run`.
+The helper lives in `src/survey_app/databricks_helpers.py` and is called by `python -m survey_app.run`.
 
 ## Cache and Model Downloads
 - Cluster shared cache locations are not writable (for example `/root/.cache`).

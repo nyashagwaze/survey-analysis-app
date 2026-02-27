@@ -1,0 +1,131 @@
+column,parent,theme,subtheme,polarity,phrase
+Free_Text_1,Perception,Hearing Meaning,Independence & Alertness,Positive,staying independent
+Free_Text_1,Perception,Hearing Meaning,Independence & Alertness,Positive,staying independent and alert
+Free_Text_1,Perception,Hearing Meaning,Independence & Alertness,Positive,independent and alert
+Free_Text_1,Perception,Hearing Meaning,Independence & Alertness,Positive,stay alert
+Free_Text_1,Perception,Hearing Meaning,Independence & Alertness,Positive,stay independent
+Free_Text_1,Perception,Hearing Meaning,Connection & Engagement,Positive,staying connected with the world
+Free_Text_1,Perception,Hearing Meaning,Connection & Engagement,Positive,staying connected
+Free_Text_1,Perception,Hearing Meaning,Connection & Engagement,Positive,feeling connected
+Free_Text_1,Perception,Hearing Meaning,Connection & Engagement,Positive,connected with the world
+Free_Text_1,Perception,Hearing Meaning,Connection & Engagement,Positive,part of conversations
+Free_Text_1,Perception,Hearing Meaning,Enjoyment & Quality of Life,Positive,enjoying music
+Free_Text_1,Perception,Hearing Meaning,Enjoyment & Quality of Life,Positive,"enjoying music, laughter, and life"
+Free_Text_1,Perception,Hearing Meaning,Enjoyment & Quality of Life,Positive,enjoyment of sounds
+Free_Text_1,Perception,Hearing Meaning,Enjoyment & Quality of Life,Positive,quality of life
+Free_Text_1,Perception,Hearing Meaning,Enjoyment & Quality of Life,Positive,enjoying life
+Free_Text_1,Perception,Hearing Meaning,Not Considered,Neutral,i haven?t thought about it much
+Free_Text_1,Perception,Hearing Meaning,Not Considered,Neutral,i haven't thought about it much
+Free_Text_1,Perception,Hearing Meaning,Not Considered,Neutral,not really thought about it
+Free_Text_1,Perception,Hearing Meaning,Not Considered,Neutral,not considered
+Free_Text_1,Perception,Hearing Meaning,Not Considered,Neutral,unsure
+Free_Text_2,Barriers,Testing Barriers,Cost,Negative,cost
+Free_Text_2,Barriers,Testing Barriers,Cost,Negative,too expensive
+Free_Text_2,Barriers,Testing Barriers,Cost,Negative,cannot afford
+Free_Text_2,Barriers,Testing Barriers,Cost,Negative,cost is a barrier
+Free_Text_2,Barriers,Testing Barriers,Cost,Negative,price
+Free_Text_2,Barriers,Testing Barriers,Shame or Embarrassment,Negative,shame
+Free_Text_2,Barriers,Testing Barriers,Shame or Embarrassment,Negative,embarrassed
+Free_Text_2,Barriers,Testing Barriers,Shame or Embarrassment,Negative,stigma
+Free_Text_2,Barriers,Testing Barriers,Shame or Embarrassment,Negative,don?t want people to know
+Free_Text_2,Barriers,Testing Barriers,Shame or Embarrassment,Negative,dont want people to know
+Free_Text_2,Barriers,Testing Barriers,Lack of Awareness,Negative,lack of awareness
+Free_Text_2,Barriers,Testing Barriers,Lack of Awareness,Negative,not aware
+Free_Text_2,Barriers,Testing Barriers,Lack of Awareness,Negative,didn?t know
+Free_Text_2,Barriers,Testing Barriers,Lack of Awareness,Negative,didnt know
+Free_Text_2,Barriers,Testing Barriers,Lack of Awareness,Negative,not enough information
+Free_Text_2,Barriers,Testing Barriers,Time or Access,Negative,no time
+Free_Text_2,Barriers,Testing Barriers,Time or Access,Negative,hard to access
+Free_Text_2,Barriers,Testing Barriers,Time or Access,Negative,difficult to book
+Free_Text_2,Barriers,Testing Barriers,Time or Access,Negative,inconvenient
+Free_Text_2,Barriers,Testing Barriers,Time or Access,Negative,access issues
+Free_Text_2,Barriers,Testing Barriers,No Need,Neutral,never felt the need
+Free_Text_2,Barriers,Testing Barriers,No Need,Neutral,no need
+Free_Text_2,Barriers,Testing Barriers,No Need,Neutral,don?t need a test
+Free_Text_2,Barriers,Testing Barriers,No Need,Neutral,dont need a test
+Free_Text_2,Barriers,Testing Barriers,No Need,Neutral,not necessary
+Free_Text_3,Impact,Missed Sounds,Family Conversations,Negative,family conversations
+Free_Text_3,Impact,Missed Sounds,Family Conversations,Negative,family discussions
+Free_Text_3,Impact,Missed Sounds,Family Conversations,Negative,talking with family
+Free_Text_3,Impact,Missed Sounds,Family Conversations,Negative,family gatherings
+Free_Text_3,Impact,Missed Sounds,Family Conversations,Negative,conversations at home
+Free_Text_3,Impact,Missed Sounds,Work or School Meetings,Negative,important work meetings
+Free_Text_3,Impact,Missed Sounds,Work or School Meetings,Negative,school meetings
+Free_Text_3,Impact,Missed Sounds,Work or School Meetings,Negative,work or school meetings
+Free_Text_3,Impact,Missed Sounds,Work or School Meetings,Negative,meetings at work
+Free_Text_3,Impact,Missed Sounds,Work or School Meetings,Negative,important meetings
+Free_Text_3,Impact,Missed Sounds,Public Announcements,Negative,public spaces
+Free_Text_3,Impact,Missed Sounds,Public Announcements,Negative,"trains, shops, announcements"
+Free_Text_3,Impact,Missed Sounds,Public Announcements,Negative,public announcements
+Free_Text_3,Impact,Missed Sounds,Public Announcements,Negative,announcements
+Free_Text_3,Impact,Missed Sounds,Public Announcements,Negative,in public spaces
+Free_Text_3,Impact,Missed Sounds,Safety Alerts,Negative,alarms
+Free_Text_3,Impact,Missed Sounds,Safety Alerts,Negative,warning sounds
+Free_Text_3,Impact,Missed Sounds,Safety Alerts,Negative,safety alerts
+Free_Text_3,Impact,Missed Sounds,Safety Alerts,Negative,emergency sounds
+Free_Text_3,Impact,Missed Sounds,Safety Alerts,Negative,sirens
+Free_Text_3,Impact,Missed Sounds,Not Missed,Neutral,no
+Free_Text_3,Impact,Missed Sounds,Not Missed,Neutral,none
+Free_Text_3,Impact,Missed Sounds,Not Missed,Neutral,not missed
+Free_Text_3,Impact,Missed Sounds,Not Missed,Neutral,haven?t missed anything
+Free_Text_3,Impact,Missed Sounds,Not Missed,Neutral,havent missed anything
+Free_Text_4,Social Impact,Left Out,Often Left Out,Negative,"yes, often"
+Free_Text_4,Social Impact,Left Out,Often Left Out,Negative,often
+Free_Text_4,Social Impact,Left Out,Often Left Out,Negative,frequently left out
+Free_Text_4,Social Impact,Left Out,Often Left Out,Negative,regularly left out
+Free_Text_4,Social Impact,Left Out,Often Left Out,Negative,left out often
+Free_Text_4,Social Impact,Left Out,Sometimes Left Out,Negative,sometimes
+Free_Text_4,Social Impact,Left Out,Sometimes Left Out,Negative,occasionally
+Free_Text_4,Social Impact,Left Out,Sometimes Left Out,Negative,at times
+Free_Text_4,Social Impact,Left Out,Sometimes Left Out,Negative,now and then
+Free_Text_4,Social Impact,Left Out,Sometimes Left Out,Negative,sometimes left out
+Free_Text_4,Social Impact,Left Out,Noisy Places Only,Negative,only in noisy places
+Free_Text_4,Social Impact,Left Out,Noisy Places Only,Negative,noisy places
+Free_Text_4,Social Impact,Left Out,Noisy Places Only,Negative,loud environments
+Free_Text_4,Social Impact,Left Out,Noisy Places Only,Negative,crowded places
+Free_Text_4,Social Impact,Left Out,Noisy Places Only,Negative,only in noisy environments
+Free_Text_4,Social Impact,Left Out,Not Left Out,Neutral,no
+Free_Text_4,Social Impact,Left Out,Not Left Out,Neutral,not at all
+Free_Text_4,Social Impact,Left Out,Not Left Out,Neutral,never
+Free_Text_4,Social Impact,Left Out,Not Left Out,Neutral,no issues
+Free_Text_4,Social Impact,Left Out,Not Left Out,Neutral,not left out
+Free_Text_5,App Features,Desired Features,Privacy,Positive,privacy
+Free_Text_5,App Features,Desired Features,Privacy,Positive,data privacy
+Free_Text_5,App Features,Desired Features,Privacy,Positive,private
+Free_Text_5,App Features,Desired Features,Privacy,Positive,confidential
+Free_Text_5,App Features,Desired Features,Privacy,Positive,confidentiality
+Free_Text_5,App Features,Desired Features,Soft Guidance,Positive,soft guidance
+Free_Text_5,App Features,Desired Features,Soft Guidance,Positive,gentle guidance
+Free_Text_5,App Features,Desired Features,Soft Guidance,Positive,supportive guidance
+Free_Text_5,App Features,Desired Features,Soft Guidance,Positive,light guidance
+Free_Text_5,App Features,Desired Features,Soft Guidance,Positive,guidance
+Free_Text_5,App Features,Desired Features,Visuals,Positive,visuals
+Free_Text_5,App Features,Desired Features,Visuals,Positive,visual guidance
+Free_Text_5,App Features,Desired Features,Visuals,Positive,charts
+Free_Text_5,App Features,Desired Features,Visuals,Positive,visual feedback
+Free_Text_5,App Features,Desired Features,Visuals,Positive,visuals and reports
+Free_Text_5,App Features,Desired Features,Report Sharing,Positive,report sharing
+Free_Text_5,App Features,Desired Features,Report Sharing,Positive,share reports
+Free_Text_5,App Features,Desired Features,Report Sharing,Positive,report options
+Free_Text_5,App Features,Desired Features,Report Sharing,Positive,sharing options
+Free_Text_5,App Features,Desired Features,Report Sharing,Positive,share results
+Free_Text_5,App Features,Desired Features,AI Support,Positive,ai support
+Free_Text_5,App Features,Desired Features,AI Support,Positive,ai help
+Free_Text_5,App Features,Desired Features,AI Support,Positive,ai assistant
+Free_Text_5,App Features,Desired Features,AI Support,Positive,smart guidance
+Free_Text_5,App Features,Desired Features,AI Support,Positive,ai
+Free_Text_5,App Features,Desired Features,Game-based Interaction,Positive,game-based interaction
+Free_Text_5,App Features,Desired Features,Game-based Interaction,Positive,game based
+Free_Text_5,App Features,Desired Features,Game-based Interaction,Positive,gamified
+Free_Text_5,App Features,Desired Features,Game-based Interaction,Positive,games
+Free_Text_5,App Features,Desired Features,Game-based Interaction,Positive,game interaction
+Free_Text_5,App Features,Desired Features,Self-Test,Positive,self test
+Free_Text_5,App Features,Desired Features,Self-Test,Positive,self assessment
+Free_Text_5,App Features,Desired Features,Self-Test,Positive,hearing test in app
+Free_Text_5,App Features,Desired Features,Self-Test,Positive,in app test
+Free_Text_5,App Features,Desired Features,Self-Test,Positive,test myself
+Free_Text_5,App Features,Desired Features,Reminders,Positive,reminders
+Free_Text_5,App Features,Desired Features,Reminders,Positive,notifications
+Free_Text_5,App Features,Desired Features,Reminders,Positive,follow up reminders
+Free_Text_5,App Features,Desired Features,Reminders,Positive,regular check ins
+Free_Text_5,App Features,Desired Features,Reminders,Positive,check in reminders

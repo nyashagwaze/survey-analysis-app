@@ -1,0 +1,6 @@
+column,parent,theme,subtheme,polarity,phrase
+Free_Text_1,Product,Quality,Reliability,Negative,product stops working randomly
+Free_Text_1,Product,Quality,Reliability,Negative,frequent crashes
+Free_Text_2,Support,Service,Response Time,Negative,support response is slow
+Free_Text_2,Support,Service,Helpfulness,Positive,support agent was helpful
+Free_Text_3,Value,Pricing,Affordability,Negative,pricing is too high

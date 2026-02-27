@@ -1,0 +1,46 @@
+# Hearing survey profile
+
+profile: "hearing"
+
+# Canonical free-text columns for this profile
+text_columns:
+  - Free_Text_1
+  - Free_Text_2
+  - Free_Text_3
+  - Free_Text_4
+  - Free_Text_5
+
+paths:
+  input_csv: "Data/Hearing well-being Survey Report.csv"
+  dictionary: "config/profiles/hearing/dictionary.yaml"
+  themes: "config/profiles/hearing/themes.yaml"
+  enriched_json: "assets/taxonomy/hearing/theme_subtheme_dictionary_v3_enriched.json"
+
+input:
+  column_map:
+    Perceived_Hearing_Meaning: Free_Text_1
+    Hearing_Test_Barrier: Free_Text_2
+    Missed_Important_Sounds: Free_Text_3
+    Left_Out_Due_To_Hearing: Free_Text_4
+    Desired_App_Features: Free_Text_5
+
+processing:
+  text_columns:
+    - Free_Text_1
+    - Free_Text_2
+    - Free_Text_3
+    - Free_Text_4
+    - Free_Text_5
+  taxonomy_columns:
+    - Free_Text_1
+    - Free_Text_2
+    - Free_Text_3
+    - Free_Text_4
+    - Free_Text_5
+  sentiment_columns:
+    - Free_Text_1
+    - Free_Text_2
+    - Free_Text_3
+    - Free_Text_4
+    - Free_Text_5
+  segmentation_columns: []

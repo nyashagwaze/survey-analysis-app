@@ -2,6 +2,11 @@
 
 profile: "template"
 
+# Canonical free-text columns for this profile
+text_columns:
+  - Free_Text_1
+  - Free_Text_2
+
 # Optional: override input path here for a profile-specific dataset
 # paths:
 #   input_csv: "Data/your_survey.csv"

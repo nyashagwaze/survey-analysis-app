@@ -1,0 +1,262 @@
+themes:
+  Workload & Pressure:
+    parent_theme: Wellbeing
+    subthemes:
+      - name: Overload
+        keywords_phrases:
+          - too much work
+          - overloaded
+          - high workload
+          - work piling up
+          - too many tasks
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Deadlines
+        keywords_phrases:
+          - tight deadlines
+          - constant deadlines
+          - deadline pressure
+          - rushed work
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Staffing
+        keywords_phrases:
+          - understaffed
+          - short staffed
+          - not enough staff
+          - resourcing is low
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+  Work-Life Balance:
+    parent_theme: Wellbeing
+    subthemes:
+      - name: Long Hours
+        keywords_phrases:
+          - long hours
+          - working late
+          - overtime
+          - long shifts
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Flexibility
+        keywords_phrases:
+          - flexibility
+          - flexible hours
+          - remote work
+          - working from home
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either
+
+      - name: Time Off
+        keywords_phrases:
+          - time off
+          - leave
+          - holiday
+          - breaks
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+  Management & Leadership:
+    parent_theme: Culture
+    subthemes:
+      - name: Communication
+        keywords_phrases:
+          - poor communication
+          - unclear direction
+          - mixed messages
+          - no updates
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Supportive Management
+        keywords_phrases:
+          - supportive manager
+          - manager listens
+          - helpful supervisor
+          - good leadership
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Positive
+
+      - name: Micromanagement
+        keywords_phrases:
+          - micromanaged
+          - no autonomy
+          - lack of trust
+          - too much oversight
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+  Team & Collaboration:
+    parent_theme: Culture
+    subthemes:
+      - name: Teamwork
+        keywords_phrases:
+          - teamwork
+          - supportive colleagues
+          - collaboration
+          - helpful team
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Positive
+
+      - name: Conflict
+        keywords_phrases:
+          - conflict
+          - tension
+          - toxic team
+          - disagreements
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Inclusion
+        keywords_phrases:
+          - inclusive
+          - belonging
+          - left out
+          - excluded
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either
+
+  Wellbeing & Mental Health:
+    parent_theme: Wellbeing
+    subthemes:
+      - name: Stress & Burnout
+        keywords_phrases:
+          - stress
+          - burnout
+          - overwhelmed
+          - exhausted
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Anxiety & Mood
+        keywords_phrases:
+          - anxious
+          - low mood
+          - worried
+          - mental health
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Energy & Fatigue
+        keywords_phrases:
+          - tired
+          - fatigue
+          - low energy
+          - drained
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+  Recognition & Value:
+    parent_theme: Culture
+    subthemes:
+      - name: Appreciation
+        keywords_phrases:
+          - recognition
+          - appreciated
+          - valued
+          - thanks
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either
+
+      - name: Feedback
+        keywords_phrases:
+          - feedback
+          - lack of feedback
+          - constructive feedback
+          - no feedback
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either
+
+      - name: Fairness
+        keywords_phrases:
+          - unfair
+          - favoritism
+          - inequity
+          - fairness
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+  Growth & Development:
+    parent_theme: Career & Growth
+    subthemes:
+      - name: Training
+        keywords_phrases:
+          - training
+          - upskilling
+          - learning
+          - development
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either
+
+      - name: Career Progression
+        keywords_phrases:
+          - career progression
+          - promotion
+          - growth opportunities
+          - stuck in role
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Role Clarity
+        keywords_phrases:
+          - role clarity
+          - unclear role
+          - expectations
+          - responsibilities
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+  Resources & Tools:
+    parent_theme: Tools & Environment
+    subthemes:
+      - name: Tools & Systems
+        keywords_phrases:
+          - systems are slow
+          - outdated tools
+          - software issues
+          - equipment problems
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Processes
+        keywords_phrases:
+          - bureaucracy
+          - inefficient processes
+          - red tape
+          - approvals take too long
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Workspace
+        keywords_phrases:
+          - workspace
+          - office environment
+          - remote setup
+          - work environment
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either
+
+  Compensation & Benefits:
+    parent_theme: Rewards
+    subthemes:
+      - name: Pay
+        keywords_phrases:
+          - pay
+          - salary
+          - compensation
+          - underpaid
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Negative
+
+      - name: Benefits
+        keywords_phrases:
+          - benefits
+          - healthcare
+          - pension
+          - perks
+        likely_columns: [Free_Text_1, Free_Text_2, Free_Text_3, Free_Text_4, Free_Text_5]
+        default_polarity: Either

@@ -8,15 +8,15 @@
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = "/Workspace/Users/ngwaze@anglianwater.co.uk/Wellbeing_Survey_Analysis"
+PROJECT_ROOT = "/Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app"
 src_dir = Path(PROJECT_ROOT) / "src"
 if str(src_dir) not in sys.path:
     sys.path.insert(0, str(src_dir))
 
-from wellbeing_pipeline.pipeline import run_pipeline
+from survey_app.pipeline import run_pipeline
 
 settings_path = str(Path(PROJECT_ROOT) / "config/pipeline_settings.yaml")
-profile = "wellbeing"
+profile = "general"
 enriched_json_path = str(Path(PROJECT_ROOT) / f"assets/taxonomy/{profile}/theme_subtheme_dictionary_v3_enriched.json")
 
 run_pipeline(

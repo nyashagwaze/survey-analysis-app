@@ -1,0 +1,6 @@
+column,parent,theme,subtheme,polarity,phrase
+Free_Text_1,Experience,Workload,Too Much Work,Negative,too much work for the team
+Free_Text_1,Experience,Workload,Too Much Work,Negative,backlog keeps growing
+Free_Text_1,Experience,Recognition,Appreciation,Positive,good recognition from my manager
+Free_Text_2,Support,Training,Needs Training,Neutral,need more training on new tools
+Free_Text_3,Culture,Communication,Clarity,Negative,unclear communication from leadership

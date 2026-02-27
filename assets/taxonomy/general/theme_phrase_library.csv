@@ -1,0 +1,651 @@
+column,parent,theme,subtheme,polarity,phrase
+Free_Text_1,Wellbeing,Workload & Pressure,Overload,Negative,too much work
+Free_Text_1,Wellbeing,Workload & Pressure,Overload,Negative,work piling up
+Free_Text_1,Wellbeing,Workload & Pressure,Overload,Negative,high workload
+Free_Text_1,Wellbeing,Workload & Pressure,Overload,Negative,overloaded most weeks
+Free_Text_1,Wellbeing,Workload & Pressure,Overload,Negative,too many tasks
+Free_Text_1,Wellbeing,Workload & Pressure,Deadlines,Negative,constant deadline pressure
+Free_Text_1,Wellbeing,Workload & Pressure,Deadlines,Negative,tight deadlines every week
+Free_Text_1,Wellbeing,Workload & Pressure,Deadlines,Negative,rushed to meet deadlines
+Free_Text_1,Wellbeing,Workload & Pressure,Deadlines,Negative,deadlines keep moving
+Free_Text_1,Wellbeing,Workload & Pressure,Deadlines,Negative,not enough time for deadlines
+Free_Text_1,Wellbeing,Workload & Pressure,Staffing,Negative,not enough staff
+Free_Text_1,Wellbeing,Workload & Pressure,Staffing,Negative,short staffed
+Free_Text_1,Wellbeing,Workload & Pressure,Staffing,Negative,team is understaffed
+Free_Text_1,Wellbeing,Workload & Pressure,Staffing,Negative,need more people
+Free_Text_1,Wellbeing,Workload & Pressure,Staffing,Negative,resourcing is low
+Free_Text_1,Wellbeing,Work-Life Balance,Long Hours,Negative,working long hours
+Free_Text_1,Wellbeing,Work-Life Balance,Long Hours,Negative,late nights often
+Free_Text_1,Wellbeing,Work-Life Balance,Long Hours,Negative,regular overtime
+Free_Text_1,Wellbeing,Work-Life Balance,Long Hours,Negative,long shifts
+Free_Text_1,Wellbeing,Work-Life Balance,Long Hours,Negative,too many hours
+Free_Text_1,Wellbeing,Work-Life Balance,Flexibility,Either,flexible hours help
+Free_Text_1,Wellbeing,Work-Life Balance,Flexibility,Either,need more flexibility
+Free_Text_1,Wellbeing,Work-Life Balance,Flexibility,Either,remote work is helpful
+Free_Text_1,Wellbeing,Work-Life Balance,Flexibility,Either,working from home works well
+Free_Text_1,Wellbeing,Work-Life Balance,Flexibility,Either,lack of flexibility
+Free_Text_1,Wellbeing,Work-Life Balance,Time Off,Negative,not enough time off
+Free_Text_1,Wellbeing,Work-Life Balance,Time Off,Negative,hard to take leave
+Free_Text_1,Wellbeing,Work-Life Balance,Time Off,Negative,need more breaks
+Free_Text_1,Wellbeing,Work-Life Balance,Time Off,Negative,time off is limited
+Free_Text_1,Wellbeing,Work-Life Balance,Time Off,Negative,tough to use holiday
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,feeling burned out
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,very stressed
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,overwhelmed and exhausted
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,burnout risk
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,stress is high
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,feeling anxious
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,low mood
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,worried about work
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,mental health struggles
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,anxiety levels rising
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,low energy
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,constant fatigue
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,tired most days
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,feeling drained
+Free_Text_1,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,exhausted after work
+Free_Text_1,Culture,Management & Leadership,Communication,Negative,poor communication from leaders
+Free_Text_1,Culture,Management & Leadership,Communication,Negative,unclear direction
+Free_Text_1,Culture,Management & Leadership,Communication,Negative,mixed messages
+Free_Text_1,Culture,Management & Leadership,Communication,Negative,not enough updates
+Free_Text_1,Culture,Management & Leadership,Communication,Negative,communication could be better
+Free_Text_1,Culture,Management & Leadership,Supportive Management,Positive,manager is supportive
+Free_Text_1,Culture,Management & Leadership,Supportive Management,Positive,my supervisor listens
+Free_Text_1,Culture,Management & Leadership,Supportive Management,Positive,helpful manager
+Free_Text_1,Culture,Management & Leadership,Supportive Management,Positive,good leadership support
+Free_Text_1,Culture,Management & Leadership,Supportive Management,Positive,manager checks in
+Free_Text_1,Culture,Management & Leadership,Micromanagement,Negative,feel micromanaged
+Free_Text_1,Culture,Management & Leadership,Micromanagement,Negative,no autonomy
+Free_Text_1,Culture,Management & Leadership,Micromanagement,Negative,too much oversight
+Free_Text_1,Culture,Management & Leadership,Micromanagement,Negative,lack of trust
+Free_Text_1,Culture,Management & Leadership,Micromanagement,Negative,decisions are controlled
+Free_Text_1,Culture,Team & Collaboration,Teamwork,Positive,great teamwork
+Free_Text_1,Culture,Team & Collaboration,Teamwork,Positive,supportive colleagues
+Free_Text_1,Culture,Team & Collaboration,Teamwork,Positive,team helps each other
+Free_Text_1,Culture,Team & Collaboration,Teamwork,Positive,good collaboration
+Free_Text_1,Culture,Team & Collaboration,Teamwork,Positive,we work well together
+Free_Text_1,Culture,Team & Collaboration,Conflict,Negative,team conflict
+Free_Text_1,Culture,Team & Collaboration,Conflict,Negative,tension with colleagues
+Free_Text_1,Culture,Team & Collaboration,Conflict,Negative,toxic environment
+Free_Text_1,Culture,Team & Collaboration,Conflict,Negative,frequent disagreements
+Free_Text_1,Culture,Team & Collaboration,Conflict,Negative,poor team dynamics
+Free_Text_1,Culture,Team & Collaboration,Inclusion,Either,feel included
+Free_Text_1,Culture,Team & Collaboration,Inclusion,Either,sense of belonging
+Free_Text_1,Culture,Team & Collaboration,Inclusion,Either,left out of decisions
+Free_Text_1,Culture,Team & Collaboration,Inclusion,Either,not included
+Free_Text_1,Culture,Team & Collaboration,Inclusion,Either,inclusive culture
+Free_Text_1,Culture,Recognition & Value,Appreciation,Either,feel appreciated
+Free_Text_1,Culture,Recognition & Value,Appreciation,Either,recognition matters
+Free_Text_1,Culture,Recognition & Value,Appreciation,Either,not feeling valued
+Free_Text_1,Culture,Recognition & Value,Appreciation,Either,would like more thanks
+Free_Text_1,Culture,Recognition & Value,Appreciation,Either,appreciation is low
+Free_Text_1,Culture,Recognition & Value,Feedback,Either,lack of feedback
+Free_Text_1,Culture,Recognition & Value,Feedback,Either,need constructive feedback
+Free_Text_1,Culture,Recognition & Value,Feedback,Either,feedback is helpful
+Free_Text_1,Culture,Recognition & Value,Feedback,Either,no feedback from manager
+Free_Text_1,Culture,Recognition & Value,Feedback,Either,regular feedback helps
+Free_Text_1,Culture,Recognition & Value,Fairness,Negative,feels unfair
+Free_Text_1,Culture,Recognition & Value,Fairness,Negative,favoritism issues
+Free_Text_1,Culture,Recognition & Value,Fairness,Negative,inequity in workload
+Free_Text_1,Culture,Recognition & Value,Fairness,Negative,unfair treatment
+Free_Text_1,Culture,Recognition & Value,Fairness,Negative,lack of fairness
+Free_Text_1,Career & Growth,Growth & Development,Training,Either,need more training
+Free_Text_1,Career & Growth,Growth & Development,Training,Either,training is helpful
+Free_Text_1,Career & Growth,Growth & Development,Training,Either,lack of development
+Free_Text_1,Career & Growth,Growth & Development,Training,Either,upskilling opportunities
+Free_Text_1,Career & Growth,Growth & Development,Training,Either,learning resources
+Free_Text_1,Career & Growth,Growth & Development,Career Progression,Negative,no career progression
+Free_Text_1,Career & Growth,Growth & Development,Career Progression,Negative,stuck in role
+Free_Text_1,Career & Growth,Growth & Development,Career Progression,Negative,limited growth opportunities
+Free_Text_1,Career & Growth,Growth & Development,Career Progression,Negative,want promotion
+Free_Text_1,Career & Growth,Growth & Development,Career Progression,Negative,career growth is unclear
+Free_Text_1,Career & Growth,Growth & Development,Role Clarity,Negative,unclear role expectations
+Free_Text_1,Career & Growth,Growth & Development,Role Clarity,Negative,role is confusing
+Free_Text_1,Career & Growth,Growth & Development,Role Clarity,Negative,need clearer responsibilities
+Free_Text_1,Career & Growth,Growth & Development,Role Clarity,Negative,uncertain about duties
+Free_Text_1,Career & Growth,Growth & Development,Role Clarity,Negative,role clarity needed
+Free_Text_1,Tools & Environment,Resources & Tools,Tools & Systems,Negative,systems are slow
+Free_Text_1,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tools are outdated
+Free_Text_1,Tools & Environment,Resources & Tools,Tools & Systems,Negative,software issues
+Free_Text_1,Tools & Environment,Resources & Tools,Tools & Systems,Negative,equipment problems
+Free_Text_1,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tech tools need upgrades
+Free_Text_1,Tools & Environment,Resources & Tools,Processes,Negative,too much bureaucracy
+Free_Text_1,Tools & Environment,Resources & Tools,Processes,Negative,inefficient processes
+Free_Text_1,Tools & Environment,Resources & Tools,Processes,Negative,red tape slows work
+Free_Text_1,Tools & Environment,Resources & Tools,Processes,Negative,processes are unclear
+Free_Text_1,Tools & Environment,Resources & Tools,Processes,Negative,approvals take too long
+Free_Text_1,Tools & Environment,Resources & Tools,Workspace,Either,office environment is noisy
+Free_Text_1,Tools & Environment,Resources & Tools,Workspace,Either,workspace is comfortable
+Free_Text_1,Tools & Environment,Resources & Tools,Workspace,Either,remote setup needs improvement
+Free_Text_1,Tools & Environment,Resources & Tools,Workspace,Either,workspace issues
+Free_Text_1,Tools & Environment,Resources & Tools,Workspace,Either,work environment affects focus
+Free_Text_1,Rewards,Compensation & Benefits,Pay,Negative,pay is low
+Free_Text_1,Rewards,Compensation & Benefits,Pay,Negative,salary not competitive
+Free_Text_1,Rewards,Compensation & Benefits,Pay,Negative,compensation concerns
+Free_Text_1,Rewards,Compensation & Benefits,Pay,Negative,underpaid
+Free_Text_1,Rewards,Compensation & Benefits,Pay,Negative,pay could be better
+Free_Text_1,Rewards,Compensation & Benefits,Benefits,Either,benefits are good
+Free_Text_1,Rewards,Compensation & Benefits,Benefits,Either,need better benefits
+Free_Text_1,Rewards,Compensation & Benefits,Benefits,Either,healthcare benefits
+Free_Text_1,Rewards,Compensation & Benefits,Benefits,Either,benefits package is weak
+Free_Text_1,Rewards,Compensation & Benefits,Benefits,Either,perks could improve
+Free_Text_2,Wellbeing,Workload & Pressure,Overload,Negative,too much work
+Free_Text_2,Wellbeing,Workload & Pressure,Overload,Negative,work piling up
+Free_Text_2,Wellbeing,Workload & Pressure,Overload,Negative,high workload
+Free_Text_2,Wellbeing,Workload & Pressure,Overload,Negative,overloaded most weeks
+Free_Text_2,Wellbeing,Workload & Pressure,Overload,Negative,too many tasks
+Free_Text_2,Wellbeing,Workload & Pressure,Deadlines,Negative,constant deadline pressure
+Free_Text_2,Wellbeing,Workload & Pressure,Deadlines,Negative,tight deadlines every week
+Free_Text_2,Wellbeing,Workload & Pressure,Deadlines,Negative,rushed to meet deadlines
+Free_Text_2,Wellbeing,Workload & Pressure,Deadlines,Negative,deadlines keep moving
+Free_Text_2,Wellbeing,Workload & Pressure,Deadlines,Negative,not enough time for deadlines
+Free_Text_2,Wellbeing,Workload & Pressure,Staffing,Negative,not enough staff
+Free_Text_2,Wellbeing,Workload & Pressure,Staffing,Negative,short staffed
+Free_Text_2,Wellbeing,Workload & Pressure,Staffing,Negative,team is understaffed
+Free_Text_2,Wellbeing,Workload & Pressure,Staffing,Negative,need more people
+Free_Text_2,Wellbeing,Workload & Pressure,Staffing,Negative,resourcing is low
+Free_Text_2,Wellbeing,Work-Life Balance,Long Hours,Negative,working long hours
+Free_Text_2,Wellbeing,Work-Life Balance,Long Hours,Negative,late nights often
+Free_Text_2,Wellbeing,Work-Life Balance,Long Hours,Negative,regular overtime
+Free_Text_2,Wellbeing,Work-Life Balance,Long Hours,Negative,long shifts
+Free_Text_2,Wellbeing,Work-Life Balance,Long Hours,Negative,too many hours
+Free_Text_2,Wellbeing,Work-Life Balance,Flexibility,Either,flexible hours help
+Free_Text_2,Wellbeing,Work-Life Balance,Flexibility,Either,need more flexibility
+Free_Text_2,Wellbeing,Work-Life Balance,Flexibility,Either,remote work is helpful
+Free_Text_2,Wellbeing,Work-Life Balance,Flexibility,Either,working from home works well
+Free_Text_2,Wellbeing,Work-Life Balance,Flexibility,Either,lack of flexibility
+Free_Text_2,Wellbeing,Work-Life Balance,Time Off,Negative,not enough time off
+Free_Text_2,Wellbeing,Work-Life Balance,Time Off,Negative,hard to take leave
+Free_Text_2,Wellbeing,Work-Life Balance,Time Off,Negative,need more breaks
+Free_Text_2,Wellbeing,Work-Life Balance,Time Off,Negative,time off is limited
+Free_Text_2,Wellbeing,Work-Life Balance,Time Off,Negative,tough to use holiday
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,feeling burned out
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,very stressed
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,overwhelmed and exhausted
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,burnout risk
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,stress is high
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,feeling anxious
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,low mood
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,worried about work
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,mental health struggles
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,anxiety levels rising
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,low energy
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,constant fatigue
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,tired most days
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,feeling drained
+Free_Text_2,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,exhausted after work
+Free_Text_2,Culture,Management & Leadership,Communication,Negative,poor communication from leaders
+Free_Text_2,Culture,Management & Leadership,Communication,Negative,unclear direction
+Free_Text_2,Culture,Management & Leadership,Communication,Negative,mixed messages
+Free_Text_2,Culture,Management & Leadership,Communication,Negative,not enough updates
+Free_Text_2,Culture,Management & Leadership,Communication,Negative,communication could be better
+Free_Text_2,Culture,Management & Leadership,Supportive Management,Positive,manager is supportive
+Free_Text_2,Culture,Management & Leadership,Supportive Management,Positive,my supervisor listens
+Free_Text_2,Culture,Management & Leadership,Supportive Management,Positive,helpful manager
+Free_Text_2,Culture,Management & Leadership,Supportive Management,Positive,good leadership support
+Free_Text_2,Culture,Management & Leadership,Supportive Management,Positive,manager checks in
+Free_Text_2,Culture,Management & Leadership,Micromanagement,Negative,feel micromanaged
+Free_Text_2,Culture,Management & Leadership,Micromanagement,Negative,no autonomy
+Free_Text_2,Culture,Management & Leadership,Micromanagement,Negative,too much oversight
+Free_Text_2,Culture,Management & Leadership,Micromanagement,Negative,lack of trust
+Free_Text_2,Culture,Management & Leadership,Micromanagement,Negative,decisions are controlled
+Free_Text_2,Culture,Team & Collaboration,Teamwork,Positive,great teamwork
+Free_Text_2,Culture,Team & Collaboration,Teamwork,Positive,supportive colleagues
+Free_Text_2,Culture,Team & Collaboration,Teamwork,Positive,team helps each other
+Free_Text_2,Culture,Team & Collaboration,Teamwork,Positive,good collaboration
+Free_Text_2,Culture,Team & Collaboration,Teamwork,Positive,we work well together
+Free_Text_2,Culture,Team & Collaboration,Conflict,Negative,team conflict
+Free_Text_2,Culture,Team & Collaboration,Conflict,Negative,tension with colleagues
+Free_Text_2,Culture,Team & Collaboration,Conflict,Negative,toxic environment
+Free_Text_2,Culture,Team & Collaboration,Conflict,Negative,frequent disagreements
+Free_Text_2,Culture,Team & Collaboration,Conflict,Negative,poor team dynamics
+Free_Text_2,Culture,Team & Collaboration,Inclusion,Either,feel included
+Free_Text_2,Culture,Team & Collaboration,Inclusion,Either,sense of belonging
+Free_Text_2,Culture,Team & Collaboration,Inclusion,Either,left out of decisions
+Free_Text_2,Culture,Team & Collaboration,Inclusion,Either,not included
+Free_Text_2,Culture,Team & Collaboration,Inclusion,Either,inclusive culture
+Free_Text_2,Culture,Recognition & Value,Appreciation,Either,feel appreciated
+Free_Text_2,Culture,Recognition & Value,Appreciation,Either,recognition matters
+Free_Text_2,Culture,Recognition & Value,Appreciation,Either,not feeling valued
+Free_Text_2,Culture,Recognition & Value,Appreciation,Either,would like more thanks
+Free_Text_2,Culture,Recognition & Value,Appreciation,Either,appreciation is low
+Free_Text_2,Culture,Recognition & Value,Feedback,Either,lack of feedback
+Free_Text_2,Culture,Recognition & Value,Feedback,Either,need constructive feedback
+Free_Text_2,Culture,Recognition & Value,Feedback,Either,feedback is helpful
+Free_Text_2,Culture,Recognition & Value,Feedback,Either,no feedback from manager
+Free_Text_2,Culture,Recognition & Value,Feedback,Either,regular feedback helps
+Free_Text_2,Culture,Recognition & Value,Fairness,Negative,feels unfair
+Free_Text_2,Culture,Recognition & Value,Fairness,Negative,favoritism issues
+Free_Text_2,Culture,Recognition & Value,Fairness,Negative,inequity in workload
+Free_Text_2,Culture,Recognition & Value,Fairness,Negative,unfair treatment
+Free_Text_2,Culture,Recognition & Value,Fairness,Negative,lack of fairness
+Free_Text_2,Career & Growth,Growth & Development,Training,Either,need more training
+Free_Text_2,Career & Growth,Growth & Development,Training,Either,training is helpful
+Free_Text_2,Career & Growth,Growth & Development,Training,Either,lack of development
+Free_Text_2,Career & Growth,Growth & Development,Training,Either,upskilling opportunities
+Free_Text_2,Career & Growth,Growth & Development,Training,Either,learning resources
+Free_Text_2,Career & Growth,Growth & Development,Career Progression,Negative,no career progression
+Free_Text_2,Career & Growth,Growth & Development,Career Progression,Negative,stuck in role
+Free_Text_2,Career & Growth,Growth & Development,Career Progression,Negative,limited growth opportunities
+Free_Text_2,Career & Growth,Growth & Development,Career Progression,Negative,want promotion
+Free_Text_2,Career & Growth,Growth & Development,Career Progression,Negative,career growth is unclear
+Free_Text_2,Career & Growth,Growth & Development,Role Clarity,Negative,unclear role expectations
+Free_Text_2,Career & Growth,Growth & Development,Role Clarity,Negative,role is confusing
+Free_Text_2,Career & Growth,Growth & Development,Role Clarity,Negative,need clearer responsibilities
+Free_Text_2,Career & Growth,Growth & Development,Role Clarity,Negative,uncertain about duties
+Free_Text_2,Career & Growth,Growth & Development,Role Clarity,Negative,role clarity needed
+Free_Text_2,Tools & Environment,Resources & Tools,Tools & Systems,Negative,systems are slow
+Free_Text_2,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tools are outdated
+Free_Text_2,Tools & Environment,Resources & Tools,Tools & Systems,Negative,software issues
+Free_Text_2,Tools & Environment,Resources & Tools,Tools & Systems,Negative,equipment problems
+Free_Text_2,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tech tools need upgrades
+Free_Text_2,Tools & Environment,Resources & Tools,Processes,Negative,too much bureaucracy
+Free_Text_2,Tools & Environment,Resources & Tools,Processes,Negative,inefficient processes
+Free_Text_2,Tools & Environment,Resources & Tools,Processes,Negative,red tape slows work
+Free_Text_2,Tools & Environment,Resources & Tools,Processes,Negative,processes are unclear
+Free_Text_2,Tools & Environment,Resources & Tools,Processes,Negative,approvals take too long
+Free_Text_2,Tools & Environment,Resources & Tools,Workspace,Either,office environment is noisy
+Free_Text_2,Tools & Environment,Resources & Tools,Workspace,Either,workspace is comfortable
+Free_Text_2,Tools & Environment,Resources & Tools,Workspace,Either,remote setup needs improvement
+Free_Text_2,Tools & Environment,Resources & Tools,Workspace,Either,workspace issues
+Free_Text_2,Tools & Environment,Resources & Tools,Workspace,Either,work environment affects focus
+Free_Text_2,Rewards,Compensation & Benefits,Pay,Negative,pay is low
+Free_Text_2,Rewards,Compensation & Benefits,Pay,Negative,salary not competitive
+Free_Text_2,Rewards,Compensation & Benefits,Pay,Negative,compensation concerns
+Free_Text_2,Rewards,Compensation & Benefits,Pay,Negative,underpaid
+Free_Text_2,Rewards,Compensation & Benefits,Pay,Negative,pay could be better
+Free_Text_2,Rewards,Compensation & Benefits,Benefits,Either,benefits are good
+Free_Text_2,Rewards,Compensation & Benefits,Benefits,Either,need better benefits
+Free_Text_2,Rewards,Compensation & Benefits,Benefits,Either,healthcare benefits
+Free_Text_2,Rewards,Compensation & Benefits,Benefits,Either,benefits package is weak
+Free_Text_2,Rewards,Compensation & Benefits,Benefits,Either,perks could improve
+Free_Text_3,Wellbeing,Workload & Pressure,Overload,Negative,too much work
+Free_Text_3,Wellbeing,Workload & Pressure,Overload,Negative,work piling up
+Free_Text_3,Wellbeing,Workload & Pressure,Overload,Negative,high workload
+Free_Text_3,Wellbeing,Workload & Pressure,Overload,Negative,overloaded most weeks
+Free_Text_3,Wellbeing,Workload & Pressure,Overload,Negative,too many tasks
+Free_Text_3,Wellbeing,Workload & Pressure,Deadlines,Negative,constant deadline pressure
+Free_Text_3,Wellbeing,Workload & Pressure,Deadlines,Negative,tight deadlines every week
+Free_Text_3,Wellbeing,Workload & Pressure,Deadlines,Negative,rushed to meet deadlines
+Free_Text_3,Wellbeing,Workload & Pressure,Deadlines,Negative,deadlines keep moving
+Free_Text_3,Wellbeing,Workload & Pressure,Deadlines,Negative,not enough time for deadlines
+Free_Text_3,Wellbeing,Workload & Pressure,Staffing,Negative,not enough staff
+Free_Text_3,Wellbeing,Workload & Pressure,Staffing,Negative,short staffed
+Free_Text_3,Wellbeing,Workload & Pressure,Staffing,Negative,team is understaffed
+Free_Text_3,Wellbeing,Workload & Pressure,Staffing,Negative,need more people
+Free_Text_3,Wellbeing,Workload & Pressure,Staffing,Negative,resourcing is low
+Free_Text_3,Wellbeing,Work-Life Balance,Long Hours,Negative,working long hours
+Free_Text_3,Wellbeing,Work-Life Balance,Long Hours,Negative,late nights often
+Free_Text_3,Wellbeing,Work-Life Balance,Long Hours,Negative,regular overtime
+Free_Text_3,Wellbeing,Work-Life Balance,Long Hours,Negative,long shifts
+Free_Text_3,Wellbeing,Work-Life Balance,Long Hours,Negative,too many hours
+Free_Text_3,Wellbeing,Work-Life Balance,Flexibility,Either,flexible hours help
+Free_Text_3,Wellbeing,Work-Life Balance,Flexibility,Either,need more flexibility
+Free_Text_3,Wellbeing,Work-Life Balance,Flexibility,Either,remote work is helpful
+Free_Text_3,Wellbeing,Work-Life Balance,Flexibility,Either,working from home works well
+Free_Text_3,Wellbeing,Work-Life Balance,Flexibility,Either,lack of flexibility
+Free_Text_3,Wellbeing,Work-Life Balance,Time Off,Negative,not enough time off
+Free_Text_3,Wellbeing,Work-Life Balance,Time Off,Negative,hard to take leave
+Free_Text_3,Wellbeing,Work-Life Balance,Time Off,Negative,need more breaks
+Free_Text_3,Wellbeing,Work-Life Balance,Time Off,Negative,time off is limited
+Free_Text_3,Wellbeing,Work-Life Balance,Time Off,Negative,tough to use holiday
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,feeling burned out
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,very stressed
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,overwhelmed and exhausted
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,burnout risk
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,stress is high
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,feeling anxious
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,low mood
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,worried about work
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,mental health struggles
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,anxiety levels rising
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,low energy
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,constant fatigue
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,tired most days
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,feeling drained
+Free_Text_3,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,exhausted after work
+Free_Text_3,Culture,Management & Leadership,Communication,Negative,poor communication from leaders
+Free_Text_3,Culture,Management & Leadership,Communication,Negative,unclear direction
+Free_Text_3,Culture,Management & Leadership,Communication,Negative,mixed messages
+Free_Text_3,Culture,Management & Leadership,Communication,Negative,not enough updates
+Free_Text_3,Culture,Management & Leadership,Communication,Negative,communication could be better
+Free_Text_3,Culture,Management & Leadership,Supportive Management,Positive,manager is supportive
+Free_Text_3,Culture,Management & Leadership,Supportive Management,Positive,my supervisor listens
+Free_Text_3,Culture,Management & Leadership,Supportive Management,Positive,helpful manager
+Free_Text_3,Culture,Management & Leadership,Supportive Management,Positive,good leadership support
+Free_Text_3,Culture,Management & Leadership,Supportive Management,Positive,manager checks in
+Free_Text_3,Culture,Management & Leadership,Micromanagement,Negative,feel micromanaged
+Free_Text_3,Culture,Management & Leadership,Micromanagement,Negative,no autonomy
+Free_Text_3,Culture,Management & Leadership,Micromanagement,Negative,too much oversight
+Free_Text_3,Culture,Management & Leadership,Micromanagement,Negative,lack of trust
+Free_Text_3,Culture,Management & Leadership,Micromanagement,Negative,decisions are controlled
+Free_Text_3,Culture,Team & Collaboration,Teamwork,Positive,great teamwork
+Free_Text_3,Culture,Team & Collaboration,Teamwork,Positive,supportive colleagues
+Free_Text_3,Culture,Team & Collaboration,Teamwork,Positive,team helps each other
+Free_Text_3,Culture,Team & Collaboration,Teamwork,Positive,good collaboration
+Free_Text_3,Culture,Team & Collaboration,Teamwork,Positive,we work well together
+Free_Text_3,Culture,Team & Collaboration,Conflict,Negative,team conflict
+Free_Text_3,Culture,Team & Collaboration,Conflict,Negative,tension with colleagues
+Free_Text_3,Culture,Team & Collaboration,Conflict,Negative,toxic environment
+Free_Text_3,Culture,Team & Collaboration,Conflict,Negative,frequent disagreements
+Free_Text_3,Culture,Team & Collaboration,Conflict,Negative,poor team dynamics
+Free_Text_3,Culture,Team & Collaboration,Inclusion,Either,feel included
+Free_Text_3,Culture,Team & Collaboration,Inclusion,Either,sense of belonging
+Free_Text_3,Culture,Team & Collaboration,Inclusion,Either,left out of decisions
+Free_Text_3,Culture,Team & Collaboration,Inclusion,Either,not included
+Free_Text_3,Culture,Team & Collaboration,Inclusion,Either,inclusive culture
+Free_Text_3,Culture,Recognition & Value,Appreciation,Either,feel appreciated
+Free_Text_3,Culture,Recognition & Value,Appreciation,Either,recognition matters
+Free_Text_3,Culture,Recognition & Value,Appreciation,Either,not feeling valued
+Free_Text_3,Culture,Recognition & Value,Appreciation,Either,would like more thanks
+Free_Text_3,Culture,Recognition & Value,Appreciation,Either,appreciation is low
+Free_Text_3,Culture,Recognition & Value,Feedback,Either,lack of feedback
+Free_Text_3,Culture,Recognition & Value,Feedback,Either,need constructive feedback
+Free_Text_3,Culture,Recognition & Value,Feedback,Either,feedback is helpful
+Free_Text_3,Culture,Recognition & Value,Feedback,Either,no feedback from manager
+Free_Text_3,Culture,Recognition & Value,Feedback,Either,regular feedback helps
+Free_Text_3,Culture,Recognition & Value,Fairness,Negative,feels unfair
+Free_Text_3,Culture,Recognition & Value,Fairness,Negative,favoritism issues
+Free_Text_3,Culture,Recognition & Value,Fairness,Negative,inequity in workload
+Free_Text_3,Culture,Recognition & Value,Fairness,Negative,unfair treatment
+Free_Text_3,Culture,Recognition & Value,Fairness,Negative,lack of fairness
+Free_Text_3,Career & Growth,Growth & Development,Training,Either,need more training
+Free_Text_3,Career & Growth,Growth & Development,Training,Either,training is helpful
+Free_Text_3,Career & Growth,Growth & Development,Training,Either,lack of development
+Free_Text_3,Career & Growth,Growth & Development,Training,Either,upskilling opportunities
+Free_Text_3,Career & Growth,Growth & Development,Training,Either,learning resources
+Free_Text_3,Career & Growth,Growth & Development,Career Progression,Negative,no career progression
+Free_Text_3,Career & Growth,Growth & Development,Career Progression,Negative,stuck in role
+Free_Text_3,Career & Growth,Growth & Development,Career Progression,Negative,limited growth opportunities
+Free_Text_3,Career & Growth,Growth & Development,Career Progression,Negative,want promotion
+Free_Text_3,Career & Growth,Growth & Development,Career Progression,Negative,career growth is unclear
+Free_Text_3,Career & Growth,Growth & Development,Role Clarity,Negative,unclear role expectations
+Free_Text_3,Career & Growth,Growth & Development,Role Clarity,Negative,role is confusing
+Free_Text_3,Career & Growth,Growth & Development,Role Clarity,Negative,need clearer responsibilities
+Free_Text_3,Career & Growth,Growth & Development,Role Clarity,Negative,uncertain about duties
+Free_Text_3,Career & Growth,Growth & Development,Role Clarity,Negative,role clarity needed
+Free_Text_3,Tools & Environment,Resources & Tools,Tools & Systems,Negative,systems are slow
+Free_Text_3,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tools are outdated
+Free_Text_3,Tools & Environment,Resources & Tools,Tools & Systems,Negative,software issues
+Free_Text_3,Tools & Environment,Resources & Tools,Tools & Systems,Negative,equipment problems
+Free_Text_3,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tech tools need upgrades
+Free_Text_3,Tools & Environment,Resources & Tools,Processes,Negative,too much bureaucracy
+Free_Text_3,Tools & Environment,Resources & Tools,Processes,Negative,inefficient processes
+Free_Text_3,Tools & Environment,Resources & Tools,Processes,Negative,red tape slows work
+Free_Text_3,Tools & Environment,Resources & Tools,Processes,Negative,processes are unclear
+Free_Text_3,Tools & Environment,Resources & Tools,Processes,Negative,approvals take too long
+Free_Text_3,Tools & Environment,Resources & Tools,Workspace,Either,office environment is noisy
+Free_Text_3,Tools & Environment,Resources & Tools,Workspace,Either,workspace is comfortable
+Free_Text_3,Tools & Environment,Resources & Tools,Workspace,Either,remote setup needs improvement
+Free_Text_3,Tools & Environment,Resources & Tools,Workspace,Either,workspace issues
+Free_Text_3,Tools & Environment,Resources & Tools,Workspace,Either,work environment affects focus
+Free_Text_3,Rewards,Compensation & Benefits,Pay,Negative,pay is low
+Free_Text_3,Rewards,Compensation & Benefits,Pay,Negative,salary not competitive
+Free_Text_3,Rewards,Compensation & Benefits,Pay,Negative,compensation concerns
+Free_Text_3,Rewards,Compensation & Benefits,Pay,Negative,underpaid
+Free_Text_3,Rewards,Compensation & Benefits,Pay,Negative,pay could be better
+Free_Text_3,Rewards,Compensation & Benefits,Benefits,Either,benefits are good
+Free_Text_3,Rewards,Compensation & Benefits,Benefits,Either,need better benefits
+Free_Text_3,Rewards,Compensation & Benefits,Benefits,Either,healthcare benefits
+Free_Text_3,Rewards,Compensation & Benefits,Benefits,Either,benefits package is weak
+Free_Text_3,Rewards,Compensation & Benefits,Benefits,Either,perks could improve
+Free_Text_4,Wellbeing,Workload & Pressure,Overload,Negative,too much work
+Free_Text_4,Wellbeing,Workload & Pressure,Overload,Negative,work piling up
+Free_Text_4,Wellbeing,Workload & Pressure,Overload,Negative,high workload
+Free_Text_4,Wellbeing,Workload & Pressure,Overload,Negative,overloaded most weeks
+Free_Text_4,Wellbeing,Workload & Pressure,Overload,Negative,too many tasks
+Free_Text_4,Wellbeing,Workload & Pressure,Deadlines,Negative,constant deadline pressure
+Free_Text_4,Wellbeing,Workload & Pressure,Deadlines,Negative,tight deadlines every week
+Free_Text_4,Wellbeing,Workload & Pressure,Deadlines,Negative,rushed to meet deadlines
+Free_Text_4,Wellbeing,Workload & Pressure,Deadlines,Negative,deadlines keep moving
+Free_Text_4,Wellbeing,Workload & Pressure,Deadlines,Negative,not enough time for deadlines
+Free_Text_4,Wellbeing,Workload & Pressure,Staffing,Negative,not enough staff
+Free_Text_4,Wellbeing,Workload & Pressure,Staffing,Negative,short staffed
+Free_Text_4,Wellbeing,Workload & Pressure,Staffing,Negative,team is understaffed
+Free_Text_4,Wellbeing,Workload & Pressure,Staffing,Negative,need more people
+Free_Text_4,Wellbeing,Workload & Pressure,Staffing,Negative,resourcing is low
+Free_Text_4,Wellbeing,Work-Life Balance,Long Hours,Negative,working long hours
+Free_Text_4,Wellbeing,Work-Life Balance,Long Hours,Negative,late nights often
+Free_Text_4,Wellbeing,Work-Life Balance,Long Hours,Negative,regular overtime
+Free_Text_4,Wellbeing,Work-Life Balance,Long Hours,Negative,long shifts
+Free_Text_4,Wellbeing,Work-Life Balance,Long Hours,Negative,too many hours
+Free_Text_4,Wellbeing,Work-Life Balance,Flexibility,Either,flexible hours help
+Free_Text_4,Wellbeing,Work-Life Balance,Flexibility,Either,need more flexibility
+Free_Text_4,Wellbeing,Work-Life Balance,Flexibility,Either,remote work is helpful
+Free_Text_4,Wellbeing,Work-Life Balance,Flexibility,Either,working from home works well
+Free_Text_4,Wellbeing,Work-Life Balance,Flexibility,Either,lack of flexibility
+Free_Text_4,Wellbeing,Work-Life Balance,Time Off,Negative,not enough time off
+Free_Text_4,Wellbeing,Work-Life Balance,Time Off,Negative,hard to take leave
+Free_Text_4,Wellbeing,Work-Life Balance,Time Off,Negative,need more breaks
+Free_Text_4,Wellbeing,Work-Life Balance,Time Off,Negative,time off is limited
+Free_Text_4,Wellbeing,Work-Life Balance,Time Off,Negative,tough to use holiday
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,feeling burned out
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,very stressed
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,overwhelmed and exhausted
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,burnout risk
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,stress is high
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,feeling anxious
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,low mood
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,worried about work
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,mental health struggles
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,anxiety levels rising
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,low energy
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,constant fatigue
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,tired most days
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,feeling drained
+Free_Text_4,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,exhausted after work
+Free_Text_4,Culture,Management & Leadership,Communication,Negative,poor communication from leaders
+Free_Text_4,Culture,Management & Leadership,Communication,Negative,unclear direction
+Free_Text_4,Culture,Management & Leadership,Communication,Negative,mixed messages
+Free_Text_4,Culture,Management & Leadership,Communication,Negative,not enough updates
+Free_Text_4,Culture,Management & Leadership,Communication,Negative,communication could be better
+Free_Text_4,Culture,Management & Leadership,Supportive Management,Positive,manager is supportive
+Free_Text_4,Culture,Management & Leadership,Supportive Management,Positive,my supervisor listens
+Free_Text_4,Culture,Management & Leadership,Supportive Management,Positive,helpful manager
+Free_Text_4,Culture,Management & Leadership,Supportive Management,Positive,good leadership support
+Free_Text_4,Culture,Management & Leadership,Supportive Management,Positive,manager checks in
+Free_Text_4,Culture,Management & Leadership,Micromanagement,Negative,feel micromanaged
+Free_Text_4,Culture,Management & Leadership,Micromanagement,Negative,no autonomy
+Free_Text_4,Culture,Management & Leadership,Micromanagement,Negative,too much oversight
+Free_Text_4,Culture,Management & Leadership,Micromanagement,Negative,lack of trust
+Free_Text_4,Culture,Management & Leadership,Micromanagement,Negative,decisions are controlled
+Free_Text_4,Culture,Team & Collaboration,Teamwork,Positive,great teamwork
+Free_Text_4,Culture,Team & Collaboration,Teamwork,Positive,supportive colleagues
+Free_Text_4,Culture,Team & Collaboration,Teamwork,Positive,team helps each other
+Free_Text_4,Culture,Team & Collaboration,Teamwork,Positive,good collaboration
+Free_Text_4,Culture,Team & Collaboration,Teamwork,Positive,we work well together
+Free_Text_4,Culture,Team & Collaboration,Conflict,Negative,team conflict
+Free_Text_4,Culture,Team & Collaboration,Conflict,Negative,tension with colleagues
+Free_Text_4,Culture,Team & Collaboration,Conflict,Negative,toxic environment
+Free_Text_4,Culture,Team & Collaboration,Conflict,Negative,frequent disagreements
+Free_Text_4,Culture,Team & Collaboration,Conflict,Negative,poor team dynamics
+Free_Text_4,Culture,Team & Collaboration,Inclusion,Either,feel included
+Free_Text_4,Culture,Team & Collaboration,Inclusion,Either,sense of belonging
+Free_Text_4,Culture,Team & Collaboration,Inclusion,Either,left out of decisions
+Free_Text_4,Culture,Team & Collaboration,Inclusion,Either,not included
+Free_Text_4,Culture,Team & Collaboration,Inclusion,Either,inclusive culture
+Free_Text_4,Culture,Recognition & Value,Appreciation,Either,feel appreciated
+Free_Text_4,Culture,Recognition & Value,Appreciation,Either,recognition matters
+Free_Text_4,Culture,Recognition & Value,Appreciation,Either,not feeling valued
+Free_Text_4,Culture,Recognition & Value,Appreciation,Either,would like more thanks
+Free_Text_4,Culture,Recognition & Value,Appreciation,Either,appreciation is low
+Free_Text_4,Culture,Recognition & Value,Feedback,Either,lack of feedback
+Free_Text_4,Culture,Recognition & Value,Feedback,Either,need constructive feedback
+Free_Text_4,Culture,Recognition & Value,Feedback,Either,feedback is helpful
+Free_Text_4,Culture,Recognition & Value,Feedback,Either,no feedback from manager
+Free_Text_4,Culture,Recognition & Value,Feedback,Either,regular feedback helps
+Free_Text_4,Culture,Recognition & Value,Fairness,Negative,feels unfair
+Free_Text_4,Culture,Recognition & Value,Fairness,Negative,favoritism issues
+Free_Text_4,Culture,Recognition & Value,Fairness,Negative,inequity in workload
+Free_Text_4,Culture,Recognition & Value,Fairness,Negative,unfair treatment
+Free_Text_4,Culture,Recognition & Value,Fairness,Negative,lack of fairness
+Free_Text_4,Career & Growth,Growth & Development,Training,Either,need more training
+Free_Text_4,Career & Growth,Growth & Development,Training,Either,training is helpful
+Free_Text_4,Career & Growth,Growth & Development,Training,Either,lack of development
+Free_Text_4,Career & Growth,Growth & Development,Training,Either,upskilling opportunities
+Free_Text_4,Career & Growth,Growth & Development,Training,Either,learning resources
+Free_Text_4,Career & Growth,Growth & Development,Career Progression,Negative,no career progression
+Free_Text_4,Career & Growth,Growth & Development,Career Progression,Negative,stuck in role
+Free_Text_4,Career & Growth,Growth & Development,Career Progression,Negative,limited growth opportunities
+Free_Text_4,Career & Growth,Growth & Development,Career Progression,Negative,want promotion
+Free_Text_4,Career & Growth,Growth & Development,Career Progression,Negative,career growth is unclear
+Free_Text_4,Career & Growth,Growth & Development,Role Clarity,Negative,unclear role expectations
+Free_Text_4,Career & Growth,Growth & Development,Role Clarity,Negative,role is confusing
+Free_Text_4,Career & Growth,Growth & Development,Role Clarity,Negative,need clearer responsibilities
+Free_Text_4,Career & Growth,Growth & Development,Role Clarity,Negative,uncertain about duties
+Free_Text_4,Career & Growth,Growth & Development,Role Clarity,Negative,role clarity needed
+Free_Text_4,Tools & Environment,Resources & Tools,Tools & Systems,Negative,systems are slow
+Free_Text_4,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tools are outdated
+Free_Text_4,Tools & Environment,Resources & Tools,Tools & Systems,Negative,software issues
+Free_Text_4,Tools & Environment,Resources & Tools,Tools & Systems,Negative,equipment problems
+Free_Text_4,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tech tools need upgrades
+Free_Text_4,Tools & Environment,Resources & Tools,Processes,Negative,too much bureaucracy
+Free_Text_4,Tools & Environment,Resources & Tools,Processes,Negative,inefficient processes
+Free_Text_4,Tools & Environment,Resources & Tools,Processes,Negative,red tape slows work
+Free_Text_4,Tools & Environment,Resources & Tools,Processes,Negative,processes are unclear
+Free_Text_4,Tools & Environment,Resources & Tools,Processes,Negative,approvals take too long
+Free_Text_4,Tools & Environment,Resources & Tools,Workspace,Either,office environment is noisy
+Free_Text_4,Tools & Environment,Resources & Tools,Workspace,Either,workspace is comfortable
+Free_Text_4,Tools & Environment,Resources & Tools,Workspace,Either,remote setup needs improvement
+Free_Text_4,Tools & Environment,Resources & Tools,Workspace,Either,workspace issues
+Free_Text_4,Tools & Environment,Resources & Tools,Workspace,Either,work environment affects focus
+Free_Text_4,Rewards,Compensation & Benefits,Pay,Negative,pay is low
+Free_Text_4,Rewards,Compensation & Benefits,Pay,Negative,salary not competitive
+Free_Text_4,Rewards,Compensation & Benefits,Pay,Negative,compensation concerns
+Free_Text_4,Rewards,Compensation & Benefits,Pay,Negative,underpaid
+Free_Text_4,Rewards,Compensation & Benefits,Pay,Negative,pay could be better
+Free_Text_4,Rewards,Compensation & Benefits,Benefits,Either,benefits are good
+Free_Text_4,Rewards,Compensation & Benefits,Benefits,Either,need better benefits
+Free_Text_4,Rewards,Compensation & Benefits,Benefits,Either,healthcare benefits
+Free_Text_4,Rewards,Compensation & Benefits,Benefits,Either,benefits package is weak
+Free_Text_4,Rewards,Compensation & Benefits,Benefits,Either,perks could improve
+Free_Text_5,Wellbeing,Workload & Pressure,Overload,Negative,too much work
+Free_Text_5,Wellbeing,Workload & Pressure,Overload,Negative,work piling up
+Free_Text_5,Wellbeing,Workload & Pressure,Overload,Negative,high workload
+Free_Text_5,Wellbeing,Workload & Pressure,Overload,Negative,overloaded most weeks
+Free_Text_5,Wellbeing,Workload & Pressure,Overload,Negative,too many tasks
+Free_Text_5,Wellbeing,Workload & Pressure,Deadlines,Negative,constant deadline pressure
+Free_Text_5,Wellbeing,Workload & Pressure,Deadlines,Negative,tight deadlines every week
+Free_Text_5,Wellbeing,Workload & Pressure,Deadlines,Negative,rushed to meet deadlines
+Free_Text_5,Wellbeing,Workload & Pressure,Deadlines,Negative,deadlines keep moving
+Free_Text_5,Wellbeing,Workload & Pressure,Deadlines,Negative,not enough time for deadlines
+Free_Text_5,Wellbeing,Workload & Pressure,Staffing,Negative,not enough staff
+Free_Text_5,Wellbeing,Workload & Pressure,Staffing,Negative,short staffed
+Free_Text_5,Wellbeing,Workload & Pressure,Staffing,Negative,team is understaffed
+Free_Text_5,Wellbeing,Workload & Pressure,Staffing,Negative,need more people
+Free_Text_5,Wellbeing,Workload & Pressure,Staffing,Negative,resourcing is low
+Free_Text_5,Wellbeing,Work-Life Balance,Long Hours,Negative,working long hours
+Free_Text_5,Wellbeing,Work-Life Balance,Long Hours,Negative,late nights often
+Free_Text_5,Wellbeing,Work-Life Balance,Long Hours,Negative,regular overtime
+Free_Text_5,Wellbeing,Work-Life Balance,Long Hours,Negative,long shifts
+Free_Text_5,Wellbeing,Work-Life Balance,Long Hours,Negative,too many hours
+Free_Text_5,Wellbeing,Work-Life Balance,Flexibility,Either,flexible hours help
+Free_Text_5,Wellbeing,Work-Life Balance,Flexibility,Either,need more flexibility
+Free_Text_5,Wellbeing,Work-Life Balance,Flexibility,Either,remote work is helpful
+Free_Text_5,Wellbeing,Work-Life Balance,Flexibility,Either,working from home works well
+Free_Text_5,Wellbeing,Work-Life Balance,Flexibility,Either,lack of flexibility
+Free_Text_5,Wellbeing,Work-Life Balance,Time Off,Negative,not enough time off
+Free_Text_5,Wellbeing,Work-Life Balance,Time Off,Negative,hard to take leave
+Free_Text_5,Wellbeing,Work-Life Balance,Time Off,Negative,need more breaks
+Free_Text_5,Wellbeing,Work-Life Balance,Time Off,Negative,time off is limited
+Free_Text_5,Wellbeing,Work-Life Balance,Time Off,Negative,tough to use holiday
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,feeling burned out
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,very stressed
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,overwhelmed and exhausted
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,burnout risk
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Stress & Burnout,Negative,stress is high
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,feeling anxious
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,low mood
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,worried about work
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,mental health struggles
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Anxiety & Mood,Negative,anxiety levels rising
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,low energy
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,constant fatigue
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,tired most days
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,feeling drained
+Free_Text_5,Wellbeing,Wellbeing & Mental Health,Energy & Fatigue,Negative,exhausted after work
+Free_Text_5,Culture,Management & Leadership,Communication,Negative,poor communication from leaders
+Free_Text_5,Culture,Management & Leadership,Communication,Negative,unclear direction
+Free_Text_5,Culture,Management & Leadership,Communication,Negative,mixed messages
+Free_Text_5,Culture,Management & Leadership,Communication,Negative,not enough updates
+Free_Text_5,Culture,Management & Leadership,Communication,Negative,communication could be better
+Free_Text_5,Culture,Management & Leadership,Supportive Management,Positive,manager is supportive
+Free_Text_5,Culture,Management & Leadership,Supportive Management,Positive,my supervisor listens
+Free_Text_5,Culture,Management & Leadership,Supportive Management,Positive,helpful manager
+Free_Text_5,Culture,Management & Leadership,Supportive Management,Positive,good leadership support
+Free_Text_5,Culture,Management & Leadership,Supportive Management,Positive,manager checks in
+Free_Text_5,Culture,Management & Leadership,Micromanagement,Negative,feel micromanaged
+Free_Text_5,Culture,Management & Leadership,Micromanagement,Negative,no autonomy
+Free_Text_5,Culture,Management & Leadership,Micromanagement,Negative,too much oversight
+Free_Text_5,Culture,Management & Leadership,Micromanagement,Negative,lack of trust
+Free_Text_5,Culture,Management & Leadership,Micromanagement,Negative,decisions are controlled
+Free_Text_5,Culture,Team & Collaboration,Teamwork,Positive,great teamwork
+Free_Text_5,Culture,Team & Collaboration,Teamwork,Positive,supportive colleagues
+Free_Text_5,Culture,Team & Collaboration,Teamwork,Positive,team helps each other
+Free_Text_5,Culture,Team & Collaboration,Teamwork,Positive,good collaboration
+Free_Text_5,Culture,Team & Collaboration,Teamwork,Positive,we work well together
+Free_Text_5,Culture,Team & Collaboration,Conflict,Negative,team conflict
+Free_Text_5,Culture,Team & Collaboration,Conflict,Negative,tension with colleagues
+Free_Text_5,Culture,Team & Collaboration,Conflict,Negative,toxic environment
+Free_Text_5,Culture,Team & Collaboration,Conflict,Negative,frequent disagreements
+Free_Text_5,Culture,Team & Collaboration,Conflict,Negative,poor team dynamics
+Free_Text_5,Culture,Team & Collaboration,Inclusion,Either,feel included
+Free_Text_5,Culture,Team & Collaboration,Inclusion,Either,sense of belonging
+Free_Text_5,Culture,Team & Collaboration,Inclusion,Either,left out of decisions
+Free_Text_5,Culture,Team & Collaboration,Inclusion,Either,not included
+Free_Text_5,Culture,Team & Collaboration,Inclusion,Either,inclusive culture
+Free_Text_5,Culture,Recognition & Value,Appreciation,Either,feel appreciated
+Free_Text_5,Culture,Recognition & Value,Appreciation,Either,recognition matters
+Free_Text_5,Culture,Recognition & Value,Appreciation,Either,not feeling valued
+Free_Text_5,Culture,Recognition & Value,Appreciation,Either,would like more thanks
+Free_Text_5,Culture,Recognition & Value,Appreciation,Either,appreciation is low
+Free_Text_5,Culture,Recognition & Value,Feedback,Either,lack of feedback
+Free_Text_5,Culture,Recognition & Value,Feedback,Either,need constructive feedback
+Free_Text_5,Culture,Recognition & Value,Feedback,Either,feedback is helpful
+Free_Text_5,Culture,Recognition & Value,Feedback,Either,no feedback from manager
+Free_Text_5,Culture,Recognition & Value,Feedback,Either,regular feedback helps
+Free_Text_5,Culture,Recognition & Value,Fairness,Negative,feels unfair
+Free_Text_5,Culture,Recognition & Value,Fairness,Negative,favoritism issues
+Free_Text_5,Culture,Recognition & Value,Fairness,Negative,inequity in workload
+Free_Text_5,Culture,Recognition & Value,Fairness,Negative,unfair treatment
+Free_Text_5,Culture,Recognition & Value,Fairness,Negative,lack of fairness
+Free_Text_5,Career & Growth,Growth & Development,Training,Either,need more training
+Free_Text_5,Career & Growth,Growth & Development,Training,Either,training is helpful
+Free_Text_5,Career & Growth,Growth & Development,Training,Either,lack of development
+Free_Text_5,Career & Growth,Growth & Development,Training,Either,upskilling opportunities
+Free_Text_5,Career & Growth,Growth & Development,Training,Either,learning resources
+Free_Text_5,Career & Growth,Growth & Development,Career Progression,Negative,no career progression
+Free_Text_5,Career & Growth,Growth & Development,Career Progression,Negative,stuck in role
+Free_Text_5,Career & Growth,Growth & Development,Career Progression,Negative,limited growth opportunities
+Free_Text_5,Career & Growth,Growth & Development,Career Progression,Negative,want promotion
+Free_Text_5,Career & Growth,Growth & Development,Career Progression,Negative,career growth is unclear
+Free_Text_5,Career & Growth,Growth & Development,Role Clarity,Negative,unclear role expectations
+Free_Text_5,Career & Growth,Growth & Development,Role Clarity,Negative,role is confusing
+Free_Text_5,Career & Growth,Growth & Development,Role Clarity,Negative,need clearer responsibilities
+Free_Text_5,Career & Growth,Growth & Development,Role Clarity,Negative,uncertain about duties
+Free_Text_5,Career & Growth,Growth & Development,Role Clarity,Negative,role clarity needed
+Free_Text_5,Tools & Environment,Resources & Tools,Tools & Systems,Negative,systems are slow
+Free_Text_5,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tools are outdated
+Free_Text_5,Tools & Environment,Resources & Tools,Tools & Systems,Negative,software issues
+Free_Text_5,Tools & Environment,Resources & Tools,Tools & Systems,Negative,equipment problems
+Free_Text_5,Tools & Environment,Resources & Tools,Tools & Systems,Negative,tech tools need upgrades
+Free_Text_5,Tools & Environment,Resources & Tools,Processes,Negative,too much bureaucracy
+Free_Text_5,Tools & Environment,Resources & Tools,Processes,Negative,inefficient processes
+Free_Text_5,Tools & Environment,Resources & Tools,Processes,Negative,red tape slows work
+Free_Text_5,Tools & Environment,Resources & Tools,Processes,Negative,processes are unclear
+Free_Text_5,Tools & Environment,Resources & Tools,Processes,Negative,approvals take too long
+Free_Text_5,Tools & Environment,Resources & Tools,Workspace,Either,office environment is noisy
+Free_Text_5,Tools & Environment,Resources & Tools,Workspace,Either,workspace is comfortable
+Free_Text_5,Tools & Environment,Resources & Tools,Workspace,Either,remote setup needs improvement
+Free_Text_5,Tools & Environment,Resources & Tools,Workspace,Either,workspace issues
+Free_Text_5,Tools & Environment,Resources & Tools,Workspace,Either,work environment affects focus
+Free_Text_5,Rewards,Compensation & Benefits,Pay,Negative,pay is low
+Free_Text_5,Rewards,Compensation & Benefits,Pay,Negative,salary not competitive
+Free_Text_5,Rewards,Compensation & Benefits,Pay,Negative,compensation concerns
+Free_Text_5,Rewards,Compensation & Benefits,Pay,Negative,underpaid
+Free_Text_5,Rewards,Compensation & Benefits,Pay,Negative,pay could be better
+Free_Text_5,Rewards,Compensation & Benefits,Benefits,Either,benefits are good
+Free_Text_5,Rewards,Compensation & Benefits,Benefits,Either,need better benefits
+Free_Text_5,Rewards,Compensation & Benefits,Benefits,Either,healthcare benefits
+Free_Text_5,Rewards,Compensation & Benefits,Benefits,Either,benefits package is weak
+Free_Text_5,Rewards,Compensation & Benefits,Benefits,Either,perks could improve

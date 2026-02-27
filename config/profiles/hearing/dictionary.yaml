@@ -1,0 +1,59 @@
+# Hearing wellness dictionary (general)
+
+DOMAIN_WHITELIST:
+  - hearing
+  - hearing test
+  - hearing check
+  - hearing care
+  - audiologist
+  - ear
+  - ears
+  - sound
+  - sounds
+  - hearing loss
+  - tinnitus
+  - volume
+  - earbuds
+  - headphones
+  - app
+  - privacy
+  - reminders
+
+BUSINESS_MAP:
+  hearing test: hearing test
+  hearing check: hearing test
+  audiologist: hearing specialist
+  ent: hearing specialist
+
+MERGE_TO_CANONICAL:
+  headphones: headphone
+  earbuds: headphone
+  ear buds: headphone
+  hearingcare: hearing care
+
+FORCE_PHRASES:
+  - hearing test
+  - hearing care
+  - hearing loss
+  - working from home
+  - mental health
+
+UNIGRAM_WHITELIST:
+  - hearing
+  - test
+  - sound
+  - app
+  - privacy
+  - anxiety
+
+ALWAYS_DROP_UNIGRAMS:
+  - ok
+  - fine
+  - yes
+  - no
+  - none
+  - maybe
+
+MUST_BE_PHRASE:
+  - hearing test
+  - hearing care
