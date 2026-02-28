@@ -296,7 +296,7 @@ def run_pipeline(
         out_file = output_path / out_name
         assignments.to_csv(out_file, index=False)
         if deliverables_path is not None:
-            deliverables_out_name = output_cfg.get("deliverables_assignments_filename", out_name)
+            deliverables_out_name = output_cfg.get("deliverables_assignments_filename") or out_name
             assignments.to_csv(deliverables_path / deliverables_out_name, index=False)
 
     if output_cfg.get("generate_quality_report", True):

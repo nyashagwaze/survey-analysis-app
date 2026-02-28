@@ -1,249 +1,276 @@
 themes:
+  Desired Features:
+    parent_theme: App Features
+    subthemes:
+    - name: AI Support
+      keywords_phrases:
+      - ai
+      - ai assistant
+      - ai help
+      - ai support
+      - smart guidance
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Game-based Interaction
+      keywords_phrases:
+      - game based
+      - game interaction
+      - game-based interaction
+      - games
+      - gamified
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Privacy
+      keywords_phrases:
+      - confidential
+      - confidentiality
+      - data privacy
+      - privacy
+      - private
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Reminders
+      keywords_phrases:
+      - check in reminders
+      - follow up reminders
+      - notifications
+      - regular check ins
+      - reminders
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Report Sharing
+      keywords_phrases:
+      - report options
+      - report sharing
+      - share reports
+      - share results
+      - sharing options
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Self-Test
+      keywords_phrases:
+      - hearing test in app
+      - in app test
+      - self assessment
+      - self test
+      - test myself
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Soft Guidance
+      keywords_phrases:
+      - gentle guidance
+      - guidance
+      - light guidance
+      - soft guidance
+      - supportive guidance
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
+    - name: Visuals
+      keywords_phrases:
+      - charts
+      - visual feedback
+      - visual guidance
+      - visuals
+      - visuals and reports
+      likely_columns:
+      - Free_Text_5
+      default_polarity: Positive
   Hearing Meaning:
     parent_theme: Perception
     subthemes:
-      - name: Independence & Alertness
-        keywords_phrases:
-          - staying independent
-          - staying alert
-          - independence and awareness
-          - staying aware of surroundings
-        likely_columns: [Free_Text_1]
-        default_polarity: Positive
-
-      - name: Connection & Engagement
-        keywords_phrases:
-          - staying connected
-          - feel connected
-          - connection with the world
-          - being part of conversations
-        likely_columns: [Free_Text_1]
-        default_polarity: Positive
-
-      - name: Enjoyment & Quality of Life
-        keywords_phrases:
-          - enjoying music and life
-          - enjoyment of sounds
-          - quality of life
-          - enjoyment and laughter
-        likely_columns: [Free_Text_1]
-        default_polarity: Positive
-
-      - name: Not Considered
-        keywords_phrases:
-          - have not thought about it
-          - not really considered
-          - havent thought about it much
-          - unsure about it
-        likely_columns: [Free_Text_1]
-        default_polarity: Neutral
-
-  Testing Barriers:
-    parent_theme: Barriers
-    subthemes:
-      - name: Cost
-        keywords_phrases:
-          - cost
-          - too expensive
-          - cannot afford
-          - cost is a barrier
-        likely_columns: [Free_Text_2]
-        default_polarity: Negative
-
-      - name: Shame or Embarrassment
-        keywords_phrases:
-          - shame
-          - embarrassed
-          - stigma
-          - dont want people to know
-        likely_columns: [Free_Text_2]
-        default_polarity: Negative
-
-      - name: Lack of Awareness
-        keywords_phrases:
-          - lack of awareness
-          - didnt know
-          - not aware of need
-          - not enough information
-        likely_columns: [Free_Text_2]
-        default_polarity: Negative
-
-      - name: Time or Access
-        keywords_phrases:
-          - no time
-          - hard to access
-          - difficult to book
-          - inconvenient
-        likely_columns: [Free_Text_2]
-        default_polarity: Negative
-
-      - name: No Need
-        keywords_phrases:
-          - no need
-          - never felt the need
-          - dont need a test
-          - not necessary
-        likely_columns: [Free_Text_2]
-        default_polarity: Neutral
-
-  Missed Sounds:
-    parent_theme: Impact
-    subthemes:
-      - name: Family Conversations
-        keywords_phrases:
-          - family conversations
-          - talking with family
-          - family discussions
-          - family gatherings
-        likely_columns: [Free_Text_3]
-        default_polarity: Negative
-
-      - name: Work or School Meetings
-        keywords_phrases:
-          - work meetings
-          - school meetings
-          - important meetings
-          - meetings at work
-        likely_columns: [Free_Text_3]
-        default_polarity: Negative
-
-      - name: Public Announcements
-        keywords_phrases:
-          - public announcements
-          - trains and shops
-          - announcements
-          - public spaces
-        likely_columns: [Free_Text_3]
-        default_polarity: Negative
-
-      - name: Safety Alerts
-        keywords_phrases:
-          - alarms
-          - safety alerts
-          - emergency sounds
-          - warning sounds
-        likely_columns: [Free_Text_3]
-        default_polarity: Negative
-
-      - name: Not Missed
-        keywords_phrases:
-          - not missed
-          - no issues
-          - havent missed anything
-          - none
-        likely_columns: [Free_Text_3]
-        default_polarity: Neutral
-
+    - name: Connection & Engagement
+      keywords_phrases:
+      - connected with the world
+      - feeling connected
+      - part of conversations
+      - staying connected
+      - staying connected with the world
+      likely_columns:
+      - Free_Text_1
+      default_polarity: Positive
+    - name: Enjoyment & Quality of Life
+      keywords_phrases:
+      - enjoying life
+      - enjoying music
+      - enjoying music, laughter, and life
+      - enjoyment of sounds
+      - quality of life
+      likely_columns:
+      - Free_Text_1
+      default_polarity: Positive
+    - name: Independence & Alertness
+      keywords_phrases:
+      - independent and alert
+      - stay alert
+      - stay independent
+      - staying independent
+      - staying independent and alert
+      likely_columns:
+      - Free_Text_1
+      default_polarity: Positive
+    - name: Not Considered
+      keywords_phrases:
+      - i haven't thought about it much
+      - i haven?t thought about it much
+      - not considered
+      - not really thought about it
+      - unsure
+      likely_columns:
+      - Free_Text_1
+      default_polarity: Neutral
   Left Out:
     parent_theme: Social Impact
     subthemes:
-      - name: Often Left Out
-        keywords_phrases:
-          - often
-          - yes often
-          - frequently left out
-          - regularly left out
-        likely_columns: [Free_Text_4]
-        default_polarity: Negative
-
-      - name: Sometimes Left Out
-        keywords_phrases:
-          - sometimes
-          - occasionally
-          - now and then
-          - at times
-        likely_columns: [Free_Text_4]
-        default_polarity: Negative
-
-      - name: Noisy Places Only
-        keywords_phrases:
-          - only in noisy places
-          - noisy environments
-          - crowded places
-          - loud areas
-        likely_columns: [Free_Text_4]
-        default_polarity: Negative
-
-      - name: Not Left Out
-        keywords_phrases:
-          - no
-          - not at all
-          - never
-          - no issues
-        likely_columns: [Free_Text_4]
-        default_polarity: Neutral
-
-  Desired App Features:
-    parent_theme: App Features
+    - name: Noisy Places Only
+      keywords_phrases:
+      - crowded places
+      - loud environments
+      - noisy places
+      - only in noisy environments
+      - only in noisy places
+      likely_columns:
+      - Free_Text_4
+      default_polarity: Negative
+    - name: Not Left Out
+      keywords_phrases:
+      - never
+      - 'no'
+      - no issues
+      - not at all
+      - not left out
+      likely_columns:
+      - Free_Text_4
+      default_polarity: Neutral
+    - name: Often Left Out
+      keywords_phrases:
+      - frequently left out
+      - left out often
+      - often
+      - regularly left out
+      - yes, often
+      likely_columns:
+      - Free_Text_4
+      default_polarity: Negative
+    - name: Sometimes Left Out
+      keywords_phrases:
+      - at times
+      - now and then
+      - occasionally
+      - sometimes
+      - sometimes left out
+      likely_columns:
+      - Free_Text_4
+      default_polarity: Negative
+  Missed Sounds:
+    parent_theme: Impact
     subthemes:
-      - name: Privacy
-        keywords_phrases:
-          - privacy
-          - data privacy
-          - private
-          - confidentiality
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: Soft Guidance
-        keywords_phrases:
-          - soft guidance
-          - gentle guidance
-          - supportive guidance
-          - light guidance
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: Visuals
-        keywords_phrases:
-          - visuals
-          - charts
-          - visual guidance
-          - visual feedback
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: Report Sharing
-        keywords_phrases:
-          - report sharing
-          - share reports
-          - share results
-          - report options
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: AI Support
-        keywords_phrases:
-          - ai support
-          - ai help
-          - ai assistant
-          - smart guidance
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: Game-based Interaction
-        keywords_phrases:
-          - game based
-          - gamified
-          - game interaction
-          - games
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: Self-Test
-        keywords_phrases:
-          - self test
-          - self assessment
-          - hearing test in app
-          - in app test
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
-
-      - name: Reminders
-        keywords_phrases:
-          - reminders
-          - notifications
-          - follow up reminders
-          - regular check ins
-        likely_columns: [Free_Text_5]
-        default_polarity: Positive
+    - name: Family Conversations
+      keywords_phrases:
+      - conversations at home
+      - family conversations
+      - family discussions
+      - family gatherings
+      - talking with family
+      likely_columns:
+      - Free_Text_3
+      default_polarity: Negative
+    - name: Not Missed
+      keywords_phrases:
+      - haven?t missed anything
+      - havent missed anything
+      - 'no'
+      - none
+      - not missed
+      likely_columns:
+      - Free_Text_3
+      default_polarity: Neutral
+    - name: Public Announcements
+      keywords_phrases:
+      - announcements
+      - in public spaces
+      - public announcements
+      - public spaces
+      - trains, shops, announcements
+      likely_columns:
+      - Free_Text_3
+      default_polarity: Negative
+    - name: Safety Alerts
+      keywords_phrases:
+      - alarms
+      - emergency sounds
+      - safety alerts
+      - sirens
+      - warning sounds
+      likely_columns:
+      - Free_Text_3
+      default_polarity: Negative
+    - name: Work or School Meetings
+      keywords_phrases:
+      - important meetings
+      - important work meetings
+      - meetings at work
+      - school meetings
+      - work or school meetings
+      likely_columns:
+      - Free_Text_3
+      default_polarity: Negative
+  Testing Barriers:
+    parent_theme: Barriers
+    subthemes:
+    - name: Cost
+      keywords_phrases:
+      - cannot afford
+      - cost
+      - cost is a barrier
+      - price
+      - too expensive
+      likely_columns:
+      - Free_Text_2
+      default_polarity: Negative
+    - name: Lack of Awareness
+      keywords_phrases:
+      - didn?t know
+      - didnt know
+      - lack of awareness
+      - not aware
+      - not enough information
+      likely_columns:
+      - Free_Text_2
+      default_polarity: Negative
+    - name: No Need
+      keywords_phrases:
+      - don?t need a test
+      - dont need a test
+      - never felt the need
+      - no need
+      - not necessary
+      likely_columns:
+      - Free_Text_2
+      default_polarity: Neutral
+    - name: Shame or Embarrassment
+      keywords_phrases:
+      - don?t want people to know
+      - dont want people to know
+      - embarrassed
+      - shame
+      - stigma
+      likely_columns:
+      - Free_Text_2
+      default_polarity: Negative
+    - name: Time or Access
+      keywords_phrases:
+      - access issues
+      - difficult to book
+      - hard to access
+      - inconvenient
+      - no time
+      likely_columns:
+      - Free_Text_2
+      default_polarity: Negative

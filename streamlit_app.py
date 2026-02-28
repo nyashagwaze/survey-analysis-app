@@ -21,8 +21,217 @@ from survey_app.taxonomy.synthetic_generation.transfer import build_enriched_str
 
 
 st.set_page_config(page_title="Survey Analysis App", layout="wide")
-st.title("Survey Analysis App")
-st.caption("Upload a CSV, tune the pipeline settings, and run the analysis.")
+st.markdown(
+    """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+:root {
+  --bg: #0B1220;
+  --panel: #101B2F;
+  --ink: #F8FAFC;
+  --muted: #E2E8F0;
+  --accent: #38BDF8;
+  --accent-2: #22D3EE;
+  --stroke: #243B5A;
+  --shadow: rgba(4, 10, 22, 0.7);
+  --button-bg: #CBD5E1;
+  --button-hover: #94A3B8;
+  --button-text: #0B1220;
+}
+
+html, body, [class*="css"]  {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink);
+}
+
+.stApp {
+  background:
+    radial-gradient(1200px 600px at 6% -10%, #162742 0%, rgba(22, 39, 66, 0) 60%),
+    radial-gradient(1000px 600px at 108% 0%, #0E2E40 0%, rgba(14, 46, 64, 0) 58%),
+    var(--bg);
+}
+
+h1, h2, h3, .hero-title {
+  font-family: 'Fraunces', serif;
+  letter-spacing: -0.5px;
+}
+
+.block-container {
+  padding-top: 2.4rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(17, 27, 46, 0.95), rgba(12, 22, 39, 0.98));
+  border: 1px solid var(--stroke);
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: 0 18px 40px var(--shadow);
+  animation: fadeUp 700ms ease;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(45, 212, 191, 0.15);
+  color: #7CE7DB;
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(45, 212, 191, 0.35);
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  font-size: 1.02rem;
+  margin-top: 0.4rem;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.step-card {
+  background: #0F1A2B;
+  border: 1px solid #1B2B45;
+  border-radius: 16px;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.step-card strong {
+  color: var(--ink);
+}
+
+[data-testid="stSidebar"] {
+  background: #0F172A;
+  border-right: 1px solid var(--stroke);
+}
+
+[data-testid="stSidebar"] .block-container {
+  padding-top: 1.6rem;
+}
+
+.stButton > button,
+.stDownloadButton > button,
+button[kind="primary"],
+button[kind="secondary"] {
+  background: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  border: 1px solid #94A3B8 !important;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
+}
+
+.stButton > button *,
+.stDownloadButton > button *,
+button[kind="primary"] *,
+button[kind="secondary"] * {
+  color: var(--button-text) !important;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover,
+button[kind="primary"]:hover,
+button[kind="secondary"]:hover {
+  background: var(--button-hover) !important;
+  color: var(--button-text) !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+  font-weight: 600;
+}
+
+div[data-testid="stMetric"] {
+  background: #0F1A2B;
+  border: 1px solid var(--stroke);
+  padding: 12px;
+  border-radius: 16px;
+}
+
+label, .stMarkdown, .stText, .stCaption, .stAlert, .stMetric {
+  color: var(--ink);
+}
+
+[data-testid="stCaption"] {
+  color: var(--muted);
+}
+
+input, textarea, select {
+  color: var(--ink) !important;
+}
+
+/* Sidebar text and section headers */
+[data-testid="stSidebar"] * {
+  color: var(--ink) !important;
+}
+
+[data-testid="stSidebar"] .stButton > button,
+[data-testid="stSidebar"] .stDownloadButton > button,
+[data-testid="stSidebar"] button[kind="primary"],
+[data-testid="stSidebar"] button[kind="secondary"] {
+  color: var(--button-text) !important;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+  background: #0F1A2B;
+  border: 1px dashed #2B3C5A;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+[data-testid="stFileUploader"] button {
+  background: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  border: 1px solid #94A3B8 !important;
+}
+
+[data-testid="stFileUploader"] * {
+  color: var(--ink) !important;
+}
+
+.fade-in {
+  animation: fadeUp 700ms ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    """
+<div class="hero">
+  <div class="hero-badge">Survey Analysis Studio</div>
+  <h1 class="hero-title">Survey Analysis App</h1>
+  <div class="hero-subtitle">
+    Upload a CSV, tune taxonomy and sentiment, and export deliverables without exposing raw text.
+  </div>
+  <div class="step-grid">
+    <div class="step-card"><strong>1. Upload</strong><br/>Drop your survey CSV.</div>
+    <div class="step-card"><strong>2. Configure</strong><br/>Pick profiles, columns, and thresholds.</div>
+    <div class="step-card"><strong>3. Run</strong><br/>Generate assignments and reports.</div>
+    <div class="step-card"><strong>4. Export</strong><br/>Download tables for reporting.</div>
+  </div>
+</div>
+""",
+    unsafe_allow_html=True,
+)
 
 
 def _discover_profiles():
@@ -391,236 +600,255 @@ with st.sidebar:
 
     run_btn = st.button("Run pipeline", type="primary", use_container_width=True)
 
-
-if df_raw is not None:
-    st.subheader("Preview")
-    st.dataframe(df_raw.head(50), use_container_width=True)
-
 can_run = df_for_run is not None and bool(selected_text_cols)
 if taxonomy_mode == "semantic" and (not enriched_path or not enriched_path.exists()):
     can_run = False
 
-if run_btn:
-    if not can_run:
-        st.error("Upload a CSV and select at least one text column.")
+run_tab, results_tab, builder_tab = st.tabs(["Run Analysis", "Results", "Taxonomy Builder"])
+
+with run_tab:
+    st.subheader("Data Preview")
+    if df_raw is not None:
+        st.dataframe(df_raw.head(50), use_container_width=True)
     else:
-        run_root, upload_dir, tables_dir, deliverables_dir = _ensure_run_dirs()
-        input_path = upload_dir / "input.csv"
-        df_for_run.to_csv(input_path, index=False)
+        st.info("Upload a CSV in the sidebar to preview data and enable the run button.")
 
-        settings = _load_settings_for_profile(profile)
-        settings["text_columns"] = selected_text_cols
-        settings["null_detection"]["min_meaningful_length"] = int(min_len)
-        settings["null_detection"]["max_dismissive_length"] = int(max_len)
+    summary_cols = st.columns(4)
+    summary_cols[0].metric("Profile", profile)
+    summary_cols[1].metric("Mode", taxonomy_mode)
+    summary_cols[2].metric("Text Columns", len(selected_text_cols) if selected_text_cols else 0)
+    summary_cols[3].metric("Rows", len(df_for_run) if df_for_run is not None else 0)
 
-        settings["taxonomy"]["min_accept_score"] = float(keyword_min_score)
-        settings["taxonomy"]["top_k"] = int(keyword_top_k)
+    if taxonomy_mode == "semantic" and (not enriched_path or not enriched_path.exists()):
+        st.warning("Semantic mode needs an enriched taxonomy JSON. Build it or switch to keyword mode.")
 
-        settings["semantic"]["model_name"] = semantic_model
-        settings["semantic"]["similarity_threshold"] = float(semantic_threshold)
-        settings["semantic"]["top_k"] = int(semantic_top_k)
-        settings["semantic"]["use_cross_encoder"] = bool(use_cross_encoder)
-        settings["semantic"]["cross_encoder_model"] = cross_encoder_model
-        settings["semantic"]["bi_top_k"] = int(bi_top_k)
-        settings["semantic"]["bi_threshold"] = float(bi_threshold)
-
-        settings["sentiment"]["positive_threshold"] = float(pos_threshold)
-        settings["sentiment"]["negative_threshold"] = float(neg_threshold)
-        settings["sentiment"]["skip_dismissed"] = bool(skip_dismissed)
-        if column_weights:
-            settings["sentiment"]["column_weights"] = column_weights
+    if run_btn:
+        if not can_run:
+            st.error("Upload a CSV and select at least one text column.")
         else:
-            settings["sentiment"]["column_weights"] = {}
+            run_root, upload_dir, tables_dir, deliverables_dir = _ensure_run_dirs()
+            input_path = upload_dir / "input.csv"
+            df_for_run.to_csv(input_path, index=False)
 
-        settings["output"]["generate_assignments"] = bool(generate_assignments)
-        settings["output"]["generate_sentiment"] = bool(sentiment_enabled)
-        settings["output"]["generate_taxonomy_reports"] = bool(generate_taxonomy_reports)
-        settings["output"]["generate_quality_report"] = bool(generate_quality_report)
-        settings["output"]["generate_null_text_details"] = bool(generate_null_details)
-        settings["analytics"]["enabled"] = bool(analytics_enabled)
+            settings = _load_settings_for_profile(profile)
+            settings["text_columns"] = selected_text_cols
+            settings["null_detection"]["min_meaningful_length"] = int(min_len)
+            settings["null_detection"]["max_dismissive_length"] = int(max_len)
 
-        run_cache = st.session_state.setdefault("run_cache", {})
-        data_bytes = st.session_state.get("uploaded_bytes") or b""
-        run_key = _build_run_key(settings, taxonomy_mode, data_bytes)
+            settings["taxonomy"]["min_accept_score"] = float(keyword_min_score)
+            settings["taxonomy"]["top_k"] = int(keyword_top_k)
 
-        if use_cache and run_key in run_cache:
-            cached = run_cache[run_key]
-            st.session_state["run_result"] = cached["result"]
-            st.session_state["run_logs"] = cached["logs"]
-            st.session_state["run_dirs"] = cached["dirs"]
-            st.session_state["run_settings"] = cached["settings"]
-            st.info("Loaded cached results for this configuration.")
-        else:
-            log_buffer = io.StringIO()
-            with st.spinner("Running pipeline..."):
-                with contextlib.redirect_stdout(log_buffer):
-                    result = run_pipeline(
-                        settings=settings,
-                        input_csv=str(input_path),
-                        taxonomy_mode=taxonomy_mode,
-                        output_dir=str(tables_dir),
-                        deliverables_dir=str(deliverables_dir),
-                        analytics=analytics_enabled,
-                    )
+            settings["semantic"]["model_name"] = semantic_model
+            settings["semantic"]["similarity_threshold"] = float(semantic_threshold)
+            settings["semantic"]["top_k"] = int(semantic_top_k)
+            settings["semantic"]["use_cross_encoder"] = bool(use_cross_encoder)
+            settings["semantic"]["cross_encoder_model"] = cross_encoder_model
+            settings["semantic"]["bi_top_k"] = int(bi_top_k)
+            settings["semantic"]["bi_threshold"] = float(bi_threshold)
 
-            run_payload = {
-                "result": result,
-                "logs": log_buffer.getvalue(),
-                "dirs": {
-                    "root": run_root,
-                    "tables": tables_dir,
-                    "deliverables": deliverables_dir,
-                },
-                "settings": settings,
-            }
-            st.session_state["run_result"] = result
-            st.session_state["run_logs"] = log_buffer.getvalue()
-            st.session_state["run_dirs"] = run_payload["dirs"]
-            st.session_state["run_settings"] = settings
-            run_cache[run_key] = run_payload
+            settings["sentiment"]["positive_threshold"] = float(pos_threshold)
+            settings["sentiment"]["negative_threshold"] = float(neg_threshold)
+            settings["sentiment"]["skip_dismissed"] = bool(skip_dismissed)
+            if column_weights:
+                settings["sentiment"]["column_weights"] = column_weights
+            else:
+                settings["sentiment"]["column_weights"] = {}
 
+            settings["output"]["generate_assignments"] = bool(generate_assignments)
+            settings["output"]["generate_sentiment"] = bool(sentiment_enabled)
+            settings["output"]["generate_taxonomy_reports"] = bool(generate_taxonomy_reports)
+            settings["output"]["generate_quality_report"] = bool(generate_quality_report)
+            settings["output"]["generate_null_text_details"] = bool(generate_null_details)
+            settings["analytics"]["enabled"] = bool(analytics_enabled)
+            settings.setdefault("run_metadata", {})["taxonomy_mode"] = taxonomy_mode
 
-result = st.session_state.get("run_result")
-if result:
-    data_df = result.get("data")
-    assignments_df = result.get("assignments")
-    run_settings = st.session_state.get("run_settings")
+            run_cache = st.session_state.setdefault("run_cache", {})
+            data_bytes = st.session_state.get("uploaded_bytes") or b""
+            run_key = _build_run_key(settings, taxonomy_mode, data_bytes)
 
-    st.header("Results")
-    if data_df is not None:
-        st.write(f"Rows processed: {len(data_df)}")
-    if assignments_df is not None:
-        st.write(f"Assignments created: {len(assignments_df)}")
+            if use_cache and run_key in run_cache:
+                cached = run_cache[run_key]
+                st.session_state["run_result"] = cached["result"]
+                st.session_state["run_logs"] = cached["logs"]
+                st.session_state["run_dirs"] = cached["dirs"]
+                st.session_state["run_settings"] = cached["settings"]
+                st.info("Loaded cached results for this configuration.")
+            else:
+                log_buffer = io.StringIO()
+                with st.spinner("Running pipeline..."):
+                    with contextlib.redirect_stdout(log_buffer):
+                        result = run_pipeline(
+                            settings=settings,
+                            input_csv=str(input_path),
+                            taxonomy_mode=taxonomy_mode,
+                            output_dir=str(tables_dir),
+                            deliverables_dir=str(deliverables_dir),
+                            analytics=analytics_enabled,
+                        )
 
-    if assignments_df is not None and not assignments_df.empty:
-        st.subheader("Assignments Preview")
-        st.dataframe(assignments_df.head(200), use_container_width=True)
+                run_payload = {
+                    "result": result,
+                    "logs": log_buffer.getvalue(),
+                    "dirs": {
+                        "root": run_root,
+                        "tables": tables_dir,
+                        "deliverables": deliverables_dir,
+                    },
+                    "settings": settings,
+                }
+                st.session_state["run_result"] = result
+                st.session_state["run_logs"] = log_buffer.getvalue()
+                st.session_state["run_dirs"] = run_payload["dirs"]
+                st.session_state["run_settings"] = settings
+                run_cache[run_key] = run_payload
+                st.success("Run complete. Open the Results tab to download outputs.")
 
-    if data_df is not None and "sentiment_label" in data_df.columns:
-        st.subheader("Sentiment Distribution")
-        sentiment_counts = data_df["sentiment_label"].value_counts()
-        st.bar_chart(sentiment_counts)
+with results_tab:
+    result = st.session_state.get("run_result")
+    if not result:
+        st.info("Run the pipeline from the Run Analysis tab to see results.")
+    else:
+        data_df = result.get("data")
+        assignments_df = result.get("assignments")
+        run_settings = st.session_state.get("run_settings")
 
-    run_dirs = st.session_state.get("run_dirs", {})
-    output_root = run_dirs.get("tables")
-    deliverables_root = run_dirs.get("deliverables")
+        st.header("Results")
+        if data_df is not None and assignments_df is not None:
+            metric_cols = st.columns(3)
+            metric_cols[0].metric("Rows processed", len(data_df))
+            metric_cols[1].metric("Assignments created", len(assignments_df))
+            profile_name = run_settings.get("profile") if run_settings else profile
+            metric_cols[2].metric("Profile", profile_name)
 
-    st.subheader("Downloads")
-    if run_settings:
+        if assignments_df is not None and not assignments_df.empty:
+            st.subheader("Assignments Preview")
+            st.dataframe(assignments_df.head(200), use_container_width=True)
+
+        if data_df is not None and "sentiment_label" in data_df.columns:
+            st.subheader("Sentiment Distribution")
+            sentiment_counts = data_df["sentiment_label"].value_counts()
+            st.bar_chart(sentiment_counts)
+
+        run_dirs = st.session_state.get("run_dirs", {})
+        output_root = run_dirs.get("tables")
+        deliverables_root = run_dirs.get("deliverables")
+
+        st.subheader("Downloads")
+        if run_settings:
+            st.download_button(
+                "Download run config (YAML)",
+                data=_dump_settings(run_settings),
+                file_name="run_config.yaml",
+                mime="text/yaml",
+            )
+        if output_root:
+            for csv_file in sorted(Path(output_root).glob("*.csv")):
+                st.download_button(
+                    label=f"Download {csv_file.name}",
+                    data=csv_file.read_bytes(),
+                    file_name=csv_file.name,
+                    mime="text/csv",
+                )
+        if deliverables_root:
+            for csv_file in sorted(Path(deliverables_root).glob("*.csv")):
+                st.download_button(
+                    label=f"Download deliverable: {csv_file.name}",
+                    data=csv_file.read_bytes(),
+                    file_name=csv_file.name,
+                    mime="text/csv",
+                )
+
+        with st.expander("Pipeline Logs"):
+            st.text(st.session_state.get("run_logs", ""))
+
+with builder_tab:
+    st.header("Taxonomy Builder")
+    st.caption("Create a theme phrase library CSV and generate enriched taxonomy files.")
+
+    template_files = sorted(TEMPLATES_DIR.glob("*.csv")) if TEMPLATES_DIR.exists() else []
+    template_names = [p.name for p in template_files]
+    selected_template = st.selectbox("Starter template", options=["(none)"] + template_names)
+    if selected_template != "(none)":
+        template_path = TEMPLATES_DIR / selected_template
+        template_bytes = template_path.read_bytes()
         st.download_button(
-            "Download run config (YAML)",
-            data=_dump_settings(run_settings),
-            file_name="run_config.yaml",
-            mime="text/yaml",
+            "Download template CSV",
+            data=template_bytes,
+            file_name=selected_template,
+            mime="text/csv",
         )
-    if output_root:
-        for csv_file in sorted(Path(output_root).glob("*.csv")):
-            st.download_button(
-                label=f"Download {csv_file.name}",
-                data=csv_file.read_bytes(),
-                file_name=csv_file.name,
-                mime="text/csv",
-            )
-    if deliverables_root:
-        for csv_file in sorted(Path(deliverables_root).glob("*.csv")):
-            st.download_button(
-                label=f"Download deliverable: {csv_file.name}",
-                data=csv_file.read_bytes(),
-                file_name=csv_file.name,
-                mime="text/csv",
-            )
+        if st.button("Use template in builder"):
+            st.session_state["taxonomy_df"] = pd.read_csv(io.BytesIO(template_bytes))
+            st.session_state["taxonomy_name"] = selected_template
+            st.session_state["taxonomy_bytes"] = template_bytes
+            st.session_state.pop("taxonomy_outputs", None)
+            st.rerun()
 
-    with st.expander("Pipeline Logs"):
-        st.text(st.session_state.get("run_logs", ""))
-
-
-st.header("Taxonomy Builder")
-st.caption("Create a theme phrase library CSV and generate enriched taxonomy files.")
-
-template_files = sorted(TEMPLATES_DIR.glob("*.csv")) if TEMPLATES_DIR.exists() else []
-template_names = [p.name for p in template_files]
-selected_template = st.selectbox("Starter template", options=["(none)"] + template_names)
-if selected_template != "(none)":
-    template_path = TEMPLATES_DIR / selected_template
-    template_bytes = template_path.read_bytes()
-    st.download_button(
-        "Download template CSV",
-        data=template_bytes,
-        file_name=selected_template,
-        mime="text/csv",
-    )
-    if st.button("Use template in builder"):
-        st.session_state["taxonomy_df"] = pd.read_csv(io.BytesIO(template_bytes))
-        st.session_state["taxonomy_name"] = selected_template
-        st.session_state["taxonomy_bytes"] = template_bytes
+    taxonomy_upload = st.file_uploader("Upload theme_phrase_library.csv", type=["csv"], key="taxonomy_upload")
+    if taxonomy_upload is not None:
+        tax_bytes = taxonomy_upload.getvalue()
+        st.session_state["taxonomy_df"] = pd.read_csv(io.BytesIO(tax_bytes))
+        st.session_state["taxonomy_name"] = taxonomy_upload.name
+        st.session_state["taxonomy_bytes"] = tax_bytes
         st.session_state.pop("taxonomy_outputs", None)
-        st.rerun()
 
-taxonomy_upload = st.file_uploader("Upload theme_phrase_library.csv", type=["csv"], key="taxonomy_upload")
-if taxonomy_upload is not None:
-    tax_bytes = taxonomy_upload.getvalue()
-    st.session_state["taxonomy_df"] = pd.read_csv(io.BytesIO(tax_bytes))
-    st.session_state["taxonomy_name"] = taxonomy_upload.name
-    st.session_state["taxonomy_bytes"] = tax_bytes
-    st.session_state.pop("taxonomy_outputs", None)
+    tax_df = st.session_state.get("taxonomy_df")
+    if tax_df is not None:
+        st.subheader("Taxonomy Preview")
+        st.dataframe(tax_df.head(50), use_container_width=True)
 
-tax_df = st.session_state.get("taxonomy_df")
-if tax_df is not None:
-    st.subheader("Taxonomy Preview")
-    st.dataframe(tax_df.head(50), use_container_width=True)
+        min_phrases = st.number_input("Min phrases per subtheme", min_value=1, max_value=10, value=2)
+        errors, warnings = _validate_taxonomy_df(tax_df, min_phrases=int(min_phrases))
+        if errors:
+            for msg in errors:
+                st.error(msg)
+        if warnings:
+            for msg in warnings:
+                st.warning(msg)
+        if not errors:
+            st.success("Validation passed.")
 
-    min_phrases = st.number_input("Min phrases per subtheme", min_value=1, max_value=10, value=2)
-    errors, warnings = _validate_taxonomy_df(tax_df, min_phrases=int(min_phrases))
-    if errors:
-        for msg in errors:
-            st.error(msg)
-    if warnings:
-        for msg in warnings:
-            st.warning(msg)
-    if not errors:
-        st.success("Validation passed.")
+        target_profile = st.text_input("Target profile name", value=profile if "profile" in locals() else "general")
+        save_to_project = st.checkbox("Save files to project taxonomy folder", value=False)
+        make_enriched = st.checkbox("Generate enriched JSON (semantic)", value=True)
+        make_themes = st.checkbox("Generate themes.yaml (keyword)", value=True)
+        make_phrase_csv = st.checkbox("Save phrase library CSV", value=True)
+        if save_to_project and target_profile not in profiles:
+            st.warning("Target profile does not exist yet. Create it in config/profiles/ before running.")
 
-    target_profile = st.text_input("Target profile name", value=profile if "profile" in locals() else "general")
-    save_to_project = st.checkbox("Save files to project taxonomy folder", value=False)
-    make_enriched = st.checkbox("Generate enriched JSON (semantic)", value=True)
-    make_themes = st.checkbox("Generate themes.yaml (keyword)", value=True)
-    make_phrase_csv = st.checkbox("Save phrase library CSV", value=True)
-    if save_to_project and target_profile not in profiles:
-        st.warning("Target profile does not exist yet. Create it in config/profiles/ before running.")
+        if st.button("Build taxonomy files", disabled=bool(errors)):
+            outputs = {}
+            if make_phrase_csv:
+                outputs["theme_phrase_library.csv"] = tax_df.to_csv(index=False).encode("utf-8")
+            if make_enriched:
+                enriched = build_enriched_structure(tax_df)
+                outputs["theme_subtheme_dictionary_v3_enriched.json"] = (
+                    json.dumps(enriched, indent=2).encode("utf-8")
+                )
+            if make_themes:
+                themes_yaml = _build_themes_yaml(tax_df)
+                try:
+                    import yaml
+                    outputs["themes.yaml"] = yaml.safe_dump(themes_yaml, sort_keys=False).encode("utf-8")
+                except Exception:
+                    outputs["themes.yaml"] = json.dumps(themes_yaml, indent=2).encode("utf-8")
 
-    if st.button("Build taxonomy files", disabled=bool(errors)):
-        outputs = {}
-        if make_phrase_csv:
-            outputs["theme_phrase_library.csv"] = tax_df.to_csv(index=False).encode("utf-8")
-        if make_enriched:
-            enriched = build_enriched_structure(tax_df)
-            outputs["theme_subtheme_dictionary_v3_enriched.json"] = (
-                json.dumps(enriched, indent=2).encode("utf-8")
-            )
-        if make_themes:
-            themes_yaml = _build_themes_yaml(tax_df)
-            try:
-                import yaml
-                outputs["themes.yaml"] = yaml.safe_dump(themes_yaml, sort_keys=False).encode("utf-8")
-            except Exception:
-                outputs["themes.yaml"] = json.dumps(themes_yaml, indent=2).encode("utf-8")
+            st.session_state["taxonomy_outputs"] = outputs
 
-        st.session_state["taxonomy_outputs"] = outputs
+            if save_to_project:
+                target_dir = ROOT / "assets" / "taxonomy" / target_profile
+                target_dir.mkdir(parents=True, exist_ok=True)
+                for name, content in outputs.items():
+                    (target_dir / name).write_bytes(content)
+                st.info(f"Saved files to {target_dir}")
 
-        if save_to_project:
-            target_dir = ROOT / "assets" / "taxonomy" / target_profile
-            target_dir.mkdir(parents=True, exist_ok=True)
+        outputs = st.session_state.get("taxonomy_outputs")
+        if outputs:
+            st.subheader("Download Generated Files")
             for name, content in outputs.items():
-                (target_dir / name).write_bytes(content)
-            st.info(f"Saved files to {target_dir}")
-
-    outputs = st.session_state.get("taxonomy_outputs")
-    if outputs:
-        st.subheader("Download Generated Files")
-        for name, content in outputs.items():
-            st.download_button(
-                f"Download {name}",
-                data=content,
-                file_name=name,
-                mime="application/octet-stream",
-            )
+                st.download_button(
+                    f"Download {name}",
+                    data=content,
+                    file_name=name,
+                    mime="application/octet-stream",
+                )

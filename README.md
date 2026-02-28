@@ -75,6 +75,17 @@ The Streamlit app includes a Taxonomy Builder that can:
 3. Generate `themes.yaml` for keyword matching
 4. Save files into `assets/taxonomy/<profile>/`
 
+### Build Taxonomies From The CLI
+
+You can also build taxonomy files from a CSV using:
+
+```bash
+python scripts/build_taxonomy.py \
+  --input-csv assets/taxonomy/hearing/theme_phrase_library.csv \
+  --output-json assets/taxonomy/hearing/theme_subtheme_dictionary_v3_enriched.json \
+  --output-themes config/profiles/hearing/themes.yaml
+```
+
 ### Create A New Profile
 
 Use the template helper to create a new profile folder:
