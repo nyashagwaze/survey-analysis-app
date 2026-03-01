@@ -25,6 +25,40 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
+## UI Screenshots (Automated)
+
+You can generate README-ready screenshots of the Streamlit pages with Playwright.
+
+```bash
+pip install -r requirements-dev.txt
+python -m playwright install
+python scripts/capture_streamlit_screenshots.py --use-sample
+```
+
+Screenshots will be saved to `docs/images/`:
+- `home.png`
+- `data-settings.png`
+- `results.png`
+- `dashboard.png`
+- `taxonomy-builder.png`
+
+Add them to the README like:
+
+```markdown
+![Data & Settings](docs/images/data-settings.png)
+![Results](docs/images/results.png)
+```
+
+### UI Gallery
+
+> Generate screenshots first using the commands above.
+
+![Home](docs/images/home.png)
+![Data & Settings](docs/images/data-settings.png)
+![Results](docs/images/results.png)
+![Dashboard](docs/images/dashboard.png)
+![Taxonomy Builder](docs/images/taxonomy-builder.png)
+
 ## Quick Start (CLI)
 
 1. Install the package:
