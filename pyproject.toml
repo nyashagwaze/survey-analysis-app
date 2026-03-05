@@ -1,4 +1,4 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
@@ -10,10 +10,6 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [{ name = "Nyasha Gwaze", email = "nyasha.gwaze1@gmail.com" }]
-
-[project.urls]
-Repository = "https://github.com/nyashagwaze/survey-analysis-app"
-Issues = "https://github.com/nyashagwaze/survey-analysis-app/issues"
 
 # Core runtime dependencies
 dependencies = [
@@ -28,6 +24,10 @@ dependencies = [
   "openpyxl>=3.1.0",
   "spacy>=3.5.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/nyashagwaze/survey-analysis-app"
+Issues = "https://github.com/nyashagwaze/survey-analysis-app/issues"
 
 [project.optional-dependencies]
 # Visuals and notebooks
