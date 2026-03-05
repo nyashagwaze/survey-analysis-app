@@ -26,17 +26,20 @@ def apply_global_styles():
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
 
 :root {
-  --bg: #0B1220;
-  --panel: #101B2F;
-  --ink: #F8FAFC;
-  --muted: #E2E8F0;
-  --accent: #38BDF8;
-  --accent-2: #22D3EE;
-  --stroke: #243B5A;
-  --shadow: rgba(4, 10, 22, 0.7);
-  --button-bg: #CBD5E1;
-  --button-hover: #94A3B8;
-  --button-text: #0B1220;
+  --bg: #090909;
+  --panel: #121212;
+  --panel-2: #1A1A1A;
+  --ink: #F5F5F5;
+  --muted: #B3B3B3;
+  --accent: #3B82F6;
+  --accent-2: #60A5FA;
+  --stroke: #2A2A2A;
+  --shadow: rgba(0, 0, 0, 0.45);
+  --focus: rgba(59, 130, 246, 0.45);
+  --button-bg: #141414;
+  --button-hover: #1D4ED8;
+  --button-text: #FFFFFF;
+  --button-border: #FFFFFF;
 }
 
 html, body, [class*="css"]  {
@@ -46,8 +49,8 @@ html, body, [class*="css"]  {
 
 .stApp {
   background:
-    radial-gradient(1200px 600px at 6% -10%, #162742 0%, rgba(22, 39, 66, 0) 60%),
-    radial-gradient(1000px 600px at 108% 0%, #0E2E40 0%, rgba(14, 46, 64, 0) 58%),
+    radial-gradient(1000px 560px at 8% -10%, rgba(59, 130, 246, 0.24) 0%, rgba(59, 130, 246, 0) 62%),
+    radial-gradient(900px 580px at 105% 0%, rgba(37, 99, 235, 0.18) 0%, rgba(37, 99, 235, 0) 60%),
     var(--bg);
 }
 
@@ -61,7 +64,7 @@ h1, h2, h3, .hero-title {
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(17, 27, 46, 0.95), rgba(12, 22, 39, 0.98));
+  background: linear-gradient(145deg, #151515, #101010);
   border: 1px solid var(--stroke);
   border-radius: 24px;
   padding: 28px 32px;
@@ -75,13 +78,13 @@ h1, h2, h3, .hero-title {
   gap: 6px;
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(45, 212, 191, 0.15);
-  color: #7CE7DB;
+  background: rgba(59, 130, 246, 0.16);
+  color: #DBEAFE;
   font-weight: 600;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border: 1px solid rgba(45, 212, 191, 0.35);
+  border: 1px solid rgba(59, 130, 246, 0.42);
 }
 
 .hero-subtitle {
@@ -98,8 +101,8 @@ h1, h2, h3, .hero-title {
 }
 
 .step-card {
-  background: #0F1A2B;
-  border: 1px solid #1B2B45;
+  background: var(--panel-2);
+  border: 1px solid var(--stroke);
   border-radius: 16px;
   padding: 12px 14px;
   font-size: 0.9rem;
@@ -111,7 +114,7 @@ h1, h2, h3, .hero-title {
 }
 
 [data-testid="stSidebar"] {
-  background: #0F172A;
+  background: #0E0E0E;
   border-right: 1px solid var(--stroke);
 }
 
@@ -119,21 +122,40 @@ h1, h2, h3, .hero-title {
   padding-top: 1.6rem;
 }
 
+[data-testid="stSidebarNav"] a {
+  color: var(--muted) !important;
+  border-radius: 10px;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+  color: var(--ink) !important;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+  color: var(--ink) !important;
+  background: rgba(59, 130, 246, 0.24);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
 .stButton > button,
 .stDownloadButton > button,
+.stFormSubmitButton > button,
 button[kind="primary"],
 button[kind="secondary"] {
   background: var(--button-bg) !important;
   color: var(--button-text) !important;
-  border: 1px solid #94A3B8 !important;
+  border: 1px solid var(--button-border) !important;
   border-radius: 12px;
   padding: 0.6rem 1rem;
   font-weight: 600;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
 }
 
 .stButton > button *,
 .stDownloadButton > button *,
+.stFormSubmitButton > button *,
 button[kind="primary"] *,
 button[kind="secondary"] * {
   color: var(--button-text) !important;
@@ -141,18 +163,59 @@ button[kind="secondary"] * {
 
 .stButton > button:hover,
 .stDownloadButton > button:hover,
+.stFormSubmitButton > button:hover,
 button[kind="primary"]:hover,
 button[kind="secondary"]:hover {
-  background: var(--button-hover) !important;
+  background: rgba(59, 130, 246, 0.2) !important;
+  border-color: var(--accent) !important;
   color: var(--button-text) !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25), 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.stButton > button:active,
+.stDownloadButton > button:active,
+.stFormSubmitButton > button:active,
+button[kind="primary"]:active,
+button[kind="secondary"]:active {
+  background: var(--button-hover) !important;
+  border-color: var(--accent-2) !important;
+}
+
+.stButton > button:focus-visible,
+.stDownloadButton > button:focus-visible,
+.stFormSubmitButton > button:focus-visible,
+button[kind="primary"]:focus-visible,
+button[kind="secondary"]:focus-visible {
+  outline: none !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px var(--focus), 0 10px 24px rgba(0, 0, 0, 0.4) !important;
 }
 
 .stTabs [data-baseweb="tab"] {
   font-weight: 600;
+  color: var(--muted);
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+  color: var(--ink);
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.24);
+}
+
+.stTabs [aria-selected="true"] {
+  color: var(--ink) !important;
+  background: rgba(59, 130, 246, 0.22) !important;
+  border: 1px solid rgba(59, 130, 246, 0.5) !important;
+}
+
+.stTabs [data-baseweb="tab-highlight"] {
+  background: var(--accent) !important;
 }
 
 div[data-testid="stMetric"] {
-  background: #0F1A2B;
+  background: var(--panel-2);
   border: 1px solid var(--stroke);
   padding: 12px;
   border-radius: 16px;
@@ -166,7 +229,7 @@ label, .stMarkdown, .stText, .stCaption, .stAlert, .stMetric {
   color: var(--muted);
 }
 
-input, textarea, select {
+input, textarea, select, .stCode, .stDataFrame {
   color: var(--ink) !important;
 }
 
@@ -177,27 +240,99 @@ input, textarea, select {
 
 [data-testid="stSidebar"] .stButton > button,
 [data-testid="stSidebar"] .stDownloadButton > button,
+[data-testid="stSidebar"] .stFormSubmitButton > button,
 [data-testid="stSidebar"] button[kind="primary"],
 [data-testid="stSidebar"] button[kind="secondary"] {
   color: var(--button-text) !important;
+  border-color: var(--button-border) !important;
+}
+
+div[data-baseweb="input"] > div,
+div[data-baseweb="select"] > div,
+textarea {
+  background: var(--panel) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--stroke) !important;
+}
+
+div[data-baseweb="input"] > div:focus-within,
+div[data-baseweb="select"] > div:focus-within,
+textarea:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px var(--focus) !important;
+}
+
+[data-baseweb="tag"] {
+  background: rgba(59, 130, 246, 0.2) !important;
+  border: 1px solid rgba(59, 130, 246, 0.5) !important;
+}
+
+[data-baseweb="tag"], [data-baseweb="tag"] * {
+  color: #DBEAFE !important;
+}
+
+div[role="listbox"] [aria-selected="true"] {
+  background: rgba(59, 130, 246, 0.22) !important;
+  color: var(--ink) !important;
+}
+
+[data-baseweb="checkbox"] [aria-checked="true"] > div,
+[data-baseweb="checkbox"] input:checked + div {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+[data-baseweb="radio"] [aria-checked="true"] > div {
+  border-color: var(--accent) !important;
+}
+
+[data-baseweb="radio"] [aria-checked="true"] > div > div {
+  background: var(--accent) !important;
+}
+
+[data-testid="stToggle"] [aria-checked="true"] {
+  background: var(--accent) !important;
+}
+
+[data-baseweb="slider"] [role="slider"] {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px var(--focus) !important;
+}
+
+[data-baseweb="slider"] > div > div:first-child {
+  background: var(--accent) !important;
 }
 
 /* File uploader */
 [data-testid="stFileUploader"] {
-  background: #0F1A2B;
-  border: 1px dashed #2B3C5A;
+  background: var(--panel-2);
+  border: 1px dashed #3A3A3A;
   border-radius: 12px;
   padding: 12px;
+}
+
+[data-testid="stFileUploader"]:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--focus);
 }
 
 [data-testid="stFileUploader"] button {
   background: var(--button-bg) !important;
   color: var(--button-text) !important;
-  border: 1px solid #94A3B8 !important;
+  border: 1px solid var(--button-border) !important;
 }
 
 [data-testid="stFileUploader"] * {
   color: var(--ink) !important;
+}
+
+a {
+  color: var(--accent-2);
+}
+
+a:hover {
+  color: #93C5FD;
 }
 
 .fade-in {
