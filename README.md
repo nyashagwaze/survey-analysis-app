@@ -9,7 +9,7 @@
 - Semantic or keyword taxonomy matching for free-text survey responses
 - Optional sentiment analysis
 - Output tables for assignments, matched/unmatched reports, and audits
-- Streamlit app for non-technical users
+- Streamlit app for ease of use
 
 ## Quick Start (Streamlit)
 
@@ -25,33 +25,16 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-## UI Screenshots
-
-You can capture screenshots manually (any OS screenshot tool) and save them to `docs/images/`.
-
-Suggested filenames:
-- `home.png`
-- `data-settings.png`
-- `results.png`
-- `dashboard.png`
-- `taxonomy-builder.png`
-
-Add them to the README like:
-
-```markdown
-![Data & Settings](docs/images/data-settings.png)
-![Results](docs/images/results.png)
-```
 
 ### UI Gallery
 
 > Generate screenshots first using the commands above.
 
-![Home](docs/images/home.png)
-![Data & Settings](docs/images/data-settings.png)
-![Results](docs/images/results.png)
-![Dashboard](docs/images/dashboard.png)
-![Taxonomy Builder](docs/images/taxonomy-builder.png)
+![Home](docs/images/survey_home.png)
+![Data & Settings](docs/images/survey_settings.png)
+![Results](docs/images/survey_results.png)
+![Dashboard](docs/images/survey_dashboard.png)
+![Taxonomy Builder](docs/images/survey_taxonomy_builder.png)
 
 ## Quick Start (CLI)
 
