@@ -49,6 +49,8 @@ with col_left:
                 st.session_state["uploaded_name"] = uploaded_file.name
                 st.session_state["uploaded_size"] = uploaded_file.size
                 st.session_state["uploaded_bytes"] = data_bytes
+                st.session_state.pop("selected_text_cols", None)
+                st.session_state.pop("id_column", None)
             except Exception as exc:
                 st.session_state["uploaded_df"] = None
                 st.error(f"Failed to read CSV: {exc}")
@@ -92,7 +94,11 @@ with col_right:
     st.subheader("Columns")
     id_column = "(none)"
     if df_raw is not None:
-        id_column = st.selectbox("ID column (optional)", options=["(none)"] + list(df_raw.columns))
+        id_options = ["(none)"] + list(df_raw.columns)
+        prev_id = st.session_state.get("id_column", "(none)")
+        if prev_id not in id_options:
+            st.session_state["id_column"] = "(none)"
+        id_column = st.selectbox("ID column (optional)", options=id_options, key="id_column")
         df_for_run = df_raw.copy()
         if id_column != "(none)" and id_column != "ID":
             df_for_run = df_for_run.rename(columns={id_column: "ID"})
@@ -102,10 +108,27 @@ with col_right:
         ]
         if not text_candidates:
             text_candidates = [c for c in df_for_run.columns if c != "ID"]
+        column_map = (settings.get("input", {}) or {}).get("column_map", {}) or {}
+        configured_text_cols = (
+            (settings.get("processing", {}) or {}).get("text_columns")
+            or settings.get("text_columns")
+            or []
+        )
+        mapped_defaults = [
+            src
+            for src, dest in column_map.items()
+            if src in text_candidates and dest in configured_text_cols
+        ]
+        default_text_cols = mapped_defaults if mapped_defaults else text_candidates
+        prior_selected = st.session_state.get("selected_text_cols", [])
+        valid_selected = [c for c in prior_selected if c in text_candidates]
+        if not valid_selected:
+            valid_selected = default_text_cols
+        st.session_state["selected_text_cols"] = valid_selected
         selected_text_cols = st.multiselect(
             "Text columns",
             options=text_candidates,
-            default=text_candidates,
+            key="selected_text_cols",
         )
 
 st.divider()
@@ -251,7 +274,21 @@ def _execute_run(
     df_input.to_csv(input_path, index=False)
 
     settings = load_settings_for_profile(profile)
-    settings["text_columns"] = text_cols
+    column_map = (settings.get("input", {}) or {}).get("column_map", {}) or {}
+    resolved_text_cols = []
+    for col in text_cols:
+        mapped_col = column_map.get(col, col)
+        if mapped_col not in resolved_text_cols:
+            resolved_text_cols.append(mapped_col)
+
+    settings["text_columns"] = list(resolved_text_cols)
+    processing_cfg = settings.get("processing", {}) or {}
+    processing_cfg["text_columns"] = list(resolved_text_cols)
+    processing_cfg["taxonomy_columns"] = list(resolved_text_cols)
+    processing_cfg["sentiment_columns"] = list(resolved_text_cols)
+    processing_cfg["segmentation_columns"] = list(processing_cfg.get("segmentation_columns", []))
+    settings["processing"] = processing_cfg
+
     settings["null_detection"]["min_meaningful_length"] = int(min_len)
     settings["null_detection"]["max_dismissive_length"] = int(max_len)
 
@@ -280,6 +317,8 @@ def _execute_run(
     settings["output"]["generate_quality_report"] = bool(generate_quality_report)
     settings["output"]["generate_null_text_details"] = bool(generate_null_details)
     settings["analytics"]["enabled"] = bool(analytics_enabled)
+    settings.setdefault("run_metadata", {})["ui_selected_text_columns"] = list(text_cols)
+    settings["run_metadata"]["resolved_text_columns"] = list(resolved_text_cols)
     settings.setdefault("run_metadata", {})["taxonomy_mode"] = run_mode
 
     if fast_demo:

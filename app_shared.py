@@ -485,4 +485,7 @@ def merge_assignments_with_text(assignments: pd.DataFrame, responses: pd.DataFra
         return responses
     if responses is None or responses.empty:
         return assignments
-    return assignments.merge(responses, on=["ID", "TextColumn"], how="left")
+    merged = assignments.merge(responses, on=["ID", "TextColumn"], how="left")
+    if "is_meaningful_x" in merged.columns and "is_meaningful_y" in merged.columns:
+        merged["is_meaningful"] = merged["is_meaningful_x"].combine_first(merged["is_meaningful_y"])
+    return merged

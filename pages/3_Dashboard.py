@@ -25,13 +25,33 @@ run_settings = st.session_state.get("run_settings") or {}
 text_columns = run_settings.get("text_columns") or []
 delimiter = run_settings.get("taxonomy", {}).get("multi_label", {}).get("delimiter", " | ")
 
-responses = build_response_long(data_df, text_columns)
+assigned_text_columns = []
+if assignments_df is not None and not assignments_df.empty and "TextColumn" in assignments_df.columns:
+    assigned_text_columns = sorted(assignments_df["TextColumn"].dropna().astype(str).unique().tolist())
+columns_for_responses = assigned_text_columns if assigned_text_columns else text_columns
+
+responses = build_response_long(data_df, columns_for_responses)
 view_df = merge_assignments_with_text(assignments_df, responses)
 
-themes = sorted({t for val in view_df.get("theme", []) for t in split_multi(val, delimiter)})
-subthemes = sorted({t for val in view_df.get("subtheme", []) for t in split_multi(val, delimiter)})
-sentiments = sorted([s for s in view_df.get("sentiment_label", []).dropna().unique()])
-match_methods = sorted([m for m in view_df.get("match_method", []).dropna().unique()])
+theme_values = view_df["theme"] if "theme" in view_df.columns else []
+subtheme_values = view_df["subtheme"] if "subtheme" in view_df.columns else []
+themes = sorted({t for val in theme_values for t in split_multi(val, delimiter)})
+subthemes = sorted({t for val in subtheme_values for t in split_multi(val, delimiter)})
+sentiments = (
+    sorted(view_df["sentiment_label"].dropna().astype(str).unique().tolist())
+    if "sentiment_label" in view_df.columns
+    else []
+)
+match_methods = (
+    sorted(view_df["match_method"].dropna().astype(str).unique().tolist())
+    if "match_method" in view_df.columns
+    else []
+)
+available_text_columns = (
+    sorted(view_df["TextColumn"].dropna().astype(str).unique().tolist())
+    if "TextColumn" in view_df.columns
+    else []
+)
 
 filter_cols = st.columns(5)
 with filter_cols[0]:
@@ -43,20 +63,24 @@ with filter_cols[2]:
 with filter_cols[3]:
     match_filter = st.multiselect("Match method", options=match_methods)
 with filter_cols[4]:
-    text_col_filter = st.multiselect("Text column", options=text_columns, default=text_columns)
+    text_col_filter = st.multiselect(
+        "Text column",
+        options=available_text_columns,
+        default=available_text_columns,
+    )
 
 only_meaningful = st.checkbox("Only meaningful responses", value=False)
 search_text = st.text_input("Search responses")
 
 filtered = view_df.copy()
 
-if text_col_filter:
+if text_col_filter and "TextColumn" in filtered.columns:
     filtered = filtered[filtered["TextColumn"].isin(text_col_filter)]
 
-if theme_filter:
+if theme_filter and "theme" in filtered.columns:
     filtered = filtered[filtered["theme"].apply(lambda x: any(t in split_multi(x, delimiter) for t in theme_filter))]
 
-if subtheme_filter:
+if subtheme_filter and "subtheme" in filtered.columns:
     filtered = filtered[
         filtered["subtheme"].apply(lambda x: any(t in split_multi(x, delimiter) for t in subtheme_filter))
     ]
@@ -67,10 +91,14 @@ if sentiment_filter and "sentiment_label" in filtered.columns:
 if match_filter and "match_method" in filtered.columns:
     filtered = filtered[filtered["match_method"].isin(match_filter)]
 
-if only_meaningful and "is_meaningful" in filtered.columns:
-    filtered = filtered[filtered["is_meaningful"] == True]
+meaningful_col = next(
+    (c for c in ["is_meaningful", "is_meaningful_x", "is_meaningful_y"] if c in filtered.columns),
+    None,
+)
+if only_meaningful and meaningful_col:
+    filtered = filtered[filtered[meaningful_col] == True]
 
-if search_text:
+if search_text and "text" in filtered.columns:
     filtered = filtered[filtered["text"].astype(str).str.contains(search_text, case=False, na=False)]
 
 metric_cols = st.columns(3)
