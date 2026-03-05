@@ -28,8 +28,6 @@ streamlit run streamlit_app.py
 
 ### UI Gallery
 
-> Generate screenshots first using the commands above.
-
 ![Home](docs/images/survey_home.png)
 ![Data & Settings](docs/images/survey_settings.png)
 ![Results](docs/images/survey_results.png)
