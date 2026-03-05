@@ -6,10 +6,14 @@ Runs the complete NLP pipeline: Clean -> Taxonomy -> Sentiment
 from pathlib import Path
 
 from .config_runtime import load_settings, resolve_base_dir, resolve_path, resolve_processing_columns
-from .databricks_helpers import copy_workspace_to_dbfs
 from .clean_normalise.null_text_detector import add_response_quality_flags
 from .taxonomy.semantic_taxonomy import assign_taxonomy_semantic
 from .taxonomy.cross_encoder_taxonomy import assign_taxonomy_semantic_cross_encoder
+
+try:
+    from .databricks_helpers import copy_workspace_to_dbfs
+except Exception:
+    copy_workspace_to_dbfs = None
 
 try:
     from pyspark.sql import SparkSession
@@ -92,6 +96,11 @@ def run_pipeline():
     if use_pyspark:
         if str(input_path).startswith("/Workspace/"):
             if db_cfg.get("spark_copy_workspace_to_dbfs", False):
+                if copy_workspace_to_dbfs is None:
+                    raise ImportError(
+                        "databricks_helpers.py is not available in this repo. "
+                        "Disable databricks.spark_copy_workspace_to_dbfs or restore the helper from archive."
+                    )
                 dbfs_dir = db_cfg.get("spark_dbfs_dir", "dbfs:/tmp/survey_app")
                 input_path = copy_workspace_to_dbfs(str(input_path), dbfs_dir, overwrite=True)
             else:

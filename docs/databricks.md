@@ -58,7 +58,8 @@ databricks:
   spark_copy_workspace_to_dbfs: true
   spark_dbfs_dir: "dbfs:/tmp/survey_app"
 ```
-The helper lives in `src/survey_app/databricks_helpers.py` and is called by `python -m survey_app.run`.
+The helper module may be archived outside the repo. If it is unavailable, `python -m survey_app.run`
+will raise an import error when `databricks.spark_copy_workspace_to_dbfs: true`.
 
 ## Cache and Model Downloads
 - Cluster shared cache locations are not writable (for example `/root/.cache`).

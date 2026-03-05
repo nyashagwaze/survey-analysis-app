@@ -18,7 +18,6 @@ src/survey_app/taxonomy/
   semantic_taxonomy.py
   cross_encoder_taxonomy.py
   synthetic_generation/
-    plan.py
     enhanced_dictionary.py
     transfer.py
 ```
