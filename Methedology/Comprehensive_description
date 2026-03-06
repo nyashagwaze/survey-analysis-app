@@ -2,7 +2,7 @@
 COMPREHENSIVE PIPELINE SUMMARY - SURVEY SURVEY NLP ANALYSIS
 ================================================================================
 
-Project Owner: ngwaze@anglianwater.co.uk
+Project Owner: nyasha.gwaze1@gmail.com
 Date: January 28, 2026
 Compute: openLake01 (Standard_DS13_v2, Databricks Runtime 15.4)
 Cloud Provider: Azure
@@ -443,7 +443,7 @@ DATA SOURCES & STRUCTURE
 ================================================================================
 
 1. Current Survey Survey (survey.csv)
-   Location: /Workspace/Users/ngwaze@anglianwater.co.uk/survey.csv
+   Location: /Workspace/Users/nyasha.gwaze1@gmail.com/survey.csv
    Structure:
      • 625 survey responses
      • 3 text columns:
@@ -457,7 +457,7 @@ DATA SOURCES & STRUCTURE
      • 58-64% dismissed as brief/null responses
 
 2. Historical Survey (historic_survey.xlsx)
-   Location: /Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/data/historic_survey.xlsx
+   Location: /Workspace/Users/nyasha.gwaze1@gmail.com/survey-analysis-app/data/historic_survey.xlsx
    Structure:
      • 3,600 historical survey responses
      • 1 text column: improvement_requested
@@ -472,7 +472,7 @@ DATA SOURCES & STRUCTURE
      • 37.2% dismissed as brief/null responses
 
 3. Theme Phrase Library (theme_phrase_library.csv)
-   Location: /Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/Generator/Output/
+   Location: /Workspace/Users/nyasha.gwaze1@gmail.com/survey-analysis-app/Generator/Output/
    Structure:
      • 2,844 rows of curated phrases
      • Columns: column, parent, theme, subtheme, polarity, phrase
@@ -488,7 +488,7 @@ DATA SOURCES & STRUCTURE
        mental health resources, team collaboration, work flexibility
 
 4. Synthetic Training Data (generated_phrases_schema.csv)
-   Location: /Workspace/Users/ngwaze@anglianwater.co.uk/survey-analysis-app/embed_class_insight/archive/
+   Location: /Workspace/Users/nyasha.gwaze1@gmail.com/survey-analysis-app/embed_class_insight/archive/
    Structure:
      • 9,581 synthetic phrases
      • Columns: phrase_id, phrase_text, intent_label, descriptor_labels, 
