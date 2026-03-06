@@ -36,3 +36,6 @@ Final_deliverable/
 Data/*.csv
 Data/*.xlsx
 Data/*.parquet
+
+# Notebooks (keep .ipynb files but ignore checkpoints and outputs)
+/notebooks/
